@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/common/Header/Header";
+import {BrowserRouter, Routes} from "react-router-dom";
+import Home from "./components/Home/Home";
+import styled from "styled-components";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Wrapper>
+                <Header/>
+                <Home/>
+                <Routes>
+                </Routes>
+            </Wrapper>
+        </BrowserRouter>
+    );
 }
+
+const Wrapper = styled.div`
+  max-width: 375px;
+  margin: 0 auto;
+  overflow: hidden;
+`;
 
 export default App;
