@@ -39,17 +39,18 @@ const Home = () => {
                             <BoxInner>
                                 <RhombsTop/>
                                 <RhombsBottom/>
+                                <DeviceLeft src='/assets/images/deviceLeft.png'/>
+                                <DeviceRight src='/assets/images/deviceRight.png'/>
                             </BoxInner>
                         </Box>
                     </MainBox>
                 </BoxWrapper>
-                <DeviceLeft src='/assets/images/deviceLeft.png'/>
-                <DeviceRight src='/assets/images/deviceRight.png'/>
+
             </BlockWrapper>
             <HowItWorksWrapper>
-                <HowItWorksInner>
-                    <HowItWorksRotated/>
-                </HowItWorksInner>
+                {/*<HowItWorksInner>*/}
+                {/*    <HowItWorksRotated/>*/}
+                {/*</HowItWorksInner>*/}
             </HowItWorksWrapper>
         </div>
 

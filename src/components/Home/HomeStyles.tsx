@@ -17,9 +17,11 @@ export const H1 = styled.div`
   font-size: 28px;
   line-height: 34px;
   text-align: center;
+
   & span {
     color: #FF474D;
   }
+
   &::before {
     position: absolute;
     content: url("assets/icons/stars.png");
@@ -31,7 +33,7 @@ export const H1 = styled.div`
 export const TextBeforeButton = styled.div`
   max-width: 333px;
   margin: 16px auto 0;
-  font-family: 'Inter',serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -43,7 +45,7 @@ export const TextBeforeButton = styled.div`
 export const Button = styled.button`
   margin: 32px auto 0;
   padding: 14px 32px;
-  font-family: 'Gilroy',serif;
+  font-family: 'Gilroy', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -65,7 +67,7 @@ export const TextWrapper = styled.div`
 
 export const TextAfterButton = styled.div`
   width: 87px;
-  font-family: 'Gilroy',serif;
+  font-family: 'Gilroy', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -86,7 +88,6 @@ export const BoxWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: -46px 0 0 -449px;
-  overflow: hidden;
 `;
 export const MainBox = styled.div`
   display: flex;
@@ -115,8 +116,8 @@ export const RhombsTop = styled.div`
   width: 163px;
   height: 124px;
   position: absolute;
-  top: -236px;
-  left: 163px;
+  top: -171px;
+  left: 207px;
 `;
 
 export const RhombsBottom = styled.div`
@@ -125,52 +126,59 @@ export const RhombsBottom = styled.div`
   width: 278px;
   height: 211px;
   position: absolute;
-  top: 7px;
-  left: 263px;
+  bottom: 157px;
+  left: 328px;
 `;
 
 export const BoxInner = styled.div`
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 430px;
+  height: 430px;
   transform: rotate(45deg);
 `;
 
 export const DeviceLeft = styled.img`
-  width: 161px;
+  width: 168px;
+  height: 274px;
   position: absolute;
-  top: 245px;
-  left: 5px;
+  top: 11px;
+  left: 231px;
 `;
 
 export const DeviceRight = styled.img`
-  width: 518px;
+  min-width: 514px;
+  height: 385px;
   position: absolute;
-  top: 80px;
-  left: 101px;
+  top: -139px;
+  right: -419px;
 `;
 
 export const BlockWrapper = styled.div`
   position: relative;
   width: 869px;
   height: 869px;
-  z-index: -1;
+  //z-index: -1;
+  //background-color: green;
+  margin: 0 auto;
+  max-width: 375px;
 `;
 
 export const HowItWorksWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1000px;
-  height: 1000px;
-  margin: -430px 0 0 -66px;
+  margin: -387px 0 0 0;
+  height: 767px;
+  background: #F7F7F7;  transform: skewY(-8deg);
+  border-radius: 50px 0 0 50px;
 `;
 
 export const HowItWorksInner = styled.div`
   position: relative;
   width: 869px;
   height: 869px;
-  background-color: #F7F7F7;
+  //background-color: #F7F7F7;
+  background-color: red;
   border-radius: 88px;
 `;
 
@@ -180,6 +188,7 @@ export const HowItWorksRotated = styled.div`
   height: 875px;
   //margin: -377px 0 0 0;
   background-color: #F7F7F7;
+  background-color: green;
   transform: rotate(-8deg);
   top: -142px;
   left: 126px;
