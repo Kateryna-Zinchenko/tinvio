@@ -24,7 +24,7 @@ export const H1 = styled.div`
 
   &::before {
     position: absolute;
-    content: url("assets/icons/stars.png");
+    content: url("assets/icons/preview-stars.png");
     top: -34px;
     left: -18px;
   }
@@ -55,6 +55,7 @@ export const Button = styled.button`
   background: #FF474D;
   border: none;
   border-radius: 16px;
+  cursor: pointer;
 `;
 
 export const TextWrapper = styled.div`
@@ -111,7 +112,7 @@ export const Box = styled.div`
 `;
 
 export const RhombsTop = styled.div`
-  background: url("/assets/icons/rhombsTop.png") no-repeat;
+  background: url("/assets/icons/preview-rhombs-top.png") no-repeat;
   background-size: contain;
   width: 163px;
   height: 124px;
@@ -121,7 +122,7 @@ export const RhombsTop = styled.div`
 `;
 
 export const RhombsBottom = styled.div`
-  background: url("/assets/icons/rhombsBottom.png") no-repeat;
+  background: url("/assets/icons/preview-rhombs-bottom.png") no-repeat;
   background-size: contain;
   width: 278px;
   height: 211px;
@@ -162,42 +163,3 @@ export const BlockWrapper = styled.div`
   margin: 0 auto;
   max-width: 375px;
 `;
-
-export const HowItWorksWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: -387px 0 0 0;
-  height: 767px;
-  background: #F7F7F7;  transform: skewY(-8deg);
-  border-radius: 50px 0 0 50px;
-`;
-
-export const HowItWorksInner = styled.div`
-  position: relative;
-  width: 869px;
-  height: 869px;
-  //background-color: #F7F7F7;
-  background-color: red;
-  border-radius: 88px;
-`;
-
-export const HowItWorksRotated = styled.div`
-  position: absolute;
-  width: 2000px;
-  height: 875px;
-  //margin: -377px 0 0 0;
-  background-color: #F7F7F7;
-  background-color: green;
-  transform: rotate(-8deg);
-  top: -142px;
-  left: 126px;
-`;
-
-
-
-
-
-
-
-

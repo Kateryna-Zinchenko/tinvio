@@ -1,25 +1,13 @@
 import React from 'react';
-import {Container} from '../common/Header/HeaderStyles';
-import {
-    BlockWrapper,
-    Box,
-    BoxInner,
-    BoxWrapper,
-    Button, DeviceLeft, DeviceRight,
-    Emoji,
-    H1, HowItWorksInner, HowItWorksRotated, HowItWorksWrapper,
-    MainBox,
+import {Container} from "../../../../common/container/Container";
+import {BlockWrapper,
+    Box, BoxInner, BoxWrapper, Button, DeviceLeft, DeviceRight, Emoji, H1, MainBox,
     RhombsBottom,
-    RhombsTop,
-    TextAfterButton,
-    TextBeforeButton,
-    TextWrapper,
-    Wrapper
-} from './HomeStyles';
+    RhombsTop, TextAfterButton, TextBeforeButton, TextWrapper, Wrapper} from "./PreviewStyles";
 
-const Home = () => {
+const Preview = () => {
     return (
-        <div>
+        <section className='preview'>
             <Container>
                 <Wrapper>
                     <H1>Collecting payments <span>is easy</span>, right?</H1>
@@ -45,15 +33,10 @@ const Home = () => {
                         </Box>
                     </MainBox>
                 </BoxWrapper>
-
             </BlockWrapper>
-            <HowItWorksWrapper>
-                {/*<HowItWorksInner>*/}
-                {/*    <HowItWorksRotated/>*/}
-                {/*</HowItWorksInner>*/}
-            </HowItWorksWrapper>
-        </div>
-
+        </section>
     );
 };
-export default Home;
+
+export default Preview;
+
