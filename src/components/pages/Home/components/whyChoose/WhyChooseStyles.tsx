@@ -8,12 +8,22 @@ export const Wrapper = styled.div`
   margin: 148px 0 0;
   border-radius: 50px 0 0 50px;
   width: 100%;
-  height: 1165px;
-  background: radial-gradient(60.41% 52.5% at 70.4% 57.25%, #FF474D 0%, rgba(255, 130, 134, 0.57) 100%) #FF474D;
-  opacity: 0.88;
+  height: 905px;
+  //background: radial-gradient(60.41% 52.5% at 70.4% 57.25%, #FF474D 0%, rgba(255, 130, 134, 0.57) 100%);
+  background: #363636;
+  //opacity: 0.88;
+`;
+
+export const Stars = styled.img`
+  position: absolute;
+  width: 356px;
+  height: 217px;
+  top: -204px;
+  right: 4px;
 `;
 
 export const Inner = styled.div`
+  position: relative;
   transform: skewY(8deg);
   width: 100%;
   height: 100%;

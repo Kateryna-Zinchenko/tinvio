@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  //position: relative;
+  position: relative;
   margin: 70px 0 0 0;
   display: flex;
   flex-direction: column;
@@ -9,9 +9,8 @@ export const Wrapper = styled.div`
   border-radius: 0 50px 50px 0;
   width: 100%;
   height: 451px;
-  left: -2px;
-  top: 2827px;
   background: radial-gradient(129.72% 141.01% at 50% 50%, #F7F7F7 0%, #FAFAFA 100%);
+  z-index: 1;
 `;
 export const RhombsTop = styled.img`
   //position: absolute;
