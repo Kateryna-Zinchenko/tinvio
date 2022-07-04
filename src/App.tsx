@@ -12,6 +12,8 @@ function App() {
     return (
         <BrowserRouter>
             {
+
+
                 isOpenMenu ? <BurgerMenu setIsOpenMenu={setIsOpenMenu}/> :
                     <div className='app'>
                         <Header isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu}/>
