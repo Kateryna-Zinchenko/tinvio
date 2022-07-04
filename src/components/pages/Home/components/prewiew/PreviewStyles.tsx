@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {DeviceWidth} from "../../../../../styles/global";
 
 export const Wrapper = styled.div`
   margin: 78px auto 0;
@@ -154,12 +155,7 @@ export const DeviceRight = styled.img`
   right: -419px;
 `;
 
-export const BlockWrapper = styled.div`
+export const BlockWrapper = styled(DeviceWidth)`
   position: relative;
-  width: 869px;
-  height: 869px;
-  //z-index: -1;
-  //background-color: green;
   margin: 0 auto;
-  max-width: 375px;
 `;

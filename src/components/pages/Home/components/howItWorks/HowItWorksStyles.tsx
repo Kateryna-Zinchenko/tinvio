@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {DeviceWidth} from "../../../../../styles/global";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -75,10 +76,9 @@ export const Button = styled.button`
   }
 `;
 
-export const Tabs = styled.div`
+export const Tabs = styled(DeviceWidth)`
   position: relative;
-  padding: 49px 0 0 0;
-  width: 100%;
+  margin: 49px 0 0 0;
 `;
 
 export const Tab = styled.div`
@@ -96,18 +96,46 @@ export const Tab = styled.div`
   -moz-box-shadow: 4px 4px 13px 0px rgba(33,33,33,0.1);
 `;
 
+export const StarsTab1 = styled.div`
+  position: absolute;
+  background: url("/assets/icons/stars-chats.png") no-repeat;
+  width: 35px;
+  height: 26px;
+  margin: 0 0 0 133px;
+`;
+
+export const StarsTab2 = styled.div`
+  position: absolute;
+  background: url("/assets/icons/stars-orders.png") no-repeat;
+  width: 49px;
+  height: 27px;
+  margin: 0 0 0 309px;
+`;
+
+export const StarsTopTab3 = styled.div`
+  position: absolute;
+  background: url("/assets/icons/stars-top-payments.png") no-repeat;
+  width: 32px;
+  height: 23px;
+  margin: -32px 0 0 76px;
+`;
+
+export const StarsRightTab3 = styled.div`
+  position: absolute;
+  background: url("/assets/icons/stars-right-payments.png") no-repeat;
+  width: 31px;
+  height: 36px;
+  margin: 11px 0 0 190px;
+`;
+
 export const Tab1 = styled(Tab)`
-  margin: 21px 0 0 33px;
-  &::before {
-
-  }
-  &::after {
-
-  }
+  margin: 31px 0 0 33px;
 `;
 
 export const Tab2 = styled(Tab)`
-  margin: 42px 0 0 188px;
+  margin: 34px 0 0 181px;
+  width: 171px;
+  height: 71px;
   &::before {
     
   }
@@ -117,7 +145,7 @@ export const Tab2 = styled(Tab)`
 `;
 
 export const Tab3 = styled(Tab)`
-  margin: 21px 0 21px 18px;
+  margin: 13px 0 10px 17px;
 `;
 
 
@@ -154,24 +182,25 @@ export const ArrowChats = styled.img`
   width: 82px;
   height: 55px;
   left: 199px;
-  top: 110px;
+  top: 68px;
 `;
 
 export const ArrowOrders = styled(ArrowChats)`
-  left: 106px;
-  top: 196px;
+  left: 107px;
+  top: 149px;
 `;
 
 export const Icon1 = styled.img`
   position: absolute;
   width: 71px;
   height: 71px;
+  margin: -84px 0 0 159px;
 `;
 export const Icon2 = styled(Icon1)`
-  
+  margin: -44px 0 0 155px
 `;
 export const Icon3 = styled(Icon1)`
-  
+  margin: -112px 0 0 8px;
 `;
 
 
