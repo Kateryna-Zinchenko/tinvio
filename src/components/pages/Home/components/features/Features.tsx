@@ -11,7 +11,7 @@ import {
     Cursor,
     Option2,
     Option3,
-    Text2, Text3, Text1, BlockWrapper1, PurpleSquare, RedSquare, DeviceLeft, DeviceRight
+    Text2, Text3, Text1, BlockWrapper1, PurpleSquare, RedSquare, DeviceLeft, DeviceRight, Stars, RhombsBottom, RhombsTop
 } from "./FeaturesStyles";
 
 const Features = () => {
@@ -76,11 +76,14 @@ const Features = () => {
                 </Wrapper>
             </Container>
             <BlockWrapper1>
+                <RhombsTop src='/assets/images/rhombs-top-features.png'/>
+                <Stars src='/assets/images/stars-features.png'/>
                 <PurpleSquare>
                     <RedSquare/>
                 </PurpleSquare>
+                <RhombsBottom src='/assets/images/rhombs-bottom-features.png'/>
                 <DeviceLeft src='/assets/images/device-left-features.png'/>
-                <DeviceRight src='/assets/images/device-left-features.png'/>
+                <DeviceRight src='/assets/images/device-right-features.png'/>
             </BlockWrapper1>
         </section>
     );

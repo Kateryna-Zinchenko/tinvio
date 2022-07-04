@@ -73,6 +73,7 @@ export const Option3 = styled(Option)`
 
 export const Text1 = styled.ul<{ isOption: string }>`
   display: ${({isOption}) => (isOption === 'chats' ? 'block' : 'none')};
+  width: 334px;
   margin: 24px 0 0 0;
   font-family: 'Inter';
   font-style: normal;
@@ -97,12 +98,30 @@ export const Li = styled.div`
   &:last-child {
     margin: 0 0 0 0;
   }
+  
+  & li {
+    padding: 0 0 0 23px;
+  }
 `;
 
 export const Dot = styled.div`
   position: absolute;
   width: 10px;
   height: 10px;
+  top: 5px;
+  left: 0;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, #FF474D 0%, rgba(255, 130, 134, 0.57) 100%);
+  border-radius: 2px;
+  transform: rotate(-45deg);
+`;
+
+export const RhombsTop = styled.img`
+  position: absolute;
+  width: 216px;
+  height: 163px;
+  top: -134px;
+  right: -97px;
+  z-index: -1;
 `;
 
 export const Button = styled.button`
@@ -128,6 +147,22 @@ export const BlockWrapper1 = styled(DeviceWidth)`
   position: relative;
 `;
 
+export const Stars = styled.img`
+  width: 124px;
+  height: 160px;
+  position: absolute;
+  top: -16px;
+  left: 0;
+`;
+
+export const RhombsBottom = styled.img`
+  width: 278px;
+  height: 210px;
+  position: absolute;
+  top: 91px;
+  right: -38px;
+`;
+
 
 export const PurpleSquare = styled.div`
   position: absolute;
@@ -150,18 +185,19 @@ export const RedSquare = styled.div`
 `;
 
 export const DeviceLeft = styled.img`
-  width: 233px;
+  width: 246px;
+  height: 399px;
   position: absolute;
   top: 81px;
-  left: -43px;
+  left: -30px;
 `;
 
 export const DeviceRight = styled.img`
-  width: 338px;
-  height: 548px;
+  width: 240px;
+  height: 399px;
   position: absolute;
-  top: -139px;
-  right: -419px;
+  top: 170px;
+  right: -40px;
 `;
 
 
