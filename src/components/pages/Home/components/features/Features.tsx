@@ -11,7 +11,7 @@ import {
     Cursor,
     Option2,
     Option3,
-    Text2, Text3, Text1, BlockWrapper1, PurpleSquare, RedSquare
+    Text2, Text3, Text1, BlockWrapper1, PurpleSquare, RedSquare, DeviceLeft, DeviceRight
 } from "./FeaturesStyles";
 
 const Features = () => {
@@ -75,12 +75,12 @@ const Features = () => {
                     <Button>More Features</Button>
                 </Wrapper>
             </Container>
-            <BlockWrapper1 >
+            <BlockWrapper1>
                 <PurpleSquare>
                     <RedSquare/>
                 </PurpleSquare>
-
-
+                <DeviceLeft src='/assets/images/device-left-features.png'/>
+                <DeviceRight src='/assets/images/device-left-features.png'/>
             </BlockWrapper1>
         </section>
     );

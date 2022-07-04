@@ -122,25 +122,6 @@ export const Button = styled.button`
   cursor: pointer;
 `;
 
-
-
-
-export const DeviceLeft = styled.img`
-  width: 338px;
-  height: 548px;
-  position: absolute;
-  top: 11px;
-  left: 231px;
-`;
-
-export const DeviceRight = styled.img`
-  width: 338px;
-  height: 548px;
-  position: absolute;
-  top: -139px;
-  right: -419px;
-`;
-
 export const BlockWrapper1 = styled(DeviceWidth)`
   height: 640px;
   margin: 57px auto 0;
@@ -166,6 +147,21 @@ export const RedSquare = styled.div`
   height: 395px;
   background: #FB242B;
   border-radius: 50px;
+`;
+
+export const DeviceLeft = styled.img`
+  width: 233px;
+  position: absolute;
+  top: 81px;
+  left: -43px;
+`;
+
+export const DeviceRight = styled.img`
+  width: 338px;
+  height: 548px;
+  position: absolute;
+  top: -139px;
+  right: -419px;
 `;
 
 
