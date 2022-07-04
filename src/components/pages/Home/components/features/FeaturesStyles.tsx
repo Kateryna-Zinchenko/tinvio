@@ -100,7 +100,7 @@ export const Li = styled.div`
   }
   
   & li {
-    padding: 0 0 0 23px;
+    padding: 0 0 0 25px;
   }
 `;
 
@@ -109,7 +109,7 @@ export const Dot = styled.div`
   width: 10px;
   height: 10px;
   top: 5px;
-  left: 0;
+  left: 2px;
   background: radial-gradient(95.51% 95.51% at 50% 50%, #FF474D 0%, rgba(255, 130, 134, 0.57) 100%);
   border-radius: 2px;
   transform: rotate(-45deg);
