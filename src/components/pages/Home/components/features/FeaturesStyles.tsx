@@ -146,6 +146,8 @@ export const BlockWrapper1 = styled(DeviceWidth)`
   margin: 57px auto 0;
   position: relative;
 `;
+
+
 export const PurpleSquare = styled.div`
   position: absolute;
   left: 50%;
