@@ -5,6 +5,7 @@ import Features from "./components/features/Features";
 import FeaturedOn from "./components/featuredOn/FeaturedOn";
 import WhyChoose from "./components/whyChoose/WhyChoose";
 import Businesses from "./components/businesses/Businesses";
+import Form from "./components/form/Form";
 
 const Home = () => {
     return (
@@ -15,6 +16,8 @@ const Home = () => {
             <FeaturedOn/>
             <WhyChoose/>
             <Businesses/>
+            <Form/>
+            <div>srtj</div>
         </main>
 
     );

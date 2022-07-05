@@ -10,9 +10,7 @@ export const Wrapper = styled.div`
   border-radius: 50px 0 0 50px;
   width: 100%;
   height: 905px;
-  //background: radial-gradient(60.41% 52.5% at 70.4% 57.25%, #FF474D 0%, rgba(255, 130, 134, 0.57) 100%);
   background: #363636;
-  //opacity: 0.88;
 `;
 
 export const Stars = styled.img`
