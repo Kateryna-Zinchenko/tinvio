@@ -4,6 +4,7 @@ import HowItWorks from './components/howItWorks/HowItWorks';
 import Features from "./components/features/Features";
 import FeaturedOn from "./components/featuredOn/FeaturedOn";
 import WhyChoose from "./components/whyChoose/WhyChoose";
+import Businesses from "./components/businesses/Businesses";
 
 const Home = () => {
     return (
@@ -13,7 +14,7 @@ const Home = () => {
             <Features/>
             <FeaturedOn/>
             <WhyChoose/>
-            <div>iung</div>
+            <Businesses/>
         </main>
 
     );

@@ -32,7 +32,8 @@ export const H1 = styled.div`
 
 `;
 export const Border = styled.div`
-  border: 1px solid #D2D2D2;
+  height: 1px;
+  background: #D2D2D2;
   width: 253px;
   padding: 0 61px 0 63px;
   margin: 24px 0 32px;

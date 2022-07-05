@@ -3,7 +3,7 @@ import {Border, H1, Icon1, Icon2, Icon3, Icon4, Icons, RhombsTop, Wrapper} from 
 
 const FeaturedOn = () => {
     return (
-        <div>
+        <section className='featured-on'>
             <Wrapper>
                 {/*<RhombsTop src='/assets/images/rhombs-top-featured-on.png'/>*/}
                 <H1>Featured On</H1>
@@ -15,7 +15,7 @@ const FeaturedOn = () => {
                     <Icon4 src='/assets/images/venture-beat.png'/>
                 </Icons>
             </Wrapper>
-        </div>
+        </section>
     );
 };
 
