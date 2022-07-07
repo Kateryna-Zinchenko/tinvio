@@ -1,5 +1,16 @@
 import React from 'react';
-import {FormBlock, H1, Text, Title, Wrapper, WrapperTrans} from "./FormStyles";
+import {
+    Button,
+    FormBlock,
+    FormBlockInner,
+    H1,
+    Input,
+    Inputs,
+    InputTitle, TextAfterButton,
+    Title,
+    Wrapper,
+    WrapperTrans
+} from "./FormStyles";
 
 const Form = () => {
     return (
@@ -8,20 +19,25 @@ const Form = () => {
                 <Wrapper>
                     <H1>Fill up the form and we’ll get in touch within a few hours</H1>
                     <FormBlock>
-                        <Text>Hi, we’re Tinvio! And you?</Text>
-                        <div>
-                            <Title>Name</Title>
-                            <input type="text"/>
-                        </div>
-                        <div>
-                            <Title>Name</Title>
-                            <input type="text"/>
-                        </div>
-                        <div>
-                            <Title>Name</Title>
-                            <input type="text"/>
-                        </div>
-                        <button type='submit'>Submit</button>
+                        <FormBlockInner>
+                            <Title>Hi, we’re <span>Tinvio!</span> And you?</Title>
+                            <Inputs>
+                                <Input>
+                                    <InputTitle>Name</InputTitle>
+                                    <input type="text" placeholder='John Appleseed'/>
+                                </Input>
+                                <Input>
+                                    <InputTitle>Business Name</InputTitle>
+                                    <input type="text" placeholder='Burgers &Boba (Singapore)'/>
+                                </Input>
+                                <Input>
+                                    <InputTitle>Phone</InputTitle>
+                                    <input type="text" placeholder='65 9123 4567'/>
+                                </Input>
+                            </Inputs>
+                            <Button type='submit'>Submit</Button>
+                            <TextAfterButton>No spam, promise</TextAfterButton>
+                        </FormBlockInner>
                     </FormBlock>
                 </Wrapper>
             </WrapperTrans>
