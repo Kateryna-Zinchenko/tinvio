@@ -141,7 +141,8 @@ export const Button = styled.button`
   cursor: pointer;
 `;
 
-export const BlockWrapper1 = styled(DeviceWidth)`
+export const BlockWrapper1 = styled.div`
+  max-width: 375px;
   height: 640px;
   margin: 57px auto 0;
   position: relative;

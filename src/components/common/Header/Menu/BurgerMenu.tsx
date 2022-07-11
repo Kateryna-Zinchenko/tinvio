@@ -37,9 +37,9 @@ const BurgerMenu = ({setIsOpenMenu}: Props) => {
                     </Wrapper>
                 </Container>
                 <Pages>
-                    <Page isActive={window.location.pathname === '/Home' || window.location.pathname === '/'} onClick={() => onLinkClick('Home')}>Home</Page>
-                    <Page isActive={window.location.pathname === '/Features'} onClick={() => onLinkClick('Features')}>Features</Page>
-                    <Page isActive={window.location.pathname === '/Company'} onClick={() => onLinkClick('Company')}>Company</Page>
+                    <Page isActive={window.location.pathname === '/home' || window.location.pathname === '/'} onClick={() => onLinkClick('home')}>Home</Page>
+                    <Page isActive={window.location.pathname === '/features'} onClick={() => onLinkClick('features')}>Features</Page>
+                    <Page isActive={window.location.pathname === '/company'} onClick={() => onLinkClick('company')}>Company</Page>
                 </Pages>
             </OpenMenuWrapper>
         </section>

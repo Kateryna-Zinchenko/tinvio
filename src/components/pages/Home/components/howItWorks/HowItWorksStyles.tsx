@@ -76,9 +76,10 @@ export const Button = styled.button`
   }
 `;
 
-export const Tabs = styled(DeviceWidth)`
+export const Tabs = styled.div`
   position: relative;
   margin: 49px 0 0 0;
+  max-width: 375px;
 `;
 
 export const Tab = styled.div`

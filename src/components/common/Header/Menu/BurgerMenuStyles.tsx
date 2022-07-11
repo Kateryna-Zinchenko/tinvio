@@ -20,8 +20,6 @@ export const Page = styled.li<{ isActive: boolean }>`
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   margin: 0 0 40px;
-  & a:active {
-    color: #FF474D;
 `;
 export const OpenMenuWrapper = styled.div`
   position: fixed;

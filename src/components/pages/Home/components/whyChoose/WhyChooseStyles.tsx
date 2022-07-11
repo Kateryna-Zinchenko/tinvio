@@ -42,10 +42,26 @@ export const H1 = styled.div`
   color: #FFFFFF;
 `;
 
-export const Image = styled.img`
+
+export const Image1 = styled.img<{ slide: string }>`
+  display: ${({slide}) => (slide === 'first-slide' ? 'block' : 'none')};
   width: 343px;
   height: 550px;
-  margin: 32px -32px 0 0;
+  margin: 32px 0 0 32px;
+`;
+
+export const Image2 = styled(Image1)<{ slide: string }>`
+  display: ${({slide}) => (slide === 'second-slide' ? 'block' : 'none')};
+`;
+
+export const Image3 = styled(Image1)<{ slide: string }>`
+  display: ${({slide}) => (slide === 'third-slide' ? 'block' : 'none')};
+  height: 572px;
+  margin: 10px 0 0 32px;
+`;
+
+export const Image4 = styled(Image1)<{ slide: string }>`
+  display: ${({slide}) => (slide === 'fourth-slide' ? 'block' : 'none')};
 `;
 
 export const Dots = styled.div`
@@ -55,16 +71,31 @@ export const Dots = styled.div`
   padding: 24px 0 0;
 `;
 
-export const Dot = styled.div`
+export const Dot1 = styled.div<{ slide: string }>`
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
   border-radius: 2px;
-  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%)
+  background: ${({slide}) => (slide === 'first-slide' ? 
+          'radial-gradient(136.24% 142.18% at 50% 50%, #FFFFFF 0%, rgba(250, 250, 250, 0.8) 100%)' :
+          'radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%)')};
 `;
 
-export const Dot2 = styled(Dot)`
-  background: radial-gradient(136.24% 142.18% at 50% 50%, #FFFFFF 0%, rgba(250, 250, 250, 0.8) 100%);
+export const Dot2 = styled(Dot1)`
+  background: ${({slide}) => (slide === 'second-slide' ?
+          'radial-gradient(136.24% 142.18% at 50% 50%, #FFFFFF 0%, rgba(250, 250, 250, 0.8) 100%)' :
+          'radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%)')};`;
+
+export const Dot3 = styled(Dot1)`
+  background: ${({slide}) => (slide === 'third-slide' ?
+          'radial-gradient(136.24% 142.18% at 50% 50%, #FFFFFF 0%, rgba(250, 250, 250, 0.8) 100%)' :
+          'radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%)')};
+`;
+
+export const Dot4 = styled(Dot1)`
+  background: ${({slide}) => (slide === 'fourth-slide' ?
+          'radial-gradient(136.24% 142.18% at 50% 50%, #FFFFFF 0%, rgba(250, 250, 250, 0.8) 100%)' :
+          'radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%)')};
 `;
 
 export const RhombsBottom = styled.img`

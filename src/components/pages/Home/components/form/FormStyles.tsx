@@ -4,7 +4,7 @@ import {DeviceWidth} from "../../../../../styles/global";
 export const WrapperTrans = styled(DeviceWidth)`
   display: flex;
   width: 100%;
-  height: 1128px;
+  height: 1070px;
   background: #F7F7F7;
   border-radius: 0 50px 50px 0;
   transform: skewY(8deg);
@@ -16,9 +16,9 @@ export const Wrapper = styled(DeviceWidth)`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 1070px;
+  height: 842px;
   background: #F7F7F7;
-  margin: 78px 0 0;
+  margin: 340px 0 0;
   transform: skewY(-8deg);
   border-radius: 0 0 50px 0;
 `;
@@ -31,10 +31,11 @@ export const H1 = styled.div`
   line-height: 33px;
   text-align: center;
   color: #212121;
+  margin: -260px 0 0;
 `;
 
-export const FormBlock = styled(DeviceWidth)`
-  width: 100%;
+export const FormBlock = styled.div`
+  width: 375px;
   margin: 33px 0 0;
   padding: 16px;
   background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.6) 0%, rgba(250, 250, 250, 0.6) 100%);
@@ -129,6 +130,12 @@ export const TextAfterButton = styled.div`
     top: -1px;
     right: 0;
   }
+`;
+
+export const Map = styled.img`
+  min-width: 559px;
+  max-width: 559px;
+  margin: 29px 0 0 -188px;
 `;
 
 

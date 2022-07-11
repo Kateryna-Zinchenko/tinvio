@@ -6,7 +6,7 @@ import {
     H1,
     Input,
     Inputs,
-    InputTitle, TextAfterButton,
+    InputTitle, Map, TextAfterButton,
     Title,
     Wrapper,
     WrapperTrans
@@ -39,6 +39,7 @@ const Form = () => {
                             <TextAfterButton>No spam, promise</TextAfterButton>
                         </FormBlockInner>
                     </FormBlock>
+                    <Map src='/assets/images/map.png'/>
                 </Wrapper>
             </WrapperTrans>
         </section>

@@ -15,7 +15,7 @@ import {
 } from "./FeaturesStyles";
 
 const Features = () => {
-    const [isOption, setIsOption] = useState('chats');
+    const [isOption, setIsOption] = useState('');
 
     return (
         <section className='features'>
