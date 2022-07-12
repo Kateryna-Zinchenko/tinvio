@@ -27,9 +27,27 @@ export const RhombusRight = styled.div`
   height: 273px;
   right: -193px;
   top: -103px;
-  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%);
   border-radius: 26px;
   transform: rotate(-45deg);
+`;
+
+export const RhombusLeftBottom = styled.div`
+  position: absolute;
+  width: 273px;
+  height: 273px;
+  left: -185px;
+  top: 287px;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%);
+  border-radius: 26px;
+  transform: rotate(-45deg);
+`;
+
+export const Rhombs = styled.img`
+  position: absolute;
+  width: 151px;
+  top: 296px;
+  left: -134px;
 `;
 
 export const H1 = styled.div`

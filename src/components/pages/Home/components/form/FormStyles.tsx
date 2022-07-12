@@ -23,6 +23,14 @@ export const Wrapper = styled(DeviceWidth)`
   border-radius: 0 0 50px 0;
 `;
 
+export const Rhombs = styled.img`
+  position: absolute;
+  width: 311px;
+  top: -202px;
+  left: -80px;
+  z-index: -1;
+`;
+
 export const H1 = styled.div`
   width: 310px;
   font-family: 'Gilroy';
@@ -110,6 +118,7 @@ export const Button = styled.button`
   border-radius: 16px;
   padding: 14px 64px;
   margin: 48px 83px 0 80px;
+  cursor: pointer;
 `;
 
 export const TextAfterButton = styled.div`

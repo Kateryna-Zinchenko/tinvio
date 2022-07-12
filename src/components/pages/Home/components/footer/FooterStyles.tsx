@@ -11,6 +11,7 @@ export const Logo = styled.img`
   width: 114px;
   height: 38px;
   margin: 40px 0 0;
+  cursor: pointer;
 `;
 
 export const Pages = styled.ul`

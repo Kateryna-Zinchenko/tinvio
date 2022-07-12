@@ -6,7 +6,7 @@ import {
     H1,
     Input,
     Inputs,
-    InputTitle, Map, TextAfterButton,
+    InputTitle, Map, Rhombs, TextAfterButton,
     Title,
     Wrapper,
     WrapperTrans
@@ -17,6 +17,7 @@ const Form = () => {
         <section className='form'>
             <WrapperTrans>
                 <Wrapper>
+                    <Rhombs src='/assets/images/rhombs-form.png'/>
                     <H1>Fill up the form and we’ll get in touch within a few hours</H1>
                     <FormBlock>
                         <FormBlockInner>

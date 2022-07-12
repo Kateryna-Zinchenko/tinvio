@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import {DeviceWidth} from "../../../../../styles/global";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(DeviceWidth)`
   position: relative;
   display: flex;
   justify-content: center;
@@ -88,6 +89,7 @@ export const Dot1 = styled.div<{ slide: string }>`
   background: ${({slide}) => (slide === 'first-slide' ? 
           'radial-gradient(136.24% 142.18% at 50% 50%, #FFFFFF 0%, rgba(250, 250, 250, 0.8) 100%)' :
           'radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%)')};
+  cursor: pointer;
 `;
 
 export const Dot2 = styled(Dot1)`
