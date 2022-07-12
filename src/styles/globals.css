@@ -35,6 +35,9 @@ a {
     margin: 0 auto;
     overflow: hidden;
 }
+.home {
+    position: relative;
+}
 #root, #__next {
     isolation: isolate;
 }

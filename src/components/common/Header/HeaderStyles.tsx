@@ -16,26 +16,11 @@ export const LeftWrapper = styled.div`
   align-items: center;
 `;
 
-
 export const Logo = styled.img`
   position: relative;
   width: 114px;
   height: 38px;
   cursor: pointer;
-`;
-
-export const Language = styled.div`
-  font-family: 'Gilroy', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  color: #212121;
-`;
-
-export const ArrowDown = styled.img`
-  width: 10px;
-  height: 6px;
 `;
 
 export const MenuWrapper = styled.div`

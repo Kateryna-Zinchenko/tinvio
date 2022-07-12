@@ -11,7 +11,7 @@ const Preview = () => {
     return (
         <section className='preview'>
             <Container>
-                {/*<RhombusTop/>*/}
+                <RhombusTop/>
                 <RhombusBottom/>
                 <Wrapper>
                     <H1>Collecting payments <span>is easy</span>, right?</H1>
