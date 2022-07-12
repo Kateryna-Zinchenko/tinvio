@@ -1,6 +1,30 @@
 import styled from "styled-components";
 import {DeviceWidth} from "../../../../../styles/global";
 
+export const RhombusTop = styled.div`
+  position: absolute;
+  width: 249px;
+  height: 249px;
+  top: -172px;
+  right: -140px;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%);
+  border-radius: 44px;
+  transform: rotate(-45deg);
+  z-index: -1;
+`;
+
+export const RhombusBottom = styled.div`
+  position: absolute;
+  width: 301px;
+  height: 301px;
+  top: 202px;
+  left: -150px;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%);
+  border-radius: 28px;
+  transform: rotate(-45deg);
+  z-index: -1;
+`;
+
 export const Wrapper = styled.div`
   margin: 78px auto 0;
   display: flex;
@@ -25,7 +49,7 @@ export const H1 = styled.div`
 
   &::before {
     position: absolute;
-    content: url("assets/icons/preview-stars.png");
+    content: url("/assets/icons/preview-stars.png");
     top: -34px;
     left: -18px;
   }

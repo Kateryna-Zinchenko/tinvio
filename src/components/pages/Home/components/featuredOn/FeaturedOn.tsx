@@ -1,11 +1,16 @@
 import React from 'react';
-import {Border, H1, Icon1, Icon2, Icon3, Icon4, Icons, RhombsTop, Wrapper} from "./FeaturedOnStyles";
+import {Border, H1, Icon1, Icon2, Icon3, Icon4, Icons, RhombsTop, RhombusLeft, RhombusLeftBottom, RhombusRight,
+    RhombusRightBottom, Wrapper} from "./FeaturedOnStyles";
 
 const FeaturedOn = () => {
     return (
         <section className='featured-on'>
             <Wrapper>
-                {/*<RhombsTop src='/assets/images/rhombs-top-featured-on.png'/>*/}
+                <RhombsTop src='/assets/images/rhombs-right-featured-on.png'/>
+                <RhombusLeft/>
+                <RhombusRight/>
+                <RhombusLeftBottom/>
+                <RhombusRightBottom/>
                 <H1>Featured On</H1>
                 <Border/>
                 <Icons>

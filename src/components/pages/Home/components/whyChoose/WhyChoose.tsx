@@ -7,13 +7,13 @@ import {
     Stars,
     Dots,
     Dot2,
-    RhombsBottom,
     Dot1,
     Dot3,
     Dot4,
     Image2,
     Image3,
-    Image4
+    Image4,
+    RhombsBottom
 } from "./WhyChooseStyles";
 
 const WhyChoose = () => {
@@ -21,8 +21,9 @@ const WhyChoose = () => {
     return (
         <section className='why-choose'>
             <Wrapper>
+                <RhombsBottom src='/assets/images/rhombs-bottom-why-choose.png'/>
+                <Stars src='/assets/images/stars-why-choose.png'/>
                 <Inner>
-                    <Stars src='/assets/images/stars-why-choose.png'/>
                     <H1>Why choose Tinvio?</H1>
                     <div>
                         <Image1 slide={slide} src='/assets/images/why-choose-1.png'/>
@@ -36,7 +37,6 @@ const WhyChoose = () => {
                         <Dot3 slide={slide} onClick={() => setSlide('third-slide')}/>
                         <Dot4 slide={slide} onClick={() => setSlide('fourth-slide')}/>
                     </Dots>
-                    {/*<RhombsBottom src='/assets/images/rhombs-bottom-why-choose-4.png'/>*/}
                 </Inner>
             </Wrapper>
         </section>

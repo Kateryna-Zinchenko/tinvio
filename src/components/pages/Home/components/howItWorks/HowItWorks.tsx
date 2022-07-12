@@ -14,7 +14,7 @@ import {
     TabText2,
     TabText3,
     ArrowChats,
-    ArrowOrders, Icon1, Icon2, Icon3, StarsTab1, StarsTab2, StarsTopTab3, StarsRightTab3
+    ArrowOrders, Icon1, Icon2, Icon3, StarsTab1, StarsTab2, StarsTopTab3, StarsRightTab3, RhombsLeft, RhombsRight, Rhombus
 } from './HowItWorksStyles';
 
 const HowItWorks = () => {
@@ -22,6 +22,7 @@ const HowItWorks = () => {
         <section className='how-it-works'>
                 <Wrapper>
                     <Inner>
+                        <Rhombus/>
                         <H1>Check out how it works</H1>
                         <Text>
                             It’s easy! Exchange messages, create or confirm orders, send invoices, and collect payments
@@ -29,6 +30,8 @@ const HowItWorks = () => {
                         </Text>
                         <Button>Play Video</Button>
                         <Tabs>
+                            <RhombsLeft src='/assets/images/rhombs-left-why-choose.png'/>
+                            <RhombsRight src='/assets/images/rhombs-right-why-choose.png'/>
                             <StarsTab1/>
                             <Tab1>
                                 <Title>Chats</Title>

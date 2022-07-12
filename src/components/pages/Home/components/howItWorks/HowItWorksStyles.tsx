@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {DeviceWidth} from "../../../../../styles/global";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -13,7 +12,33 @@ export const Wrapper = styled.div`
   width: 100%;
 `;
 
+export const Rhombus = styled.div`
+  position: absolute;
+  width: 409px;
+  height: 409px;
+  top: 85px;
+  right: -312px;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 64px;
+  transform: rotate(-45deg);
+`;
+
+export const RhombsLeft = styled.img`
+  position: absolute;
+  width: 200px;
+  top: -30px;
+  left: -115px;
+`;
+
+export const RhombsRight = styled.img`
+  position: absolute;
+  width: 299px;
+  bottom: -166px;
+  right: -178px;
+`;
+
 export const Inner = styled.div`
+  position: relative;
   transform: skewY(8deg);
   width: 100%;
   height: 100%;

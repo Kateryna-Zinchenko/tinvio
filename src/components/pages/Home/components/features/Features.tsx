@@ -11,16 +11,28 @@ import {
     Cursor,
     Option2,
     Option3,
-    Text2, Text3, Text1, BlockWrapper1, PurpleSquare, RedSquare, DeviceLeft, DeviceRight, Stars, RhombsBottom, RhombsTop
+    Text2,
+    Text3,
+    Text1,
+    BlockWrapper1,
+    PurpleSquare,
+    RedSquare,
+    DeviceLeft,
+    DeviceRight,
+    Stars,
+    RhombsBottom,
+    RhombsTop,
+    Rhombus
 } from "./FeaturesStyles";
 
 const Features = () => {
-    const [isOption, setIsOption] = useState('');
+    const [isOption, setIsOption] = useState('chats');
 
     return (
         <section className='features'>
             <Container>
                 <Wrapper>
+                    <Rhombus/>
                     <Title>
                             Smarter supply chain transactions. <span>More buddy</span>
                     </Title>

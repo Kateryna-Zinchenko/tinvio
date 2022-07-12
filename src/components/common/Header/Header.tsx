@@ -15,7 +15,7 @@ interface Props {
     isOpenMenu: boolean
 }
 
-const Header = ({setIsOpenMenu, isOpenMenu}: Props) => {
+const Header = ({setIsOpenMenu}: Props) => {
     const nav = useNavigate()
     return (
         <section className='header'>

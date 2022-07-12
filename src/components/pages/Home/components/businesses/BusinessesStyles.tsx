@@ -9,6 +9,29 @@ export const Wrapper = styled.div`
   margin: 104px 0 0;
 `;
 
+export const RhombusLeft = styled.div`
+  position: absolute;
+  top: -39px;
+  left: -147px;
+  width: 219px;
+  height: 219px;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, #DADADA 0%, #FAFAFA 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.1;
+  border-radius: 21px;
+  transform: rotate(-45deg);
+`;
+
+export const RhombusRight = styled.div`
+  position: absolute;
+  width: 273px;
+  height: 273px;
+  right: -193px;
+  top: -103px;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 26px;
+  transform: rotate(-45deg);
+`;
+
 export const H1 = styled.div`
   font-family: 'Gilroy';
   font-size: 28px;

@@ -1,12 +1,25 @@
 import styled from "styled-components";
-import {DeviceWidth} from "../../../../../styles/global";
 
 export const Wrapper = styled.div`
+  position: relative;
   margin: 106px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
+
+export const Rhombus = styled.div`
+  position: absolute;
+  width: 376px;
+  height: 376px;
+  top: 77px;
+  left: -281px;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 23px;
+  transform: rotate(-45deg);
+  z-index: -1;
+`;
+
 export const Title = styled.div`
   position: relative;
   width: 331px;

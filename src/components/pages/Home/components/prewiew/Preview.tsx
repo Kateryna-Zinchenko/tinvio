@@ -1,14 +1,18 @@
 import React from 'react';
 import {Container} from "../../../../common/container/Container";
-import {BlockWrapper,
+import {
+    BlockWrapper,
     Box, BoxInner, BoxWrapper, Button, DeviceLeft, DeviceRight, Emoji, H1, MainBox,
     RhombsBottom,
-    RhombsTop, TextAfterButton, TextBeforeButton, TextWrapper, Wrapper} from "./PreviewStyles";
+    RhombsTop, RhombusBottom, RhombusTop, TextAfterButton, TextBeforeButton, TextWrapper, Wrapper
+} from "./PreviewStyles";
 
 const Preview = () => {
     return (
         <section className='preview'>
             <Container>
+                {/*<RhombusTop/>*/}
+                <RhombusBottom/>
                 <Wrapper>
                     <H1>Collecting payments <span>is easy</span>, right?</H1>
                     <TextBeforeButton>Manage all your supply chain transactions in one dashboard. Get paid faster,

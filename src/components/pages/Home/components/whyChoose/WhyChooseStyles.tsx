@@ -11,6 +11,15 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 905px;
   background: #363636;
+  overflow: hidden;
+`;
+
+export const RhombsBottom = styled.img`
+  position: absolute;
+  width: 412px;
+  bottom: -171px;
+  left: -124px;
+  transform: skewY(8deg);
 `;
 
 export const Stars = styled.img`
@@ -19,10 +28,10 @@ export const Stars = styled.img`
   height: 217px;
   top: -204px;
   right: 4px;
+  transform: skewY(8deg);
 `;
 
 export const Inner = styled.div`
-  position: relative;
   transform: skewY(8deg);
   width: 100%;
   height: 100%;
@@ -96,13 +105,4 @@ export const Dot4 = styled(Dot1)`
   background: ${({slide}) => (slide === 'fourth-slide' ?
           'radial-gradient(136.24% 142.18% at 50% 50%, #FFFFFF 0%, rgba(250, 250, 250, 0.8) 100%)' :
           'radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%)')};
-`;
-
-export const RhombsBottom = styled.img`
-  position: absolute;
-  width: 412px;
-  height: 312px;
-  bottom: 0;
-  left: -134px;
-  
 `;

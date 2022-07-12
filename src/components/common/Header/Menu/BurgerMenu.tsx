@@ -1,7 +1,19 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import {ChooseLanguage, CloseButton, CloseWrapper, MenuWrapper, OpenMenuWrapper, Page, Pages} from "./BurgerMenuStyles";
-import {ArrowDown, Language, LeftWrapper, Logo, Wrapper} from "../HeaderStyles";
+import {
+    ArrowDown,
+    ChooseLanguage,
+    CloseButton,
+    CloseWrapper,
+    Language,
+    LeftWrapper,
+    Logo,
+    MenuWrapper,
+    OpenMenuWrapper,
+    Page,
+    Pages, Rhombs, RhombusBottom, RhombusTop,
+    Wrapper
+} from "./BurgerMenuStyles";
 import { Container } from '../../container/Container';
 
 interface Props {
@@ -17,6 +29,9 @@ const BurgerMenu = ({setIsOpenMenu}: Props) => {
     return (
         <section className='burger-menu'>
             <OpenMenuWrapper>
+                <RhombusTop/>
+                <RhombusBottom/>
+                <Rhombs src='/assets/images/rhombs-burger-menu.png'/>
                 <Container>
                     <Wrapper>
                         <MenuWrapper>
