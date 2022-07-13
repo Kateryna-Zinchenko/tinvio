@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {DeviceWidth} from "../../../../../styles/global";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -48,7 +49,7 @@ export const Inner = styled.div`
 `;
 
 export const H1 = styled.div`
-  width: 299px;
+  //width: 299px;
   font-family: 'Gilroy',serif;
   font-size: 28px;
   font-weight: 600;
@@ -56,6 +57,11 @@ export const H1 = styled.div`
   color: #212121;
   padding: 115px 0 0 0;
   text-align: center;
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 39px;
+    padding: 85px 0 0;
+  }
 `;
 
 export const Text = styled.div`
@@ -67,14 +73,18 @@ export const Text = styled.div`
   line-height: 23px;
   text-align: center;
   color: #5C5C5C;
-  padding: 16px 0 0 0;
+  padding: 16px 0 0;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    width: 429px;
+  }
 `;
 
 export const Button = styled.button`
   position: relative;
   width: 188px;
   height: 48px;
-  margin: 32px 0 0 0;
+  margin: 32px 0 0;
   padding: 0 0 0 18px;
   font-family: 'Gilroy';
   font-style: normal;
@@ -101,10 +111,13 @@ export const Button = styled.button`
   }
 `;
 
-export const Tabs = styled.div`
+export const Tabs = styled(DeviceWidth)`
   position: relative;
-  margin: 49px 0 0 0;
-  max-width: 375px;
+  margin: 49px auto 0;
+  max-width: 100%;
+  @media (min-width: 768px) {
+    margin: 53px 0 0;
+  }
 `;
 
 export const Tab = styled.div`
@@ -162,12 +175,6 @@ export const Tab2 = styled(Tab)`
   margin: 34px 0 0 181px;
   width: 171px;
   height: 71px;
-  &::before {
-    
-  }
-  &::after {
-    
-  }
 `;
 
 export const Tab3 = styled(Tab)`

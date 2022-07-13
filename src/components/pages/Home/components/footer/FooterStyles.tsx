@@ -41,6 +41,7 @@ export const LinksSocial = styled.div`
   margin: 48px 0 0;
   & img {
     width: 32px;
+    cursor: pointer;
   }
 `;
 
@@ -51,6 +52,7 @@ export const LinksStore = styled.div`
   margin: 16px 0 0;
   & img {
     width: 113px;
+    cursor: pointer;
   }
 `;
 

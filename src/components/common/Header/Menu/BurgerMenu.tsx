@@ -1,12 +1,16 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import {
     ArrowDown,
+    Button,
     ChooseLanguage,
     CloseButton,
     CloseWrapper,
+    Footer,
     Language,
     LeftWrapper,
+    Links,
+    LinksSocial, LinksStore,
     Logo,
     MenuWrapper,
     OpenMenuWrapper,
@@ -14,10 +18,10 @@ import {
     Pages, Rhombs, RhombusBottom, RhombusTop,
     Wrapper
 } from "./BurgerMenuStyles";
-import { Container } from '../../container/Container';
+import {Container} from '../../container/Container';
 
 interface Props {
-    setIsOpenMenu: (value:boolean) => void
+    setIsOpenMenu: (value: boolean) => void
 }
 
 const BurgerMenu = ({setIsOpenMenu}: Props) => {
@@ -52,10 +56,26 @@ const BurgerMenu = ({setIsOpenMenu}: Props) => {
                     </Wrapper>
                 </Container>
                 <Pages>
-                    <Page isActive={window.location.pathname === '/home' || window.location.pathname === '/'} onClick={() => onLinkClick('home')}>Home</Page>
-                    <Page isActive={window.location.pathname === '/features'} onClick={() => onLinkClick('features')}>Features</Page>
-                    <Page isActive={window.location.pathname === '/company'} onClick={() => onLinkClick('company')}>Company</Page>
+                    <Page isActive={window.location.pathname === '/home' || window.location.pathname === '/'}
+                          onClick={() => onLinkClick('home')}>Home</Page>
+                    <Page isActive={window.location.pathname === '/features'}
+                          onClick={() => onLinkClick('features')}>Features</Page>
+                    <Page isActive={window.location.pathname === '/company'}
+                          onClick={() => onLinkClick('company')}>Company</Page>
                 </Pages>
+                <Footer>
+                    <Button>Get Started</Button>
+                    <Links>
+                        <LinksSocial>
+                            <img src="/assets/images/linked-in.png" alt="#"/>
+                            <img src="/assets/images/instagram.png" alt="#"/>
+                        </LinksSocial>
+                        <LinksStore>
+                            <img src="/assets/images/google-play.png" alt="#"/>
+                            <img src="/assets/images/app-store.png" alt="#"/>
+                        </LinksStore>
+                    </Links>
+                </Footer>
             </OpenMenuWrapper>
         </section>
     );

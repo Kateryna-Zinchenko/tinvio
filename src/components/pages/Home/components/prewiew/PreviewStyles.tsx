@@ -5,24 +5,38 @@ export const RhombusTop = styled.div`
   position: absolute;
   width: 249px;
   height: 249px;
-  top: -172px;
-  right: -140px;
+  top: -260px;
+  right: -153px;
   background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%);
   border-radius: 44px;
   transform: rotate(-45deg);
   z-index: -1;
+  @media (min-width: 768px) {
+    width: 328px;
+    height: 328px;
+    top: -280px;
+    right: -156px;
+    border-radius: 58px;
+  }
 `;
 
 export const RhombusBottom = styled.div`
   position: absolute;
   width: 301px;
   height: 301px;
-  top: 202px;
+  top: 62px;
   left: -150px;
   background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%);
   border-radius: 28px;
   transform: rotate(-45deg);
   z-index: -1;
+  @media (min-width: 768px) {
+    width: 386px;
+    height: 386px;
+    top: 80px;
+    left: -123px;
+    border-radius: 36px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -56,7 +70,7 @@ export const H1 = styled.div`
 `;
 
 export const TextBeforeButton = styled.div`
-  max-width: 333px;
+  width: 333px;
   margin: 16px auto 0;
   font-family: 'Inter', serif;
   font-style: normal;
@@ -65,6 +79,9 @@ export const TextBeforeButton = styled.div`
   line-height: 22px;
   text-align: center;
   color: #5C5C5C;
+  @media (min-width: 768px) {
+    width: 426px;
+  }
 `;
 
 export const Button = styled.button`
@@ -114,7 +131,13 @@ export const BoxWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: -46px 0 0 -449px;
+  @media (min-width: 768px) {
+    width: 999px;
+    height: 999px;
+    margin: 99px 0 0 -499px;
+  }
 `;
+
 export const MainBox = styled.div`
   display: flex;
   justify-content: center;
@@ -124,6 +147,11 @@ export const MainBox = styled.div`
   background: rgba(251, 36, 43, 0.6);
   border-radius: 88px;
   transform: rotate(-45deg);
+  @media (min-width: 768px) {
+    width: 999px;
+    height: 999px;
+    border-radius: 106px;
+  }
 `;
 
 export const Box = styled.div`
@@ -134,7 +162,13 @@ export const Box = styled.div`
   height: 615px;
   background: #FB242B;
   border-radius: 88px;
+  @media (min-width: 768px) {
+    width: 922px;
+    height: 922px;
+    border-radius: 106px;
+  }
 `;
+
 
 export const RhombsTop = styled.div`
   background: url("/assets/icons/preview-rhombs-top.png") no-repeat;
@@ -144,6 +178,13 @@ export const RhombsTop = styled.div`
   position: absolute;
   top: -171px;
   left: 207px;
+  @media (min-width: 768px) {
+    width: 245px;
+    height: 182px;
+    background-size: cover;
+    left: 235px;
+    top: -340px;
+  }
 `;
 
 export const RhombsBottom = styled.div`
@@ -169,6 +210,11 @@ export const DeviceLeft = styled.img`
   position: absolute;
   top: 11px;
   left: 231px;
+  @media (min-width: 768px) {
+    max-width: 253px;
+    left: 236px;
+    top: -89px;
+  }
 `;
 
 export const DeviceRight = styled.img`
@@ -177,9 +223,13 @@ export const DeviceRight = styled.img`
   position: absolute;
   top: -139px;
   right: -419px;
+  @media (min-width: 768px) {
+    width: 879px;
+  }
 `;
 
 export const BlockWrapper = styled(DeviceWidth)`
   position: relative;
   margin: 0 auto;
+  max-width: 100%;
 `;

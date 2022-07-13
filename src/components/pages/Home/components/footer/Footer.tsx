@@ -30,12 +30,12 @@ const Footer = () => {
                     <Page isActive={window.location.pathname === '/login'} onClick={() => onLinkClick('login')}>Login</Page>
                 </Pages>
                 <LinksSocial>
-                    <a href=""><img src="/assets/images/linked-in.png" alt="#"/></a>
-                    <a href=""><img src="/assets/images/instagram.png" alt="#"/></a>
+                    <img src="/assets/images/linked-in.png" alt="#"/>
+                    <img src="/assets/images/instagram.png" alt="#"/>
                 </LinksSocial>
                 <LinksStore>
-                    <a href=""><img src="/assets/images/google-play.png" alt="#"/></a>
-                    <a href=""><img src="/assets/images/app-store.png" alt="#"/></a>
+                    <img src="/assets/images/google-play.png" alt="#"/>
+                    <img src="/assets/images/app-store.png" alt="#"/>
                 </LinksStore>
                 <div>
                     <Text>© Tinvio™ 2020. All Rights Reserved</Text>

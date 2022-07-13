@@ -1,12 +1,14 @@
 import styled from "styled-components";
+import {DeviceWidth} from "../../../../styles/global";
 
 export const OpenMenuWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   position: fixed;
   width: 100%;
   height: 100%;
   background-color: #fff;
-  right: 0;
-  z-index: 999;
 `;
 
 export const RhombusTop = styled.div`
@@ -18,6 +20,13 @@ export const RhombusTop = styled.div`
   background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   border-radius: 45px;
   transform: rotate(-45deg);
+  @media (min-width: 768px) {
+    width: 538px;
+    height: 538px;
+    top: -127px;
+    right: -334px;
+    border-radius: 95px;
+  }
 `;
 
 export const RhombusBottom = styled.div`
@@ -29,6 +38,13 @@ export const RhombusBottom = styled.div`
   background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   border-radius: 23px;
   transform: rotate(-45deg);
+  @media (min-width: 768px) {
+    width: 457px;
+    height: 457px;
+    bottom: 38px;
+    left: -210px;
+    border-radius: 43px;
+  }
 `;
 
 export const Rhombs = styled.img`
@@ -36,6 +52,13 @@ export const Rhombs = styled.img`
   width: 248px;
   bottom: 30px;
   right: -150px;
+  @media (min-width: 768px) {
+    width: 381px;
+    height: 289px;
+    bottom: 100px;
+    right: -214px;
+    background-size: cover;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -135,6 +158,9 @@ export const Pages = styled.ul`
   align-items: center;
   padding: 0 0;
   margin: 235px 0 0;
+  @media (min-width: 768px) {
+    margin: 293px 0 0;
+  }
 `;
 
 export const Page = styled.li<{ isActive: boolean }>`
@@ -148,8 +174,66 @@ export const Page = styled.li<{ isActive: boolean }>`
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   margin: 0 0 40px;
+  &:last-child {
+    margin: 0 0 0;
+  }
+  @media (min-width: 768px) {
+    margin: 0 0 48px;
+  }
 `;
 
+export const Footer = styled.div`
+    display: none;
+  @media (min-width: 768px) {
+    display: block;
+    margin: 0 auto;
+  }
+`;
+
+export const Button = styled.button`
+  display: block;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding: 14px 50px;
+  margin: 356px auto 0;
+  border: none;
+  color: #FFFFFF;
+  background: #FF474D;
+  border-radius: 16px;
+  cursor: pointer;
+`;
+
+export const Links = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 32px 0 0;
+`;
+
+export const LinksSocial = styled.div`
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  & img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+`;
+
+export const LinksStore = styled.div`
+  width: 242px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 32px;
+  & img {
+    width: 113px;
+    cursor: pointer;
+  }
+`;
 
 
 
