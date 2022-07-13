@@ -27,6 +27,7 @@ import {
 
 const Features = () => {
     const [isOption, setIsOption] = useState('chats');
+    const [isText, setIsText] = useState('More buddy');
 
     return (
         <section className='features'>
@@ -34,13 +35,25 @@ const Features = () => {
                 <Wrapper>
                     <Rhombus/>
                     <Title>
-                            Smarter supply chain transactions. <span>More buddy</span>
+                            Smarter supply chain transactions. <span>{isText}</span>
                     </Title>
                     <Cursor/>
                     <Options>
-                        <Option isOption={isOption} onClick={() => (setIsOption('chats'))}>Chats</Option>
-                        <Option2 isOption={isOption} onClick={() => (setIsOption('orders'))}>Orders</Option2>
-                        <Option3 isOption={isOption} onClick={() => (setIsOption('payments'))}>Payments</Option3>
+                        <Option isOption={isOption} onClick={() => {
+                            setIsOption('chats')
+                            setIsText('More buddy')
+                        }
+                            }>Chats</Option>
+                        <Option2 isOption={isOption} onClick={() => {
+                            setIsOption('orders')
+                            setIsText('More speedy')
+                        }
+                        }>Orders</Option2>
+                        <Option3 isOption={isOption} onClick={() => {
+                            setIsOption('payments')
+                            setIsText('More money')
+                        }
+                            }>Payments</Option3>
                     </Options>
                     <Text1 isOption={isOption}>
                         <Li>

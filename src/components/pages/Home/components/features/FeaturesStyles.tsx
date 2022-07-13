@@ -18,11 +18,18 @@ export const Rhombus = styled.div`
   border-radius: 23px;
   transform: rotate(-45deg);
   z-index: -1;
+  @media (min-width: 768px) {
+    width: 478px;
+    height: 478px;
+    top: 45px;
+    left: -402px;
+    border-radius: 29px;
+  }
 `;
 
 export const Title = styled.div`
   position: relative;
-  width: 331px;
+  width: 345px;
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 600;
@@ -31,7 +38,6 @@ export const Title = styled.div`
   text-align: center;
   margin: 0 auto;
   color: #212121;
-
   & span {
     position: relative;
     color: #FF474D;
@@ -67,33 +73,45 @@ export const Option = styled.button<{ isOption: string }>`
   color: #212121;
   cursor: pointer;
   border: ${({isOption}) => (isOption === 'chats' ? '1px solid #212121' : 'none')};
-
   &:last-child {
     margin: 0 0 0 0;
+  }
+  @media (min-width: 768px) {
+    width: 107px;
   }
 `;
 
 export const Option2 = styled(Option)`
   width: 87px;
   border: ${({isOption}) => (isOption === 'orders' ? '1px solid #212121' : 'none')};
+  @media (min-width: 768px) {
+    width: 114px;
+  }
 `;
 
 export const Option3 = styled(Option)`
   width: 114px;
   border: ${({isOption}) => (isOption === 'payments' ? '1px solid #212121' : 'none')};
+  @media (min-width: 768px) {
+    width: 134px;
+  }
 `;
 
 
 export const Text1 = styled.ul<{ isOption: string }>`
   display: ${({isOption}) => (isOption === 'chats' ? 'block' : 'none')};
   width: 334px;
-  margin: 24px 0 0 0;
+  margin: 24px 0 0;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #212121;
+  @media (min-width: 768px) {
+  width: 489px;
+  margin: 24px 0 0 79px;
+}
 `;
 
 export const Text2 = styled(Text1)<{ isOption: string }>`
@@ -135,6 +153,13 @@ export const RhombsTop = styled.img`
   top: -134px;
   right: -97px;
   z-index: -1;
+  @media (min-width: 768px) {
+    width: 243px;
+    height: 184px;
+    background-size: cover;
+    top: -70px;
+    right: -287px;
+  }
 `;
 
 export const Button = styled.button`
@@ -159,6 +184,9 @@ export const BlockWrapper1 = styled.div`
   height: 640px;
   margin: 57px auto 0;
   position: relative;
+  @media (min-width: 768px) {
+    margin: 131px auto 0;
+  }
 `;
 
 export const Stars = styled.img`
@@ -175,6 +203,13 @@ export const RhombsBottom = styled.img`
   position: absolute;
   top: 91px;
   right: -38px;
+  @media (min-width: 768px) {
+    width: 358px;
+    height: 271px;
+    background-size: cover;
+    top: 24px;
+    right: -84px;
+  }
 `;
 
 
@@ -190,12 +225,22 @@ export const PurpleSquare = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: 768px) {
+    width: 581px;
+    height: 581px;
+    border-radius: 72px;
+  }
 `;
 export const RedSquare = styled.div`
   width: 395px;
   height: 395px;
   background: #FB242B;
   border-radius: 50px;
+  @media (min-width: 768px) {
+    width: 509px;
+    height: 509px;
+    border-radius: 62px;
+  }
 `;
 
 export const DeviceLeft = styled.img`
