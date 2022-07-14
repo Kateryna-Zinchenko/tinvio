@@ -27,7 +27,7 @@ export const Rhombus = styled.div`
   }
 `;
 
-export const Title = styled.div`
+export const H1 = styled.div`
   position: relative;
   width: 345px;
   font-family: 'Gilroy';
@@ -40,7 +40,22 @@ export const Title = styled.div`
   color: #212121;
   & span {
     position: relative;
+    font-weight: 700;
     color: #FF474D;
+  }
+  & span::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 36px;
+    top: 0;
+    right: -4px;
+    background: #212121;
+  }
+  @media (min-width: 768px) {
+    width: 394px;
+    font-size: 32px;
+    line-height: 39px;
   }
 `;
 
@@ -109,8 +124,10 @@ export const Text1 = styled.ul<{ isOption: string }>`
   line-height: 20px;
   color: #212121;
   @media (min-width: 768px) {
-  width: 489px;
-  margin: 24px 0 0 79px;
+    width: 489px;
+    margin: 24px 0 0 79px;
+    font-size: 16px;
+    line-height: 23px;
 }
 `;
 
@@ -146,19 +163,21 @@ export const Dot = styled.div`
   transform: rotate(-45deg);
 `;
 
-export const RhombsTop = styled.img`
+export const RhombsTop = styled.div`
+  background: url("/assets/images/rhombs-top-features.png") no-repeat;
+  background-size: contain;
   position: absolute;
   width: 216px;
   height: 163px;
-  top: -134px;
+  top: 257px;
   right: -97px;
   z-index: -1;
   @media (min-width: 768px) {
     width: 243px;
     height: 184px;
     background-size: cover;
-    top: -70px;
-    right: -287px;
+    top: 327px;
+    right: -105px;
   }
 `;
 
@@ -189,15 +208,25 @@ export const BlockWrapper1 = styled.div`
   }
 `;
 
-export const Stars = styled.img`
+export const Stars = styled.div`
+  background: url("/assets/images/stars-features.png") no-repeat;
+  background-size: contain;
   width: 124px;
   height: 160px;
   position: absolute;
   top: -16px;
   left: 0;
+  @media (min-width: 768px) {
+    width: 181px;
+    height: 199px;
+    top: -32px;
+    left: -192px;
+  }
 `;
 
-export const RhombsBottom = styled.img`
+export const RhombsBottom = styled.div`
+  background: url("/assets/images/rhombs-bottom-features.png") no-repeat;
+  background-size: contain;
   width: 278px;
   height: 210px;
   position: absolute;
@@ -249,6 +278,12 @@ export const DeviceLeft = styled.img`
   position: absolute;
   top: 81px;
   left: -30px;
+  @media (min-width: 768px) {
+    width: 320px;
+    height: 531px;
+    top: -9px;
+    left: -110px;
+  }
 `;
 
 export const DeviceRight = styled.img`
@@ -257,6 +292,12 @@ export const DeviceRight = styled.img`
   position: absolute;
   top: 170px;
   right: -40px;
+  @media (min-width: 768px) {
+    width: 320px;
+    height: 531px;
+    top: 114px;
+    right: -121px;
+  }
 `;
 
 

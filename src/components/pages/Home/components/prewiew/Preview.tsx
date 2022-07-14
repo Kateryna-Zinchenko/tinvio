@@ -31,8 +31,8 @@ const Preview = () => {
                             <BoxInner>
                                 <RhombsTop/>
                                 <RhombsBottom/>
-                                <DeviceLeft src='/assets/images/deviceLeft.png'/>
-                                <DeviceRight src='/assets/images/deviceRight.png'/>
+                                <DeviceLeft src='/assets/images/device-left-preview.png'/>
+                                <DeviceRight src='/assets/images/device-right-preview.png'/>
                             </BoxInner>
                         </Box>
                     </MainBox>

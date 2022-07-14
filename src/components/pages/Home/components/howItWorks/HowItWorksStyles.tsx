@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
   transform: skewY(-8deg);
   border-radius: 50px 0 0 50px;
   width: 100%;
+  overflow: hidden;
 `;
 
 export const Rhombus = styled.div`
@@ -18,24 +19,45 @@ export const Rhombus = styled.div`
   width: 409px;
   height: 409px;
   top: 85px;
-  right: -312px;
-  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  right: -272px;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%);
   border-radius: 64px;
   transform: rotate(-45deg);
+  @media (min-width: 768px) {
+    top: -35px;
+    right: -234px;
+  }
 `;
 
-export const RhombsLeft = styled.img`
+export const RhombsLeft = styled.div`
+  background: url("/assets/images/rhombs-left-why-choose.png") no-repeat;
+  background-size: contain;
   position: absolute;
   width: 200px;
-  top: -30px;
-  left: -115px;
+  height: 151px;
+  bottom: 118px;
+  left: -153px;
+  @media (min-width: 768px) {
+    bottom: 0px;
+    left: 0px;
+    width: 297px;
+    height: 225px;
+    background-size: cover;
+  }
 `;
 
-export const RhombsRight = styled.img`
+export const RhombsRight = styled.div`
+  background: url("/assets/images/rhombs-right-why-choose.png") no-repeat;
+  background-size: contain;
   position: absolute;
   width: 299px;
-  bottom: -166px;
-  right: -178px;
+  height: 226px;
+  bottom: -59px;
+  right: -161px;
+  @media (min-width: 768px) {
+    bottom: -100px;
+    right: -130px;
+  }
 `;
 
 export const Inner = styled.div`
@@ -120,7 +142,7 @@ export const Tabs = styled(DeviceWidth)`
   }
 `;
 
-export const Tab = styled.div`
+export const Tab1 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,58 +150,80 @@ export const Tab = styled.div`
   height: 67px;
   background-color: #fff;
   border-radius: 12px;
+  margin: 31px 0 0 24px;
   padding: 15px 0 0 0;
   transform: matrix(0.99, 0.14, -0.14, 0.99, 0, 0);
   box-shadow: 4px 4px 13px 0px rgba(33,33,33,0.1);
   -webkit-box-shadow: 4px 4px 13px 0px rgba(33,33,33,0.1);
   -moz-box-shadow: 4px 4px 13px 0px rgba(33,33,33,0.1);
+  @media (min-width: 768px) {
+    border-radius: 18px;
+    width: 252px;
+    height: 102px;
+    padding: 23px 0 0 0;
+  }
+`;
+
+export const Tab2 = styled(Tab1)`
+  margin: 40px 0 0 175px;
+  width: 171px;
+  height: 71px;
+  @media (min-width: 768px) {
+    width: 252px;
+    height: 102px;
+    margin: 54px 0 0 259px;
+  }
+`;
+
+export const Tab3 = styled(Tab1)`
+  margin: 24px 0 10px 12px;
 `;
 
 export const StarsTab1 = styled.div`
   position: absolute;
   background: url("/assets/icons/stars-chats.png") no-repeat;
+  background-size: contain;
   width: 35px;
   height: 26px;
-  margin: 0 0 0 133px;
+  top: -37px;
+  left: 86px;
+  transform: rotate(-8deg);
 `;
 
 export const StarsTab2 = styled.div`
   position: absolute;
   background: url("/assets/icons/stars-orders.png") no-repeat;
+  background-size: contain;
   width: 49px;
   height: 27px;
-  margin: 0 0 0 309px;
+  top: -48px;
+  right: 0;
+  transform: rotate(-8deg);
 `;
 
 export const StarsTopTab3 = styled.div`
   position: absolute;
   background: url("/assets/icons/stars-top-payments.png") no-repeat;
+  background-size: contain;
   width: 32px;
   height: 23px;
-  margin: -32px 0 0 76px;
+  top: -42px;
+  left: 46px;
+  transform: rotate(-8deg);
 `;
 
 export const StarsRightTab3 = styled.div`
   position: absolute;
   background: url("/assets/icons/stars-right-payments.png") no-repeat;
+  background-size: contain;
   width: 31px;
   height: 36px;
-  margin: 11px 0 0 190px;
+  top: -22px;
+  right: -36px;
+  transform: rotate(-8deg);
 `;
 
-export const Tab1 = styled(Tab)`
-  margin: 31px 0 0 33px;
-`;
 
-export const Tab2 = styled(Tab)`
-  margin: 34px 0 0 181px;
-  width: 171px;
-  height: 71px;
-`;
-
-export const Tab3 = styled(Tab)`
-  margin: 13px 0 10px 17px;
-`;
 
 
 export const Title = styled.div`
@@ -189,6 +233,11 @@ export const Title = styled.div`
   color: rgb(33, 33, 33);
   font-size: 14px;
   line-height: 14px;
+  @media (min-width: 768px) {
+    font-size: 19px;
+    line-height: 24px;
+  }
+  
 `;
 
 export const TabText = styled.div`
@@ -200,40 +249,76 @@ export const TabText = styled.div`
   line-height: 11px;
   text-align: center;
   padding: 5px 0 0 0;
+  @media (min-width: 768px) {
+    font-size: 11px;
+    line-height: 13px;
+    width: 189px;
+  }
 `;
 
 export const TabText2 = styled(TabText)`
   width: 125px;
+  @media (min-width: 768px) {
+    width: 154px;
+  }
 `;
 
 export const TabText3 = styled(TabText)`
   width: 120px;
+  @media (min-width: 768px) {
+    width: 157px;
+  }
 `;
 
-export const ArrowChats = styled.img`
+export const ArrowChats = styled.div`
+  background: url("/assets/icons/arrow-chats-orders.svg") no-repeat;
+  background-size: contain;
   position: absolute;
   width: 82px;
   height: 55px;
-  left: 199px;
-  top: 68px;
+  right: 102px;
+  top: 72px;
 `;
 
-export const ArrowOrders = styled(ArrowChats)`
-  left: 107px;
-  top: 149px;
+export const ArrowOrders = styled.div`
+  background: url("/assets/icons/arrow-orders-payments.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 82px;
+  height: 55px;
+  left: 101px;
+  top: 155px;
 `;
 
-export const Icon1 = styled.img`
+export const Icon1 = styled.div`
+  background: url("/assets/icons/chats.png") no-repeat;
+  background-size: contain;
   position: absolute;
   width: 71px;
   height: 71px;
-  margin: -84px 0 0 159px;
+  top: -25px;
+  right: -28px;
+  transform: rotate(-8deg);
 `;
-export const Icon2 = styled(Icon1)`
-  margin: -44px 0 0 155px
+export const Icon2 = styled.div`
+  background: url("/assets/icons/orders.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 71px;
+  height: 71px;
+  bottom: -36px;
+  left: -19px;
+  transform: rotate(-8deg);
 `;
-export const Icon3 = styled(Icon1)`
-  margin: -112px 0 0 8px;
+export const Icon3 = styled.div`
+  background: url("/assets/icons/payments.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 71px;
+  height: 71px;
+  top: -25px;
+  left: -12px;
+  transform: rotate(-8deg);
 `;
 
 

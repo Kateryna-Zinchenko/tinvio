@@ -56,16 +56,24 @@ export const H1 = styled.div`
   font-size: 28px;
   line-height: 34px;
   text-align: center;
-
   & span {
     color: #FF474D;
+    font-weight: 700;
   }
-
   &::before {
     position: absolute;
     content: url("/assets/icons/preview-stars.png");
     top: -34px;
     left: -18px;
+  }
+  @media (min-width: 768px) {
+    max-width: 333px;
+    font-size: 32px;
+    line-height: 39px;
+    &::before {
+      width: 72px;
+      height: 60px;
+    }
   }
 `;
 
@@ -195,6 +203,13 @@ export const RhombsBottom = styled.div`
   position: absolute;
   bottom: 157px;
   left: 328px;
+  @media (min-width: 768px) {
+    width: 409px;
+    height: 310px;
+    background-size: cover;
+    bottom: 120px;
+    left: 406px;
+  }
 `;
 
 export const BoxInner = styled.div`
@@ -211,8 +226,9 @@ export const DeviceLeft = styled.img`
   top: 11px;
   left: 231px;
   @media (min-width: 768px) {
-    max-width: 253px;
-    left: 236px;
+    width: 260px;
+    height: 426px;
+    left: 244px;
     top: -89px;
   }
 `;
@@ -224,7 +240,10 @@ export const DeviceRight = styled.img`
   top: -139px;
   right: -419px;
   @media (min-width: 768px) {
-    width: 879px;
+    min-width: 899px;
+    height: 663px;
+    top: -394px;
+    right: -865px;
   }
 `;
 

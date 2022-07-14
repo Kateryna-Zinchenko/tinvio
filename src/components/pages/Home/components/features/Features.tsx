@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {Container} from "../../../../common/container/Container";
 import {
-    Title,
     Wrapper,
     Options,
     Option,
@@ -22,7 +21,8 @@ import {
     Stars,
     RhombsBottom,
     RhombsTop,
-    Rhombus
+    Rhombus,
+    H1
 } from "./FeaturesStyles";
 
 const Features = () => {
@@ -34,10 +34,9 @@ const Features = () => {
             <Container>
                 <Wrapper>
                     <Rhombus/>
-                    <Title>
+                    <H1>
                             Smarter supply chain transactions. <span>{isText}</span>
-                    </Title>
-                    <Cursor/>
+                    </H1>
                     <Options>
                         <Option isOption={isOption} onClick={() => {
                             setIsOption('chats')
@@ -98,15 +97,15 @@ const Features = () => {
                         </Li>
                     </Text3>
                     <Button>More Features</Button>
+                    <RhombsTop/>
                 </Wrapper>
             </Container>
             <BlockWrapper1>
-                <RhombsTop src='/assets/images/rhombs-top-features.png'/>
-                <Stars src='/assets/images/stars-features.png'/>
+                <Stars/>
                 <PurpleSquare>
                     <RedSquare/>
                 </PurpleSquare>
-                <RhombsBottom src='/assets/images/rhombs-bottom-features.png'/>
+                <RhombsBottom/>
                 <DeviceLeft src='/assets/images/device-left-features.png'/>
                 <DeviceRight src='/assets/images/device-right-features.png'/>
             </BlockWrapper1>
