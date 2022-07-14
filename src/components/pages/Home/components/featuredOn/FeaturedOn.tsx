@@ -6,7 +6,7 @@ const FeaturedOn = () => {
     return (
         <section className='featured-on'>
             <Wrapper>
-                <RhombsTop src='/assets/images/rhombs-right-featured-on.png'/>
+                <RhombsTop/>
                 <RhombusLeft/>
                 <RhombusRight/>
                 <RhombusLeftBottom/>

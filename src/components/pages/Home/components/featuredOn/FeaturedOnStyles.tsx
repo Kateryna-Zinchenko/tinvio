@@ -2,22 +2,31 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   position: relative;
-  margin: 70px 0 0 0;
+  margin: 70px 0 0;
+  padding: 0 0 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 0 50px 50px 0;
   width: 100%;
-  height: 451px;
   background: radial-gradient(129.72% 141.01% at 50% 50%, #F7F7F7 0%, #FAFAFA 100%);
   z-index: 1;
+  @media (min-width: 768px) {
+    margin: 173px 0 0;
+  }
 `;
 
-export const RhombsTop = styled.img`
+export const RhombsTop = styled.div`
+  background: url('/assets/images/rhombs-right-featured-on.png') no-repeat;
+  background-size: contain;
   position: absolute;
   width: 271px;
+  height: 205px;
   top: -97px;
   right: -170px;
+  @media (min-width: 768px) {
+    right: -93px;
+  }
 `;
 
 export const RhombusLeft = styled.div`
@@ -26,7 +35,7 @@ export const RhombusLeft = styled.div`
   height: 506px;
   top: -88px;
   left: -392px;
-  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%);
   border-radius: 95px;
   transform: rotate(-45deg);
 `;
@@ -41,6 +50,10 @@ export const RhombusRight = styled.div`
   border-radius: 95px;
   transform: rotate(-45deg);
   opacity: 0.5;
+  @media (min-width: 768px) {
+    top: -215px;
+    right: -457px;
+  }
 `;
 
 export const RhombusLeftBottom = styled.div`
@@ -51,7 +64,7 @@ export const RhombusLeftBottom = styled.div`
   left: -389px;
   background: rgba(255, 255, 255, 0.04);
   border-radius: 72px;
-  transform: rotate(-45deg) skewY(8deg);
+  transform: rotate(-45deg);
 `;
 
 export const RhombusRightBottom = styled.div`
@@ -74,7 +87,10 @@ export const H1 = styled.div`
   display: flex;
   align-items: center;
   color: #212121;
-
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 39px;
+  }
 `;
 export const Border = styled.div`
   height: 1px;
@@ -82,12 +98,23 @@ export const Border = styled.div`
   width: 253px;
   padding: 0 61px 0 63px;
   margin: 24px 0 32px;
+  @media (min-width: 768px) {
+    width: 336px;
+    padding: 0 0 0 0;
+    margin: 16px auto 0;
+  }
 `;
 
 export const Icons = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: 768px) {
+    width: 490px;
+    margin: 32px auto 0;
+    flex-direction: unset;
+    flex-wrap: wrap;
+  }
 `;
 
 export const Icon1 = styled.img`
@@ -100,15 +127,24 @@ export const Icon2 = styled.img`
   width: 203px;
   height: 40px;
   margin: 0 0 48px;
+  @media (min-width: 768px) {
+    margin: -44px 0 0 98px;
+  }
 `;
 
 export const Icon3 = styled.img`
   width: 153px;
   height: 22px;
   margin: 0 0 58px;
+  @media (min-width: 768px) {
+    margin: 0 0 0 18px;
+  }
 `;
 
 export const Icon4 = styled.img`
   width: 169px;
   height: 20px;
+  @media (min-width: 768px) {
+    margin: 20px 0 0 133px;
+  }
 `;
