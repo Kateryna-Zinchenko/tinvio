@@ -59,6 +59,10 @@ export const H1 = styled.div`
   align-items: center;
   text-align: center;
   color: #212121;
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 39px;
+  }
 `;
 
 export const BoxWrapper = styled.div`

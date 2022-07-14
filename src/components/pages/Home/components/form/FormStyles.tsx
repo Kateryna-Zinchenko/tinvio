@@ -23,9 +23,12 @@ export const Wrapper = styled(DeviceWidth)`
   border-radius: 0 0 50px 0;
 `;
 
-export const Rhombs = styled.img`
+export const Rhombs = styled.div`
+  background: url("/assets/images/rhombs-form.png") no-repeat;
+  background-size: contain;
   position: absolute;
   width: 311px;
+  height: 236px;
   top: -202px;
   left: -80px;
   z-index: -1;

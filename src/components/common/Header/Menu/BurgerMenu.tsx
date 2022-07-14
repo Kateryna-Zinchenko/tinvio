@@ -35,7 +35,7 @@ const BurgerMenu = ({setIsOpenMenu}: Props) => {
             <OpenMenuWrapper>
                 <RhombusTop/>
                 <RhombusBottom/>
-                <Rhombs src='/assets/images/rhombs-burger-menu.png'/>
+                <Rhombs/>
                 <Container>
                     <Wrapper>
                         <MenuWrapper>
@@ -46,7 +46,7 @@ const BurgerMenu = ({setIsOpenMenu}: Props) => {
                                 } src="/assets/images/logo.svg" alt="#"/>
                                 <ChooseLanguage>
                                     <Language>EN</Language>
-                                    <ArrowDown src="/assets/images/arrowDown.svg" alt="#"/>
+                                    <ArrowDown/>
                                 </ChooseLanguage>
                             </LeftWrapper>
                             <CloseWrapper onClick={() => setIsOpenMenu(false)}>

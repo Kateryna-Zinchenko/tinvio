@@ -47,7 +47,9 @@ export const RhombusBottom = styled.div`
   }
 `;
 
-export const Rhombs = styled.img`
+export const Rhombs = styled.div`
+  background: url("/assets/images/rhombs-burger-menu.png") no-repeat;
+  background-size: contain;
   position: absolute;
   width: 248px;
   bottom: 30px;
@@ -105,7 +107,9 @@ export const Language = styled.div`
   color: #212121;
 `;
 
-export const ArrowDown = styled.img`
+export const ArrowDown = styled.div`
+  background: url("/assets/images/arrowDown.svg") no-repeat;
+  background-size: contain;
   width: 10px;
   height: 6px;
 `;
