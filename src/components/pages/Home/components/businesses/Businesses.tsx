@@ -4,7 +4,7 @@ import {
     BigBoxWrapper, Box, Boxes1, Boxes2, Boxes3, BoxesWrapper,
     BoxesWrapper2, BoxImg1, BoxImg10, BoxImg2, BoxImg3, BoxImg4, BoxImg5,
     BoxImg6, BoxImg7, BoxImg8, BoxImg9, BoxInner, BoxWrapper, H1, MainBox, MiddleBox, PurpleBox,
-    RedBox, Rhombs, RhombusLeft, RhombusLeftBottom, RhombusRight, Text, Wrapper
+    RedBox, RhombsLeft, RhombsRight, RhombusLeft, RhombusLeftBottom, RhombusRight, Text, Wrapper
 } from "./BusinessesStyles";
 
 const Businesses = () => {
@@ -12,10 +12,11 @@ const Businesses = () => {
         <section className='businesses'>
             <Container>
                 <Wrapper>
-                    <RhombusLeft/>
                     <RhombusRight/>
+                    <RhombusLeft/>
                     <RhombusLeftBottom/>
-                    <Rhombs src="/assets/images/rhombs-business.png"/>
+                    <RhombsRight/>
+                    <RhombsLeft/>
                     <H1>We’ll put a smile on your supply chain</H1>
                     <BoxesWrapper>
                         <Boxes1>

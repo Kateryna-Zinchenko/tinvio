@@ -1,6 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import {
+    FooterText,
+    Links,
     LinksSocial,
     LinksStore,
     LinksTerms,
@@ -9,6 +11,7 @@ import {
     Pages,
     PrivacyPolicy,
     Stick,
+    Stick2,
     Terms,
     Text,
     Wrapper
@@ -24,27 +27,34 @@ const Footer = () => {
             <Wrapper>
                 <Logo src='/assets/images/logo.svg'/>
                 <Pages>
-                    <Page isActive={window.location.pathname === '/home' || window.location.pathname === '/'} onClick={() => onLinkClick('home')}>Home</Page>
-                    <Page isActive={window.location.pathname === '/features'} onClick={() => onLinkClick('features')}>Features</Page>
-                    <Page isActive={window.location.pathname === '/company'} onClick={() => onLinkClick('company')}>Company</Page>
-                    <Page isActive={window.location.pathname === '/login'} onClick={() => onLinkClick('login')}>Login</Page>
+                    <Page isActive={window.location.pathname === '/home' || window.location.pathname === '/'}
+                          onClick={() => onLinkClick('home')}>Home</Page>
+                    <Page isActive={window.location.pathname === '/features'}
+                          onClick={() => onLinkClick('features')}>Features</Page>
+                    <Page isActive={window.location.pathname === '/company'}
+                          onClick={() => onLinkClick('company')}>Company</Page>
+                    <Page isActive={window.location.pathname === '/login'}
+                          onClick={() => onLinkClick('login')}>Login</Page>
                 </Pages>
-                <LinksSocial>
-                    <img src="/assets/images/linked-in.png" alt="#"/>
-                    <img src="/assets/images/instagram.png" alt="#"/>
-                </LinksSocial>
-                <LinksStore>
-                    <img src="/assets/images/google-play.png" alt="#"/>
-                    <img src="/assets/images/app-store.png" alt="#"/>
-                </LinksStore>
-                <div>
+                <Links>
+                    <LinksSocial>
+                        <img src="/assets/images/linked-in.png" alt="#"/>
+                        <img src="/assets/images/instagram.png" alt="#"/>
+                    </LinksSocial>
+                    <LinksStore>
+                        <img src="/assets/images/google-play.png" alt="#"/>
+                        <img src="/assets/images/app-store.png" alt="#"/>
+                    </LinksStore>
+                </Links>
+                <FooterText>
                     <Text>© Tinvio™ 2020. All Rights Reserved</Text>
+                    <Stick2/>
                     <LinksTerms>
                         <PrivacyPolicy><a href="">Privacy Policy</a></PrivacyPolicy>
                         <Stick/>
                         <Terms><a href="">Terms of Service</a></Terms>
                     </LinksTerms>
-                </div>
+                </FooterText>
             </Wrapper>
         </section>
     );

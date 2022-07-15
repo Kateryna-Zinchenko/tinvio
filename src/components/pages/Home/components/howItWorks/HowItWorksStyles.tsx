@@ -12,6 +12,9 @@ export const Wrapper = styled.div`
   border-radius: 50px 0 0 50px;
   width: 100%;
   overflow: hidden;
+  @media (min-width: 768px) {
+    height: 927px;
+  }
 `;
 
 export const Rhombus = styled.div`
@@ -38,8 +41,8 @@ export const RhombsLeft = styled.div`
   bottom: 118px;
   left: -153px;
   @media (min-width: 768px) {
-    bottom: 0px;
-    left: 0px;
+    bottom: 446px;    
+    left: -86px;
     width: 297px;
     height: 225px;
     background-size: cover;
@@ -55,7 +58,7 @@ export const RhombsRight = styled.div`
   bottom: -59px;
   right: -161px;
   @media (min-width: 768px) {
-    bottom: -100px;
+    bottom: 35px;
     right: -130px;
   }
 `;
@@ -188,6 +191,12 @@ export const StarsTab1 = styled.div`
   top: -37px;
   left: 86px;
   transform: rotate(-8deg);
+  @media (min-width: 768px) {
+    width: 51px;
+    height: 39px;
+    left: 131px;
+    top: -54px;
+  }
 `;
 
 export const StarsTab2 = styled.div`
@@ -199,6 +208,12 @@ export const StarsTab2 = styled.div`
   top: -48px;
   right: 0;
   transform: rotate(-8deg);
+  @media (min-width: 768px) {
+    width: 74px;
+    height: 40px;
+    right: 0px;
+    top: -66px;
+  }
 `;
 
 export const StarsTopTab3 = styled.div`
@@ -210,6 +225,12 @@ export const StarsTopTab3 = styled.div`
   top: -42px;
   left: 46px;
   transform: rotate(-8deg);
+  @media (min-width: 768px) {
+    width: 47px;
+    height: 33px;
+    top: -60px;
+    left: 46px;
+  }
 `;
 
 export const StarsRightTab3 = styled.div`
@@ -221,10 +242,13 @@ export const StarsRightTab3 = styled.div`
   top: -22px;
   right: -36px;
   transform: rotate(-8deg);
+  @media (min-width: 768px) {
+    width: 45px;
+    height: 54px;
+    top: -35px;
+    right: -45px;
+  }
 `;
-
-
-
 
 export const Title = styled.div`
   font-family: Gilroy;
@@ -278,6 +302,12 @@ export const ArrowChats = styled.div`
   height: 55px;
   right: 102px;
   top: 72px;
+  @media (min-width: 768px) {
+    width: 125px;
+    height: 82px;
+    right: 48%;
+    top: 21%;
+  }
 `;
 
 export const ArrowOrders = styled.div`
@@ -288,6 +318,12 @@ export const ArrowOrders = styled.div`
   height: 55px;
   left: 101px;
   top: 155px;
+  @media (min-width: 768px) {
+    width: 125px;
+    height: 83px;
+    left: 19%;
+    top: 50%;
+  }
 `;
 
 export const Icon1 = styled.div`
@@ -299,6 +335,12 @@ export const Icon1 = styled.div`
   top: -25px;
   right: -28px;
   transform: rotate(-8deg);
+  @media (min-width: 768px) {
+    width: 110px;
+    height: 110px;
+    top: -41px;
+    right: -45px;
+  }
 `;
 export const Icon2 = styled.div`
   background: url("/assets/icons/orders.png") no-repeat;
@@ -309,6 +351,12 @@ export const Icon2 = styled.div`
   bottom: -36px;
   left: -19px;
   transform: rotate(-8deg);
+  @media (min-width: 768px) {
+    width: 110px;
+    height: 110px;
+    bottom: -59px;
+    left: -32px;
+  }
 `;
 export const Icon3 = styled.div`
   background: url("/assets/icons/payments.png") no-repeat;
@@ -319,6 +367,12 @@ export const Icon3 = styled.div`
   top: -25px;
   left: -12px;
   transform: rotate(-8deg);
+  @media (min-width: 768px) {
+    width: 110px;
+    height: 110px;
+    top: -38px;
+    left: -19px;
+  }
 `;
 
 
