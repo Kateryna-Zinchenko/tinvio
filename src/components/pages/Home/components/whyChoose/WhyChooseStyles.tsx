@@ -50,10 +50,17 @@ export const H1 = styled.div`
   align-items: center;
   padding: 110px 0 0;
   color: #FFFFFF;
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 39px;
+  }
 `;
 
 export const Slider = styled.div`
-  margin: 36px 0 0 33px;
+  margin: 36px 0 0;
+  @media (min-width: 768px) {
+    margin: 32px 0 0;
+  }
 `;
 
 export const Slide1 = styled.div<{ slide: string }>`
@@ -63,10 +70,15 @@ export const Slide1 = styled.div<{ slide: string }>`
   background: #FFFFFF;
   border-radius: 32px;
   padding: 22px 0 0;
+  @media (min-width: 768px) {
+    width: 490px;
+    height: 610px;
+    padding: 30px 0 0;
+  }
 `;
 export const Slide2 = styled(Slide1)<{ slide: string }>`
   display: ${({slide}) => (slide === 'second-slide' ? 'block' : 'none')};
-  padding: 6px 0 0px;
+  padding: 6px 0 0;
 `;
 export const Slide3 = styled(Slide1)<{ slide: string }>`
   display: ${({slide}) => (slide === 'third-slide' ? 'block' : 'none')};
@@ -79,6 +91,11 @@ export const Img1 = styled.img`
   width: 235px;
   height: 223px;
   margin: 0 0 15px 65px;
+  @media (min-width: 768px) {
+    width: 302px;
+    height: 287px;
+    margin: 0 0 17px 102px;
+  }
 `;
 export const Img2 = styled.img`
   width: 189px;
@@ -98,6 +115,9 @@ export const TextBox = styled.div`
   background: #F1F1F1;
   padding: 20px 0 20px 24px;
   border-radius: 16px;
+  @media (min-width: 768px) {
+    width: 474px;
+  }
 `;
 
 export const Text = styled.div`
@@ -108,6 +128,9 @@ export const Text = styled.div`
   font-size: 16px;
   line-height: 23px;
   color: #212121;
+  @media (min-width: 768px) {
+    width: 418px;
+  }
 `;
 
 export const Caption = styled.div`
@@ -115,6 +138,10 @@ export const Caption = styled.div`
   justify-content: space-between;
   width: 295px;
   margin: 14px auto 0;
+  @media (min-width: 768px) {
+    margin: 20px auto 0;
+    width: 426px;
+  }
 `;
 
 export const Caption2 = styled(Caption)`
@@ -133,6 +160,10 @@ export const Logo1 = styled.img`
   width: 48px;
   height: 56px;
   margin: 0 12px 0 0;
+  @media (min-width: 768px) {
+    width: 55px;
+    height: 64px;
+  }
 `;
 export const Logo2 = styled.img`
   width: 60px;
@@ -162,6 +193,10 @@ export const Name = styled.div`
   font-size: 16px;
   line-height: 20px;
   color: #212121;
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
   
 `;
 export const Position = styled.div`
@@ -174,6 +209,10 @@ export const Position = styled.div`
   color: #5C5C5C;
   margin: 4px 0 0;
   max-width: 160px;
+  @media (min-width: 768px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
 `;
 export const Quotes1 = styled.div`
   background: url("/assets/icons/quotes.png") no-repeat;
@@ -220,6 +259,9 @@ export const Dots = styled.div`
   justify-content: space-between;
   width: 105px;
   padding: 24px 0 0;
+  @media (min-width: 768px) {
+    padding: 32px 0 0;
+  }
 `;
 
 export const Dot1 = styled.div<{ slide: string }>`

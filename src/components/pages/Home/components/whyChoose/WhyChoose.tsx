@@ -35,12 +35,7 @@ const WhyChoose = () => {
                 <Stars src='/assets/images/stars-why-choose.png'/>
                 <Inner>
                     <H1>Why choose Tinvio?</H1>
-                    {/*<div>*/}
-                    {/*    <Image1 slide={slide} src='/assets/images/why-choose-1.png'/>*/}
-                    {/*    <Image2 slide={slide} src='/assets/images/why-choose-2.png'/>*/}
-                    {/*    <Image3 slide={slide} src='/assets/images/why-choose-3.png'/>*/}
-                    {/*    <Image4 slide={slide} src='/assets/images/why-choose-4.png'/>*/}
-                    {/*</div>*/}
+
                     <Slider>
                         <Slide1 slide={slide}>
                             <Img1 src='/assets/images/why-choose-eggs.png'/>
