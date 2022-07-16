@@ -52,6 +52,147 @@ export const H1 = styled.div`
   color: #FFFFFF;
 `;
 
+export const Slider = styled.div`
+  margin: 36px 0 0 33px;
+`;
+
+export const Slide1 = styled.div<{ slide: string }>`
+  display: ${({slide}) => (slide === 'first-slide' ? 'block' : 'none')};
+  width: 343px;
+  height: 550px;
+  background: #FFFFFF;
+  border-radius: 32px;
+  padding: 22px 0 0;
+`;
+export const Slide2 = styled(Slide1)<{ slide: string }>`
+  display: ${({slide}) => (slide === 'second-slide' ? 'block' : 'none')};
+  padding: 6px 0 0px;
+`;
+export const Slide3 = styled(Slide1)<{ slide: string }>`
+  display: ${({slide}) => (slide === 'third-slide' ? 'block' : 'none')};
+`;
+export const Slide4 = styled(Slide1)<{ slide: string }>`
+  display: ${({slide}) => (slide === 'fourth-slide' ? 'block' : 'none')};
+`;
+
+export const Img1 = styled.img`
+  width: 235px;
+  height: 223px;
+  margin: 0 0 15px 65px;
+`;
+export const Img2 = styled.img`
+  width: 189px;
+  margin: 0 0 0 104px;
+`;
+export const Img3 = styled.img`
+  width: 243px;
+  margin: -21px 0 0px 67px;
+`;
+export const Img4 = styled.img`
+  width: 184px;
+  margin: 4px 0 0 92px;
+`;
+
+export const TextBox = styled.div`
+  width: 327px;
+  background: #F1F1F1;
+  padding: 20px 0 20px 24px;
+  border-radius: 16px;
+`;
+
+export const Text = styled.div`
+  width: 287px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #212121;
+`;
+
+export const Caption = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 295px;
+  margin: 14px auto 0;
+`;
+
+export const Caption2 = styled(Caption)`
+  margin: 24px auto 0;
+`;
+
+export const Caption3 = styled(Caption)`
+  margin: 22px auto 0;
+`;
+
+export const Caption4 = styled(Caption)`
+  margin: 24px auto 0;
+`;
+
+export const Logo1 = styled.img`
+  width: 48px;
+  height: 56px;
+  margin: 0 12px 0 0;
+`;
+export const Logo2 = styled.img`
+  width: 60px;
+  height: 44px;
+  margin: 0 12px 0 0;
+`;
+export const Logo3 = styled.img`
+  width: 85px;
+  height: 40px;
+  margin: 0 12px 0 0;
+`;
+export const Logo4 = styled.img`
+  width: 78px;
+  height: 40px;
+  margin: 0 12px 0 0;
+`;
+
+export const LogoText = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const Name = styled.div`
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #212121;
+  
+`;
+export const Position = styled.div`
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #5C5C5C;
+  margin: 4px 0 0;
+  max-width: 160px;
+`;
+export const Quotes1 = styled.div`
+  background: url("/assets/icons/quotes.png") no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  margin: 10px 0 0;
+`;
+export const Quotes2 = styled(Quotes1)`
+  margin: 0 0 0;
+`;
+export const Quotes3 = styled(Quotes1)`
+  margin: 2px 0 0;
+`;
+export const Quotes4 = styled(Quotes1)`
+  margin: 0 0 0;
+`;
+
+
 
 export const Image1 = styled.img<{ slide: string }>`
   display: ${({slide}) => (slide === 'first-slide' ? 'block' : 'none')};

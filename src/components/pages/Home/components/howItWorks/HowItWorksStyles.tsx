@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   width: 100%;
   overflow: hidden;
   @media (min-width: 768px) {
-    height: 927px;
+    height: 954px;
   }
 `;
 
@@ -58,7 +58,7 @@ export const RhombsRight = styled.div`
   bottom: -59px;
   right: -161px;
   @media (min-width: 768px) {
-    bottom: 35px;
+    bottom: 58px;
     right: -130px;
   }
 `;
@@ -141,7 +141,8 @@ export const Tabs = styled(DeviceWidth)`
   margin: 49px auto 0;
   max-width: 100%;
   @media (min-width: 768px) {
-    margin: 53px 0 0;
+    margin: 66px 0 0;
+    padding: 0 0 0 126px;
   }
 `;
 
@@ -305,7 +306,7 @@ export const ArrowChats = styled.div`
   @media (min-width: 768px) {
     width: 125px;
     height: 82px;
-    right: 48%;
+    right: 31%;
     top: 21%;
   }
 `;
@@ -321,7 +322,7 @@ export const ArrowOrders = styled.div`
   @media (min-width: 768px) {
     width: 125px;
     height: 83px;
-    left: 19%;
+    left: 36%;
     top: 50%;
   }
 `;

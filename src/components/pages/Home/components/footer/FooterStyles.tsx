@@ -48,6 +48,7 @@ export const Page = styled.li<{ isActive: boolean }>`
 `;
 
 export const Links = styled.div`
+  margin: 48px 0 0;
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -59,7 +60,7 @@ export const LinksSocial = styled.div`
   width: 80px;
   display: flex;
   justify-content: space-between;
-  margin: 48px 0 0;
+  margin: 0 auto;
   & img {
     width: 32px;
     cursor: pointer;
@@ -84,10 +85,11 @@ export const LinksStore = styled.div`
 `;
 
 export const FooterText = styled.div`
-  display: flex;
-  justify-content: space-between;
+  margin: 16px 0 0;
   @media (min-width: 768px) {
     margin: 24px 0 16px;
+    display: flex;
+    justify-content: space-between;
   }
 `;
 
@@ -99,13 +101,12 @@ export const Text = styled.div`
   line-height: 12px;
   text-align: center;
   color: #BDBDBD;
-  margin: 16px 0 0;
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
     font-size: 12px;
     line-height: 15px;
-    margin: 0 0 0;
+    margin: 2px 0 0;
   }
 `;
 
@@ -113,7 +114,7 @@ export const LinksTerms = styled.div`
   display: flex;
   justify-content: space-between;
   width: 170px;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 22px;
   @media (min-width: 768px) {
     width: 182px;
     margin: 0 0 0;
@@ -148,7 +149,11 @@ export const Stick = styled.div`
 `;
 
 export const Stick2 = styled(Stick)`
+  @media (min-width: 375px) {
+    display: none;
+  }
   @media (min-width: 768px) {
+    display: block;
     margin: 6px 8px 0 8px;
   }
 `;
