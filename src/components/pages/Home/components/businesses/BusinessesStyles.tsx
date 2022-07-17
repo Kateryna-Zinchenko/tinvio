@@ -26,8 +26,8 @@ export const RhombusLeft = styled.div`
     width: 360px;
     height: 360px;
     border-radius: 34px;
-    top: -78px;
-    left: -161px;
+    top: -65px;
+    left: -164px;
   }
 `;
 

@@ -13,14 +13,27 @@ export const Wrapper = styled(DeviceWidth)`
   height: 905px;
   background: #363636;
   overflow: hidden;
+  @media (min-width: 768px) {
+    height: 958px;
+  }
 `;
 
-export const RhombsBottom = styled.img`
+export const RhombsBottom = styled.div`
+  background: url("/assets/images/rhombs-bottom-why-choose.png") no-repeat;
+  background-size: contain;
   position: absolute;
   width: 412px;
+  height: 312px;
   bottom: -171px;
   left: -124px;
   transform: skewY(8deg);
+  @media (min-width: 768px) {
+    background-size: cover;
+    width: 424px;
+    height: 321px;
+    bottom: -118px;
+    left: -159px;
+  }
 `;
 
 export const Stars = styled.img`
@@ -79,6 +92,9 @@ export const Slide1 = styled.div<{ slide: string }>`
 export const Slide2 = styled(Slide1)<{ slide: string }>`
   display: ${({slide}) => (slide === 'second-slide' ? 'block' : 'none')};
   padding: 6px 0 0;
+  @media (min-width: 768px) {
+    padding: 0 0 0;
+  }
 `;
 export const Slide3 = styled(Slide1)<{ slide: string }>`
   display: ${({slide}) => (slide === 'third-slide' ? 'block' : 'none')};
@@ -100,14 +116,26 @@ export const Img1 = styled.img`
 export const Img2 = styled.img`
   width: 189px;
   margin: 0 0 0 104px;
+  @media (min-width: 768px) {
+    width: 249px;
+    margin: 0 0 0 157px;
+  }
 `;
 export const Img3 = styled.img`
   width: 243px;
   margin: -21px 0 0px 67px;
+  @media (min-width: 768px) {
+    width: 318px;
+    margin: -21px 0 -13px 112px;
+  }
 `;
 export const Img4 = styled.img`
   width: 184px;
   margin: 4px 0 0 92px;
+  @media (min-width: 768px) {
+    width: 235px;
+    margin: 5.5px 0 0 140px;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -146,14 +174,23 @@ export const Caption = styled.div`
 
 export const Caption2 = styled(Caption)`
   margin: 24px auto 0;
+  @media (min-width: 768px) {
+    margin: 26px auto 0;
+  }
 `;
 
 export const Caption3 = styled(Caption)`
   margin: 22px auto 0;
+  @media (min-width: 768px) {
+    margin: 28px auto 0;
+  }
 `;
 
 export const Caption4 = styled(Caption)`
   margin: 24px auto 0;
+  @media (min-width: 768px) {
+    margin: 28px auto 0;
+  }
 `;
 
 export const Logo1 = styled.img`
@@ -169,16 +206,29 @@ export const Logo2 = styled.img`
   width: 60px;
   height: 44px;
   margin: 0 12px 0 0;
+  @media (min-width: 768px) {
+    width: 70px;
+    height: 52px;
+  }
+  
 `;
 export const Logo3 = styled.img`
   width: 85px;
   height: 40px;
   margin: 0 12px 0 0;
+  @media (min-width: 768px) {
+    width: 102px;
+    height: 48px;
+  }
 `;
 export const Logo4 = styled.img`
   width: 78px;
   height: 40px;
   margin: 0 12px 0 0;
+  @media (min-width: 768px) {
+    width: 94px;
+    height: 48px;;
+  }
 `;
 
 export const LogoText = styled.div`
@@ -212,6 +262,7 @@ export const Position = styled.div`
   @media (min-width: 768px) {
     font-size: 12px;
     line-height: 15px;
+    max-width: 190px;
   }
 `;
 export const Quotes1 = styled.div`
@@ -223,35 +274,21 @@ export const Quotes1 = styled.div`
 `;
 export const Quotes2 = styled(Quotes1)`
   margin: 0 0 0;
+  @media (min-width: 768px) {
+    margin: 4px 0 0;
+  }
 `;
 export const Quotes3 = styled(Quotes1)`
   margin: 2px 0 0;
+  @media (min-width: 768px) {
+    margin: 2px 0 0;
+  }
 `;
 export const Quotes4 = styled(Quotes1)`
   margin: 0 0 0;
-`;
-
-
-
-export const Image1 = styled.img<{ slide: string }>`
-  display: ${({slide}) => (slide === 'first-slide' ? 'block' : 'none')};
-  width: 343px;
-  height: 550px;
-  margin: 32px 0 0 32px;
-`;
-
-export const Image2 = styled(Image1)<{ slide: string }>`
-  display: ${({slide}) => (slide === 'second-slide' ? 'block' : 'none')};
-`;
-
-export const Image3 = styled(Image1)<{ slide: string }>`
-  display: ${({slide}) => (slide === 'third-slide' ? 'block' : 'none')};
-  height: 572px;
-  margin: 10px 0 0 32px;
-`;
-
-export const Image4 = styled(Image1)<{ slide: string }>`
-  display: ${({slide}) => (slide === 'fourth-slide' ? 'block' : 'none')};
+  @media (min-width: 768px) {
+    margin: 2px 0 0;
+  }
 `;
 
 export const Dots = styled.div`

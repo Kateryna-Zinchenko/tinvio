@@ -65,6 +65,10 @@ export const RhombusLeftBottom = styled.div`
   background: rgba(255, 255, 255, 0.04);
   border-radius: 72px;
   transform: rotate(-45deg);
+  @media (min-width: 768px) {
+    top: 288px;
+    left: -280px;
+  }
 `;
 
 export const RhombusRightBottom = styled.div`
@@ -76,6 +80,10 @@ export const RhombusRightBottom = styled.div`
   background: rgba(255, 255, 255, 0.04);
   border-radius: 72px;
   transform: rotate(-45deg) skewY(8deg);
+  @media (min-width: 768px) {
+    top: 667px;
+    right: -559px;
+}
 `;
 
 export const H1 = styled.div`

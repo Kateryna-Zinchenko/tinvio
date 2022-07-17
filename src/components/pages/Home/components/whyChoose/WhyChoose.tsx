@@ -31,7 +31,7 @@ const WhyChoose = () => {
     return (
         <section className='why-choose'>
             <Wrapper>
-                <RhombsBottom src='/assets/images/rhombs-bottom-why-choose.png'/>
+                <RhombsBottom/>
                 <Stars src='/assets/images/stars-why-choose.png'/>
                 <Inner>
                     <H1>Why choose Tinvio?</H1>
