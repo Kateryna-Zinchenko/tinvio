@@ -5,6 +5,12 @@ export const Wrapper = styled.ul`
   flex-direction: column;
   align-items: center;
   margin: 112px 0 0;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    margin: 311px 0 0;
+  }
 `;
 
 export const Logo = styled.img`
@@ -17,10 +23,30 @@ export const Logo = styled.img`
   }
 `;
 
+export const StickLogo = styled.div`
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+    width: 1px;
+    height: 32px;
+    background: #C4C4C4;
+    margin: 31px 24px 0;
+  }
+`;
+
+export const StickLinks = styled(StickLogo)`
+  @media (min-width: 1024px) {
+    margin: 0 24px 0;
+  }
+`;
+
 export const Pages = styled.ul`
   margin: 24px 0 0;
   @media (min-width: 768px) {
     display: flex;
+  }
+  @media (min-width: 1024px) {
+    margin: 30px 0 0;
   }
 `;
 
@@ -45,6 +71,12 @@ export const Page = styled.li<{ isActive: boolean }>`
       margin: 0 0 0;
     }
   }
+  @media (min-width: 1024px) {
+    margin: 0 24px 0 0;
+    &:last-child {
+      margin: 0 0 0;
+    }
+  }
 `;
 
 export const Links = styled.div`
@@ -53,6 +85,9 @@ export const Links = styled.div`
     display: flex;
     align-items: center;
     margin: 32px 0 0;
+  }
+  @media (min-width: 1024px) {
+    margin: 32px 0 0 117px;
   }
 `;
 
@@ -67,6 +102,9 @@ export const LinksSocial = styled.div`
   }
   @media (min-width: 768px) {
     margin: 0 32px 0 0;
+  }
+  @media (min-width: 1024px) {
+    margin: 0 0 0;
   }
 `;
 
@@ -90,6 +128,9 @@ export const FooterText = styled.div`
     margin: 24px 0 16px;
     display: flex;
     justify-content: space-between;
+  }
+  @media (min-width: 1024px) {
+    margin: 38px 0 16px;
   }
 `;
 

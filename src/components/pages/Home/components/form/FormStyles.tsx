@@ -9,6 +9,9 @@ export const WrapperTrans = styled(DeviceWidth)`
   border-radius: 0 50px 50px 0;
   transform: skewY(8deg);
   margin: 70px 0 0;
+  @media (min-width: 1024px) {
+    height: 474px;
+  }
 `;
 
 export const Wrapper = styled(DeviceWidth)`
@@ -21,6 +24,16 @@ export const Wrapper = styled(DeviceWidth)`
   margin: 340px 0 0;
   transform: skewY(-8deg);
   border-radius: 0 0 50px 0;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    margin: 373px 0 0;
+  }
+  @media (min-width: 1024px) {
+    height: 397px;
+  }
 `;
 
 export const RhombsLeft = styled.div`
@@ -38,6 +51,12 @@ export const RhombsLeft = styled.div`
     top: -150px;
     left: 16px;
   }
+  @media (min-width: 1024px) {
+    width: 151px;
+    height: 114px;
+    top: 26px;
+    left: 480px;
+  }
 `;
 
 export const RhombsRight = styled.div`
@@ -52,6 +71,12 @@ export const RhombsRight = styled.div`
   @media (min-width: 768px) {
     bottom: 450px;
     right: -140px;
+  }
+  @media (min-width: 1024px) {
+    width: 351px;
+    height: 266px;
+    bottom: 38px;
+    right: -194px;
   }
 `;
 
@@ -70,6 +95,11 @@ export const H1 = styled.div`
     line-height: 39px;
     margin: -240px 0 0;
   }
+  @media (min-width: 1024px) {
+    width: 448px;
+    line-height: 38px;
+    text-align: left;
+  }
 `;
 
 export const FormBlock = styled.div`
@@ -81,6 +111,9 @@ export const FormBlock = styled.div`
   @media (min-width: 768px) {
     width: 489px;
     padding: 32px;
+  }
+  @media (min-width: 1024px) {
+    margin: -238px 0 0 7px;
   }
 `;
 
@@ -206,6 +239,11 @@ export const Map = styled.img`
     max-width: 699px;
     margin: -85px 0 0 -164px;
     z-index: -1;
+  }
+  @media (min-width: 1024px) {
+    min-width: 752px;
+    max-width: 752px;
+    margin: -483px 0 0 -246px;
   }
 `;
 

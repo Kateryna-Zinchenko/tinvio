@@ -11,7 +11,8 @@ import {
     Pages,
     PrivacyPolicy,
     Stick,
-    Stick2,
+    Stick2, StickLinks,
+    StickLogo,
     Terms,
     Text,
     Wrapper
@@ -26,6 +27,7 @@ const Footer = () => {
         <section className='footer'>
             <Wrapper>
                 <Logo src='/assets/images/logo.svg'/>
+                <StickLogo/>
                 <Pages>
                     <Page isActive={window.location.pathname === '/home' || window.location.pathname === '/'}
                           onClick={() => onLinkClick('home')}>Home</Page>
@@ -41,6 +43,7 @@ const Footer = () => {
                         <img src="/assets/images/linked-in.png" alt="#"/>
                         <img src="/assets/images/instagram.png" alt="#"/>
                     </LinksSocial>
+                    <StickLinks/>
                     <LinksStore>
                         <img src="/assets/images/google-play.png" alt="#"/>
                         <img src="/assets/images/app-store.png" alt="#"/>

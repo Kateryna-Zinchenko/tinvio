@@ -27,6 +27,12 @@ export const RhombsTop = styled.div`
   @media (min-width: 768px) {
     right: -93px;
   }
+  @media (min-width: 1024px) {
+    width: 427px;
+    height: 323px;
+    top: -225px;
+    right: -85px;
+  }
 `;
 
 export const RhombusLeft = styled.div`
@@ -53,6 +59,10 @@ export const RhombusRight = styled.div`
   @media (min-width: 768px) {
     top: -215px;
     right: -457px;
+  }
+  @media (min-width: 1024px) {
+    top: -274px;
+    right: -356px;
   }
 `;
 
@@ -99,6 +109,10 @@ export const H1 = styled.div`
     font-size: 32px;
     line-height: 39px;
   }
+  @media (min-width: 1024px) {
+    line-height: 38px;
+    padding: 51px 0 0;
+  }
 `;
 export const Border = styled.div`
   height: 1px;
@@ -110,6 +124,10 @@ export const Border = styled.div`
     width: 336px;
     padding: 0 0 0 0;
     margin: 16px auto 0;
+  }
+  @media (min-width: 1024px) {
+    width: 666px;
+    margin: 19px auto 0;
   }
 `;
 
@@ -123,12 +141,21 @@ export const Icons = styled.div`
     flex-direction: unset;
     flex-wrap: wrap;
   }
+  @media (min-width: 1024px) {
+    width: 942px;
+    margin: 31px auto 0;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 `;
 
 export const Icon1 = styled.img`
   width: 189px;
   height: 28px;
   margin: 0 0 48px;
+  @media (min-width: 1024px) {
+    margin: 0 0 0;
+  }
 `;
 
 export const Icon2 = styled.img`
@@ -137,6 +164,9 @@ export const Icon2 = styled.img`
   margin: 0 0 48px;
   @media (min-width: 768px) {
     margin: -44px 0 0 98px;
+  }
+  @media (min-width: 1024px) {
+    margin: 0 0 0;
   }
 `;
 
@@ -147,6 +177,9 @@ export const Icon3 = styled.img`
   @media (min-width: 768px) {
     margin: 0 0 0 18px;
   }
+  @media (min-width: 1024px) {
+    margin: 0 0 0;
+  }
 `;
 
 export const Icon4 = styled.img`
@@ -154,5 +187,8 @@ export const Icon4 = styled.img`
   height: 20px;
   @media (min-width: 768px) {
     margin: 20px 0 0 133px;
+  }
+  @media (min-width: 1024px) {
+    margin: 0 0 0;
   }
 `;
