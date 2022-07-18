@@ -71,6 +71,10 @@ export const Inner = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: 1024px) {
+    padding: 0 40px;
+    flex-direction: row-reverse;
+  }
 `;
 
 export const H1 = styled.div`
@@ -109,7 +113,7 @@ export const Button = styled.button`
   position: relative;
   width: 188px;
   height: 48px;
-  margin: 32px 0 0;
+  margin: 32px auto 0;
   padding: 0 0 0 18px;
   font-family: 'Gilroy';
   font-style: normal;
@@ -143,6 +147,9 @@ export const Tabs = styled(DeviceWidth)`
   @media (min-width: 768px) {
     margin: 53px auto 0;
     padding: 18px 0 0 128px;
+  }
+  @media (min-width: 1024px) {
+    padding: 0 0 0 510px;
   }
 `;
 
@@ -301,8 +308,8 @@ export const ArrowChats = styled.div`
   position: absolute;
   width: 82px;
   height: 55px;
-  right: 102px;
-  top: 72px;
+  right: 27%;
+  top: 15%;
   @media (min-width: 768px) {
     width: 125px;
     height: 82px;
@@ -317,8 +324,8 @@ export const ArrowOrders = styled.div`
   position: absolute;
   width: 82px;
   height: 55px;
-  left: 101px;
-  top: 155px;
+  left: 27%;
+  top: 47%;
   @media (min-width: 768px) {
     width: 125px;
     height: 83px;

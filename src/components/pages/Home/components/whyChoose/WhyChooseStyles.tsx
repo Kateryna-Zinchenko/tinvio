@@ -443,6 +443,7 @@ export const ArrowBoxLeft = styled.div`
   height: 40px;
   background: #D2D2D2;
   border-radius: 8px;
+  cursor: pointer;
 `;
 export const ArrowBoxRight = styled(ArrowBoxLeft)`
   
