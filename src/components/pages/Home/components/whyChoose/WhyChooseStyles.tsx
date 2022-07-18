@@ -37,6 +37,12 @@ export const RhombsBottom = styled.div`
     bottom: -118px;
     left: -159px;
   }
+  @media (min-width: 1024px) {
+    width: 465px;
+    height: 352px;
+    bottom: -188px;
+    left: -146px;
+  }
 `;
 
 export const Stars = styled.img`
@@ -82,7 +88,7 @@ export const Slider = styled.div`
     margin: 32px 0 0;
   }
   @media (min-width: 1024px) {
-    margin: 41px 0 0;
+    margin: 41px 0 0 50px;
   }
 `;
 
