@@ -45,7 +45,8 @@ import {
 } from "./WhyChooseStyles";
 
 const WhyChoose = () => {
-    const [slide, setSlide]: any = useState('first-slide')
+    const [slide, setSlide]: any = useState('first-slide');
+    console.log(slide)
     return (
         <section className='why-choose'>
             <Wrapper>
@@ -74,10 +75,10 @@ const WhyChoose = () => {
                                 <Quotes1/>
                             </Caption>
                             <Arrows1>
-                                <ArrowBoxLeft>
+                                <ArrowBoxLeft onClick={() => setSlide('fourth-slide')}>
                                     <ArrowLeft/>
                                 </ArrowBoxLeft>
-                                <ArrowBoxRight>
+                                <ArrowBoxRight onClick={() => setSlide('second-slide')}>
                                     <ArrowRight/>
                                 </ArrowBoxRight>
                             </Arrows1>
@@ -102,10 +103,10 @@ const WhyChoose = () => {
                                 <Quotes2/>
                             </Caption2>
                             <Arrows2>
-                                <ArrowBoxLeft>
+                                <ArrowBoxLeft onClick={() => setSlide('first-slide')}>
                                     <ArrowLeft/>
                                 </ArrowBoxLeft>
-                                <ArrowBoxRight>
+                                <ArrowBoxRight onClick={() => setSlide('third-slide')}>
                                     <ArrowRight/>
                                 </ArrowBoxRight>
                             </Arrows2>
@@ -130,10 +131,10 @@ const WhyChoose = () => {
                                 <Quotes3/>
                             </Caption3>
                             <Arrows3>
-                                <ArrowBoxLeft>
+                                <ArrowBoxLeft onClick={() => setSlide('second-slide')}>
                                     <ArrowLeft/>
                                 </ArrowBoxLeft>
-                                <ArrowBoxRight>
+                                <ArrowBoxRight onClick={() => setSlide('fourth-slide')}>
                                     <ArrowRight/>
                                 </ArrowBoxRight>
                             </Arrows3>
@@ -158,10 +159,10 @@ const WhyChoose = () => {
                                 <Quotes4/>
                             </Caption4>
                             <Arrows4>
-                                <ArrowBoxLeft>
+                                <ArrowBoxLeft onClick={() => {setSlide('third-slide')}}>
                                     <ArrowLeft/>
                                 </ArrowBoxLeft>
-                                <ArrowBoxRight>
+                                <ArrowBoxRight onClick={() => setSlide('first-slide')}>
                                     <ArrowRight/>
                                 </ArrowBoxRight>
                             </Arrows4>
