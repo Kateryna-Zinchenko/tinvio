@@ -23,13 +23,15 @@ const HowItWorks = () => {
                 <Wrapper>
                     <Inner>
                         <Rhombus/>
-
+                        <div>
                         <H1>Check out how it works</H1>
                         <Text>
                             It’s easy! Exchange messages, create or confirm orders, send invoices, and collect payments
                             across your supply chain — all within one dashboard.
                         </Text>
                         <Button>Play Video</Button>
+                        </div>
+                        <div>
                         <Tabs>
 
                             <Tab1>
@@ -58,6 +60,7 @@ const HowItWorks = () => {
                             </Tab3>
 
                         </Tabs>
+                        </div>
                         <RhombsLeft/>
                         <RhombsRight/>
                     </Inner>
