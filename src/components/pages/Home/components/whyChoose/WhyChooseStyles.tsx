@@ -16,6 +16,9 @@ export const Wrapper = styled(DeviceWidth)`
   @media (min-width: 768px) {
     height: 958px;
   }
+  @media (min-width: 1024px) {
+    height: 668px;
+  }
 `;
 
 export const RhombsBottom = styled.div`
@@ -67,12 +70,19 @@ export const H1 = styled.div`
     font-size: 32px;
     line-height: 39px;
   }
+  @media (min-width: 1024px) {
+    line-height: 38px;
+    padding: 82px 0 0;
+  }
 `;
 
 export const Slider = styled.div`
   margin: 36px 0 0;
   @media (min-width: 768px) {
     margin: 32px 0 0;
+  }
+  @media (min-width: 1024px) {
+    margin: 41px 0 0;
   }
 `;
 
@@ -88,12 +98,21 @@ export const Slide1 = styled.div<{ slide: string }>`
     height: 610px;
     padding: 30px 0 0;
   }
+  @media (min-width: 1024px) {
+    position: relative;
+    width: 947px;
+    height: 377px;
+    padding: 32px 0 30px 0;
+  }
 `;
 export const Slide2 = styled(Slide1)<{ slide: string }>`
   display: ${({slide}) => (slide === 'second-slide' ? 'block' : 'none')};
   padding: 6px 0 0;
   @media (min-width: 768px) {
     padding: 0 0 0;
+  }
+  @media (min-width: 1024px) {
+    padding: 3px 0 0;
   }
 `;
 export const Slide3 = styled(Slide1)<{ slide: string }>`
@@ -112,6 +131,13 @@ export const Img1 = styled.img`
     height: 287px;
     margin: 0 0 17px 102px;
   }
+  @media (min-width: 1024px) {
+    width: 328px;
+    height: 317px;
+    margin: -2px 0 0 583px;
+    position: relative;
+    z-index: 1;
+  }
 `;
 export const Img2 = styled.img`
   width: 189px;
@@ -120,13 +146,25 @@ export const Img2 = styled.img`
     width: 249px;
     margin: 0 0 0 157px;
   }
+  @media (min-width: 1024px) {
+    width: 278px;
+    margin: 0 0 0 669px;
+    position: relative;
+    z-index: 1;
+  }
 `;
 export const Img3 = styled.img`
   width: 243px;
-  margin: -21px 0 0px 67px;
+  margin: -21px 0 0 67px;
   @media (min-width: 768px) {
     width: 318px;
     margin: -21px 0 -13px 112px;
+  }
+  @media (min-width: 1024px) {
+    position: relative;
+    z-index: 1;
+    width: 355px;
+    margin: -28px 0 0 580px
   }
 `;
 export const Img4 = styled.img`
@@ -136,19 +174,47 @@ export const Img4 = styled.img`
     width: 235px;
     margin: 5.5px 0 0 140px;
   }
+  @media (min-width: 1024px) {
+    position: relative;
+    z-index: 1;
+    width: 278px;
+    margin: -8px 0 0 653px;
+  }
 `;
 
-export const TextBox = styled.div`
+export const TextBox1 = styled.div`
   width: 327px;
   background: #F1F1F1;
-  padding: 20px 0 20px 24px;
+  padding: 24px 0 24px 24px;
   border-radius: 16px;
   @media (min-width: 768px) {
     width: 474px;
   }
+  @media (min-width: 1024px) {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 724px;
+    height: 144px;
+  }
+`;
+export const TextBox2 = styled(TextBox1)`
+  @media (min-width: 1024px) {
+    width: 792px;
+  }
+`;
+export const TextBox3 = styled(TextBox1)`
+  @media (min-width: 1024px) {
+    width: 653px;
+  }
+`;
+export const TextBox4 = styled(TextBox1)`
+  @media (min-width: 1024px) {
+    width: 756px;
+  }
 `;
 
-export const Text = styled.div`
+export const Text1 = styled.div`
   width: 287px;
   font-family: 'Inter';
   font-style: normal;
@@ -158,6 +224,26 @@ export const Text = styled.div`
   color: #212121;
   @media (min-width: 768px) {
     width: 418px;
+  }
+  @media (min-width: 1024px) {
+    width: 469px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+`;
+export const Text2 = styled(Text1)`
+  @media (min-width: 1024px) {
+    width: 548px;
+  }
+`;
+export const Text3 = styled(Text1)`
+  @media (min-width: 1024px) {
+    width: 513px;
+  }
+`;
+export const Text4 = styled(Text1)`
+  @media (min-width: 1024px) {
+    width: 541px;
   }
 `;
 
@@ -170,12 +256,18 @@ export const Caption = styled.div`
     margin: 20px auto 0;
     width: 426px;
   }
+  @media (min-width: 1024px) {
+    margin: -163px 0 0 56px
+  }
 `;
 
 export const Caption2 = styled(Caption)`
   margin: 24px auto 0;
   @media (min-width: 768px) {
     margin: 26px auto 0;
+  }
+  @media (min-width: 1024px) {
+    margin: -181px 0 0 56px;
   }
 `;
 
@@ -184,12 +276,18 @@ export const Caption3 = styled(Caption)`
   @media (min-width: 768px) {
     margin: 28px auto 0;
   }
+  @media (min-width: 1024px) {
+    margin: -179px 0 0 56px;
+  }
 `;
 
 export const Caption4 = styled(Caption)`
   margin: 24px auto 0;
   @media (min-width: 768px) {
     margin: 28px auto 0;
+  }
+  @media (min-width: 1024px) {
+    margin: -179px 0 0 56px;
   }
 `;
 
@@ -210,7 +308,6 @@ export const Logo2 = styled.img`
     width: 70px;
     height: 52px;
   }
-  
 `;
 export const Logo3 = styled.img`
   width: 85px;
@@ -227,7 +324,11 @@ export const Logo4 = styled.img`
   margin: 0 12px 0 0;
   @media (min-width: 768px) {
     width: 94px;
-    height: 48px;;
+    height: 48px;
+  }
+  @media (min-width: 1024px) {
+    width: 96px;
+    height: 49px;
   }
 `;
 
@@ -271,24 +372,78 @@ export const Quotes1 = styled.div`
   width: 24px;
   height: 24px;
   margin: 10px 0 0;
+  @media (min-width: 1024px) {
+    margin: -59px -67px 0 0;
+    z-index: 1;
+  }
 `;
 export const Quotes2 = styled(Quotes1)`
   margin: 0 0 0;
   @media (min-width: 768px) {
     margin: 4px 0 0;
   }
+  @media (min-width: 1024px) {
+    margin: -72px -148px 0 0;
+  }
 `;
 export const Quotes3 = styled(Quotes1)`
   margin: 2px 0 0;
   @media (min-width: 768px) {
-    margin: 2px 0 0;
+    margin: -77px -108px 0 0;
   }
 `;
 export const Quotes4 = styled(Quotes1)`
   margin: 0 0 0;
   @media (min-width: 768px) {
-    margin: 2px 0 0;
+    margin: -75px -137px 0 0;
   }
+`;
+
+export const Arrows1 = styled.div`
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+    width: 104px;
+    justify-content: space-between;
+    margin: 40px 0 0 56px;
+  }
+`;
+export const Arrows2 = styled(Arrows1)`
+  @media (min-width: 1024px) {
+    margin: 37px 0 0 56px;
+  }
+`;
+export const Arrows3 = styled(Arrows1)`
+  @media (min-width: 1024px) {
+    margin: 37px 0 0 56px;
+  }
+`;
+export const Arrows4 = styled(Arrows1)`
+  @media (min-width: 1024px) {
+    margin: 41px 0 0 56px;
+  }
+`;
+
+export const ArrowBoxLeft = styled.div`
+  width: 40px;
+  height: 40px;
+  background: #D2D2D2;
+  border-radius: 8px;
+`;
+export const ArrowBoxRight = styled(ArrowBoxLeft)`
+  
+`;
+
+export const ArrowLeft = styled.div`
+  background: url("/assets/icons/arrow-left.png") no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 20px;
+  margin: 10px 0 10px 13px;
+`;
+export const ArrowRight = styled(ArrowLeft)`
+  transform: rotate(180deg);
+  margin: 10px 0 10px 15px;
 `;
 
 export const Dots = styled.div`
@@ -310,6 +465,10 @@ export const Dot1 = styled.div<{ slide: string }>`
           'radial-gradient(136.24% 142.18% at 50% 50%, #FFFFFF 0%, rgba(250, 250, 250, 0.8) 100%)' :
           'radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%)')};
   cursor: pointer;
+  @media (min-width: 768px) {
+    width: 12px;
+    height: 12px;
+  }
 `;
 
 export const Dot2 = styled(Dot1)`
