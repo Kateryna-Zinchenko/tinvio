@@ -79,6 +79,9 @@ export const RhombusLeftBottom = styled.div`
     top: 288px;
     left: -280px;
   }
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const RhombusRightBottom = styled.div`

@@ -93,6 +93,8 @@ export const Slide1 = styled.div<{ slide: string }>`
   background: #FFFFFF;
   border-radius: 32px;
   padding: 22px 0 0;
+  //animation-duration: 0.6s;
+  //animation-name: slidein;
   @media (min-width: 768px) {
     width: 490px;
     height: 610px;
@@ -389,12 +391,18 @@ export const Quotes2 = styled(Quotes1)`
 export const Quotes3 = styled(Quotes1)`
   margin: 2px 0 0;
   @media (min-width: 768px) {
+    margin: 2px 0 0;
+  }
+  @media (min-width: 1024px) {
     margin: -77px -108px 0 0;
   }
 `;
 export const Quotes4 = styled(Quotes1)`
   margin: 0 0 0;
   @media (min-width: 768px) {
+    margin: 2px 0 0;
+  }
+  @media (min-width: 1024px) {
     margin: -75px -137px 0 0;
   }
 `;
@@ -410,12 +418,12 @@ export const Arrows1 = styled.div`
 `;
 export const Arrows2 = styled(Arrows1)`
   @media (min-width: 1024px) {
-    margin: 37px 0 0 56px;
+    margin: 37.5px 0 0 56px;
   }
 `;
 export const Arrows3 = styled(Arrows1)`
   @media (min-width: 1024px) {
-    margin: 37px 0 0 56px;
+    margin: 37.5px 0 0 56px;
   }
 `;
 export const Arrows4 = styled(Arrows1)`
