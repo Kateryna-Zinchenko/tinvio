@@ -13,8 +13,8 @@ import {
     Slider,
     Slide1,
     Img1,
-    Text,
-    TextBox,
+    Text1,
+    TextBox1,
     Logo1,
     Name,
     Position,
@@ -23,7 +23,25 @@ import {
     LogoText,
     Img2,
     Img3,
-    Img4, Slide2, Slide3, Slide4, Logo2, Logo3, Logo4, Caption2, Caption3, Caption4, Quotes3, Quotes4, Quotes2
+    Img4,
+    Slide2,
+    Slide3,
+    Slide4,
+    Logo2,
+    Logo3,
+    Logo4,
+    Caption2,
+    Caption3,
+    Caption4,
+    Quotes3,
+    Quotes4,
+    Quotes2,
+    TextBox2,
+    TextBox3,
+    TextBox4,
+    Text2,
+    Text3,
+    Text4, Arrows1, ArrowLeft, ArrowRight, Arrows2, Arrows3, Arrows4, ArrowBoxLeft, ArrowBoxRight
 } from "./WhyChooseStyles";
 
 const WhyChoose = () => {
@@ -39,12 +57,12 @@ const WhyChoose = () => {
                     <Slider>
                         <Slide1 slide={slide}>
                             <Img1 src='/assets/images/why-choose-eggs.png'/>
-                            <TextBox>
-                                <Text>Tinvio definitely helps to reduce the time and errors in order management
+                            <TextBox1>
+                                <Text1>Tinvio definitely helps to reduce the time and errors in order management
                                     between customers and suppliers. It’s super easy to use and available on mobile and
                                     web, and the team are friendly and always helpful.
-                                </Text>
-                            </TextBox>
+                                </Text1>
+                            </TextBox1>
                             <Caption>
                                 <LogoText>
                                     <Logo1 src='/assets/images/why-choose-logo-1.png'/>
@@ -55,16 +73,24 @@ const WhyChoose = () => {
                                 </LogoText>
                                 <Quotes1/>
                             </Caption>
+                            <Arrows1>
+                                <ArrowBoxLeft>
+                                    <ArrowLeft/>
+                                </ArrowBoxLeft>
+                                <ArrowBoxRight>
+                                    <ArrowRight/>
+                                </ArrowBoxRight>
+                            </Arrows1>
                         </Slide1>
 
                         <Slide2 slide={slide}>
                             <Img2 src='/assets/images/why-choose-milk.png'/>
-                            <TextBox>
-                                <Text>Tinvio helps our business run smoother. We can manage our customer's orders,
+                            <TextBox2>
+                                <Text2>Tinvio helps our business run smoother. We can manage our customer's orders,
                                     receivables, and most importantly, trace and reconcile their payments without
                                     checking banking apps or statements.
-                                </Text>
-                            </TextBox>
+                                </Text2>
+                            </TextBox2>
                             <Caption2>
                                 <LogoText>
                                     <Logo2 src='/assets/images/why-choose-logo-2.png'/>
@@ -75,16 +101,24 @@ const WhyChoose = () => {
                                 </LogoText>
                                 <Quotes2/>
                             </Caption2>
+                            <Arrows2>
+                                <ArrowBoxLeft>
+                                    <ArrowLeft/>
+                                </ArrowBoxLeft>
+                                <ArrowBoxRight>
+                                    <ArrowRight/>
+                                </ArrowBoxRight>
+                            </Arrows2>
                         </Slide2>
 
                         <Slide3 slide={slide}>
                             <Img3 src='/assets/images/why-choose-cup.png'/>
-                            <TextBox>
-                                <Text>With Tinvio, it's easier for my customers to make payments across various
+                            <TextBox3>
+                                <Text3>With Tinvio, it's easier for my customers to make payments across various
                                     methods. Every payment is also collected in one business account where funds can be
                                     withdrawn instantly at any time.
-                                </Text>
-                            </TextBox>
+                                </Text3>
+                            </TextBox3>
                             <Caption3>
                                 <LogoText>
                                     <Logo3 src='/assets/images/why-choose-logo-3.png'/>
@@ -95,16 +129,24 @@ const WhyChoose = () => {
                                 </LogoText>
                                 <Quotes3/>
                             </Caption3>
+                            <Arrows3>
+                                <ArrowBoxLeft>
+                                    <ArrowLeft/>
+                                </ArrowBoxLeft>
+                                <ArrowBoxRight>
+                                    <ArrowRight/>
+                                </ArrowBoxRight>
+                            </Arrows3>
                         </Slide3>
 
                         <Slide4 slide={slide}>
                             <Img4 src='/assets/images/why-choose-spoon.png'/>
-                            <TextBox>
-                                <Text>Tinvio has been a foundational partner and solution. We now have faster and more
+                            <TextBox4>
+                                <Text4>Tinvio has been a foundational partner and solution. We now have faster and more
                                     efficient communication with our clients, which makes order processing and
                                     deliveries smoother than ever before.
-                                </Text>
-                            </TextBox>
+                                </Text4>
+                            </TextBox4>
                             <Caption4>
                                 <LogoText>
                                     <Logo4 src='/assets/images/why-choose-logo-4.png'/>
@@ -115,6 +157,14 @@ const WhyChoose = () => {
                                 </LogoText>
                                 <Quotes4/>
                             </Caption4>
+                            <Arrows4>
+                                <ArrowBoxLeft>
+                                    <ArrowLeft/>
+                                </ArrowBoxLeft>
+                                <ArrowBoxRight>
+                                    <ArrowRight/>
+                                </ArrowBoxRight>
+                            </Arrows4>
                         </Slide4>
                     </Slider>
                     <Dots>
