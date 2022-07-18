@@ -80,7 +80,10 @@ export const RhombusLeftBottom = styled.div`
     left: -280px;
   }
   @media (min-width: 1024px) {
-    display: none;
+    width: 454px;
+    height: 454px;
+    top: 389px;
+    left: -245px;
   }
 `;
 
@@ -96,7 +99,13 @@ export const RhombusRightBottom = styled.div`
   @media (min-width: 768px) {
     top: 667px;
     right: -559px;
-}
+  }
+  @media (min-width: 1024px) {
+    width: 589px;
+    height: 589px;
+    top: 560px;
+    right: -306px;
+  }
 `;
 
 export const H1 = styled.div`
