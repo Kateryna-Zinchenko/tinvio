@@ -191,7 +191,7 @@ export const Tabs = styled(DeviceWidth)`
   }
   @media (min-width: 1024px) {
     margin: 0;
-    padding: 21px 0 8px 510px;
+    padding: 21px 0 8px 444px;
   }
 `;
 
@@ -358,7 +358,7 @@ export const ArrowChats = styled.div`
     top: 24%;
   }
   @media (min-width: 1024px) {
-    right: 11%;
+    right: 17.5%;
     top: 24%;
   }
 `;
@@ -378,7 +378,7 @@ export const ArrowOrders = styled.div`
     top: 52%;
   }
   @media (min-width: 1024px) {
-    left: 64%;
+    left: 58%;
     top: 52%;
   }
 `;

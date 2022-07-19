@@ -7,7 +7,6 @@ import {
     Button,
     Dot,
     Li,
-    Cursor,
     Option2,
     Option3,
     Text2,
@@ -38,6 +37,7 @@ const Features = () => {
                     <H1>
                         Smarter supply chain transactions. <span>{isText}</span>
                     </H1>
+
                     <Options>
                         <Option isOption={isOption} onClick={() => {
                             setIsOption('chats')
