@@ -14,7 +14,19 @@ import {
     TabText2,
     TabText3,
     ArrowChats,
-    ArrowOrders, Icon1, Icon2, Icon3, StarsTab1, StarsTab2, StarsTopTab3, StarsRightTab3, RhombsLeft, RhombsRight, Rhombus
+    ArrowOrders,
+    Icon1,
+    Icon2,
+    Icon3,
+    StarsTab1,
+    StarsTab2,
+    StarsTopTab3,
+    StarsRightTab3,
+    RhombsLeft,
+    RhombsRight,
+    Rhombus,
+    WrapperRight,
+    WrapperLeft
 } from './HowItWorksStyles';
 
 const HowItWorks = () => {
@@ -23,15 +35,15 @@ const HowItWorks = () => {
                 <Wrapper>
                     <Inner>
                         <Rhombus/>
-                        <div>
+                        <WrapperRight>
                         <H1>Check out how it works</H1>
                         <Text>
                             It’s easy! Exchange messages, create or confirm orders, send invoices, and collect payments
                             across your supply chain — all within one dashboard.
                         </Text>
                         <Button>Play Video</Button>
-                        </div>
-                        <div>
+                        </WrapperRight>
+                        <WrapperLeft>
                         <Tabs>
 
                             <Tab1>
@@ -60,7 +72,7 @@ const HowItWorks = () => {
                             </Tab3>
 
                         </Tabs>
-                        </div>
+                        </WrapperLeft>
                         <RhombsLeft/>
                         <RhombsRight/>
                     </Inner>

@@ -15,6 +15,9 @@ export const Wrapper = styled.div`
   @media (min-width: 768px) {
     height: 927px;
   }
+  @media (min-width: 1024px) {
+    height: 649px;
+  }
 `;
 
 export const Rhombus = styled.div`
@@ -32,6 +35,21 @@ export const Rhombus = styled.div`
   }
 `;
 
+export const WrapperRight = styled.div`
+  @media (min-width: 1024px) {
+    margin: -42px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
+
+export const WrapperLeft = styled.div`
+  @media (min-width: 1024px) {
+    margin: 43px 75px 0 0;
+  }
+`;
+
 export const RhombsLeft = styled.div`
   background: url("/assets/images/rhombs-left-why-choose.png") no-repeat;
   background-size: contain;
@@ -40,12 +58,17 @@ export const RhombsLeft = styled.div`
   height: 151px;
   bottom: 118px;
   left: -153px;
+  z-index: -1;
   @media (min-width: 768px) {
     bottom: 446px;    
     left: -86px;
     width: 297px;
     height: 225px;
     background-size: cover;
+  }
+  @media (min-width: 1024px) {
+    bottom: -142px;
+    left: -73px;
   }
 `;
 
@@ -60,6 +83,12 @@ export const RhombsRight = styled.div`
   @media (min-width: 768px) {
     bottom: 35px;
     right: -130px;
+  }
+  @media (min-width: 1024px) {
+    width: 254px;
+    height: 192px;
+    bottom: 40px;
+    right: -99px;
   }
 `;
 
@@ -91,6 +120,10 @@ export const H1 = styled.div`
     line-height: 39px;
     padding: 85px 0 0;
   }
+  @media (min-width: 1024px) {
+    line-height: 38px;
+    padding: 0;
+  }
 `;
 
 export const Text = styled.div`
@@ -106,6 +139,11 @@ export const Text = styled.div`
   @media (min-width: 768px) {
     font-size: 16px;
     width: 429px;
+  }
+  @media (min-width: 1024px) {
+    padding: 17px 0 0;
+    text-align: left;
+    width: 356px;
   }
 `;
 
@@ -138,6 +176,9 @@ export const Button = styled.button`
     height: 12px;
     left: 51px;
   }
+  @media (min-width: 1024px) {
+    margin: 32px 0 0;
+  }
 `;
 
 export const Tabs = styled(DeviceWidth)`
@@ -149,7 +190,8 @@ export const Tabs = styled(DeviceWidth)`
     padding: 18px 0 0 128px;
   }
   @media (min-width: 1024px) {
-    padding: 0 0 0 510px;
+    margin: 0;
+    padding: 21px 0 8px 510px;
   }
 `;
 
@@ -316,6 +358,10 @@ export const ArrowChats = styled.div`
     right: 31%;
     top: 24%;
   }
+  @media (min-width: 1024px) {
+    right: 11%;
+    top: 24%;
+  }
 `;
 
 export const ArrowOrders = styled.div`
@@ -330,6 +376,10 @@ export const ArrowOrders = styled.div`
     width: 125px;
     height: 83px;
     left: 36%;
+    top: 52%;
+  }
+  @media (min-width: 1024px) {
+    left: 64%;
     top: 52%;
   }
 `;
