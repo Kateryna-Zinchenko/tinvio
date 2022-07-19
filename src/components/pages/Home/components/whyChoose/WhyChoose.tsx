@@ -46,7 +46,6 @@ import {
 
 const WhyChoose = () => {
     const [slide, setSlide]: any = useState('first-slide');
-    console.log(slide)
     return (
         <section className='why-choose'>
             <Wrapper>
@@ -54,7 +53,6 @@ const WhyChoose = () => {
                 <Stars src='/assets/images/stars-why-choose.png'/>
                 <Inner>
                     <H1>Why choose Tinvio?</H1>
-
                     <Slider>
                         <Slide1 slide={slide}>
                             <Img1 src='/assets/images/why-choose-eggs.png'/>
