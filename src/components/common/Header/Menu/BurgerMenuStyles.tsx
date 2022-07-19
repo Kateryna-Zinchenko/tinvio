@@ -107,11 +107,44 @@ export const Language = styled.div`
   color: #212121;
 `;
 
-export const ArrowDown = styled.div`
+export const ArrowDown = styled.div<{ isOpenLanguage: boolean }>`
   background: url("/assets/images/arrowDown.svg") no-repeat;
   background-size: contain;
   width: 10px;
   height: 6px;
+  transform: ${({isOpenLanguage}) => (isOpenLanguage === true ? 'rotate(180deg)' : 'rotate(0deg)')};
+`;
+
+export const LanguageList = styled.div<{ isOpenLanguage: boolean }>`
+  display: ${({isOpenLanguage}) => (isOpenLanguage === true ? 'block' : 'none')};
+  position: absolute;
+  top: 39px;
+  left: 131px;
+  width: 48px;
+  height: 139px;
+  background: #FFFFFF;
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin: 23px 0 0 17px;
+`;
+
+export const Flags = styled.div`
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0 0;
+`;
+
+export const Flag = styled.img`
+  width: 24px;
+`;
+
+export const Stick = styled.div`
+  width: 24px;
+  height: 1px;
+  background: #F3F4F5;
 `;
 
 export const CloseWrapper = styled.div`
@@ -178,16 +211,18 @@ export const Page = styled.li<{ isActive: boolean }>`
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   margin: 0 0 40px;
+
   &:last-child {
     margin: 0 0 0;
   }
+
   @media (min-width: 768px) {
     margin: 0 0 48px;
   }
 `;
 
 export const Footer = styled.div`
-    display: none;
+  display: none;
   @media (min-width: 768px) {
     display: block;
     margin: 0 auto;
@@ -221,6 +256,7 @@ export const LinksSocial = styled.div`
   width: 80px;
   display: flex;
   justify-content: space-between;
+
   & img {
     width: 32px;
     height: 32px;
@@ -233,6 +269,7 @@ export const LinksStore = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 0 0 32px;
+
   & img {
     width: 113px;
     cursor: pointer;
