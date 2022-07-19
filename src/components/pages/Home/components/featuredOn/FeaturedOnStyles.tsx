@@ -14,6 +14,10 @@ export const Wrapper = styled.div`
   @media (min-width: 768px) {
     margin: 173px 0 0;
   }
+  @media (min-width: 1024px) {
+    overflow: hidden;
+    margin: 193px 0 0;
+  }
 `;
 
 export const RhombsTop = styled.div`
