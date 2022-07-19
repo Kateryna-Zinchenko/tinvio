@@ -252,8 +252,8 @@ export const Stars = styled.div`
     left: -192px;
   }
   @media (min-width: 1024px) {
-    top: 88px;
-    left: -268px;
+    top: 112px;
+    left: -294px;
   }
 `;
 
@@ -335,10 +335,10 @@ export const DeviceLeft = styled.img`
     left: -110px;
   }
   @media (min-width: 1024px) {
-    width: 284px;
+    max-width: 284px;
     height: 472px;
-    top: 0px;
-    left: 0px;
+    top: 81px;
+    left: -217px;
   }
 `;
 
@@ -355,10 +355,10 @@ export const DeviceRight = styled.img`
     right: -121px;
   }
   @media (min-width: 1024px) {
-    width: 284px;
+    max-width: 284px;
     height: 472px;
-    top: 0px;
-    left: 0px;
+    top: 226px;
+    right: -342px;;
   }
 `;
 
