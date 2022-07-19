@@ -4,11 +4,11 @@ export const Wrapper = styled.div`
   width: 100%;
   padding: 24px 0 0;
   @media (min-width: 1024px) {
-    //position: fixed;
+    position: fixed;
     //background: rgba(255, 255, 255, 0.9);
     //backdrop-filter: blur(24px);
     //z-index: 5;
-    padding: 24px 40px 0px;
+    padding: 24px 40px 24px;
   }
 `;
 

@@ -5,6 +5,7 @@ export const WrapperCommon = styled.div`
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: row;
+    margin: 64px 0 0;
   }
 `;
 
