@@ -5,9 +5,9 @@ import {
     Button,
     ChooseLanguage,
     CloseButton,
-    CloseWrapper,
+    CloseWrapper, Flag, Flags,
     Footer,
-    Language,
+    Language, LanguageList,
     LeftWrapper,
     Links,
     LinksSocial, LinksStore,
@@ -15,16 +15,18 @@ import {
     MenuWrapper,
     OpenMenuWrapper,
     Page,
-    Pages, Rhombs, RhombusBottom, RhombusTop,
+    Pages, Rhombs, RhombusBottom, RhombusTop, Stick,
     Wrapper
 } from "./BurgerMenuStyles";
 import {Container} from '../../container/Container';
+import { useToggle } from 'react-use';
 
 interface Props {
     setIsOpenMenu: (value: boolean) => void
 }
 
 const BurgerMenu = ({setIsOpenMenu}: Props) => {
+    const [isOpenLanguage, setIsOpenLanguage] = useToggle(false);
     const nav = useNavigate();
     const onLinkClick = (value: string) => {
         setIsOpenMenu(false)
@@ -44,10 +46,21 @@ const BurgerMenu = ({setIsOpenMenu}: Props) => {
                                     nav('/')
                                 }
                                 } src="/assets/images/logo.svg" alt="#"/>
-                                <ChooseLanguage>
+                                <ChooseLanguage onClick={setIsOpenLanguage}>
                                     <Language>EN</Language>
-                                    <ArrowDown/>
+                                    <ArrowDown isOpenLanguage={isOpenLanguage}/>
                                 </ChooseLanguage>
+                                <LanguageList isOpenLanguage={isOpenLanguage}>
+                                    <Flags>
+                                        <Flag src='/assets/icons/flag-1.png'/>
+                                        <Stick/>
+                                        <Flag src='/assets/icons/flag-2.png'/>
+                                        <Stick/>
+                                        <Flag src='/assets/icons/flag-3.png'/>
+                                        <Stick/>
+                                        <Flag src='/assets/icons/flag-4.png'/>
+                                    </Flags>
+                                </LanguageList>
                             </LeftWrapper>
                             <CloseWrapper onClick={() => setIsOpenMenu(false)}>
                                 <CloseButton/>
