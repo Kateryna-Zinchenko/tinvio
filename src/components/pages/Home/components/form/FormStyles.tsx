@@ -11,6 +11,7 @@ export const WrapperTrans = styled(DeviceWidth)`
   margin: 70px 0 0;
   @media (min-width: 1024px) {
     height: 474px;
+    margin: 327px 0 0
   }
 `;
 

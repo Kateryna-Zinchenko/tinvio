@@ -10,6 +10,9 @@ export const Wrapper = styled.div`
   @media (min-width: 768px) {
     margin: 144px 0 0;
   }
+  @media (min-width: 1024px) {
+    margin: 179px 0 0;
+  }
 `;
 
 export const RhombusLeft = styled.div`
@@ -29,6 +32,13 @@ export const RhombusLeft = styled.div`
     top: -65px;
     left: -164px;
   }
+  @media (min-width: 1024px) {
+    width: 555px;
+    height: 555px;
+    border-radius: 52px;
+    top: -240px;
+    left: -314px;
+  }
 `;
 
 export const RhombusRight = styled.div`
@@ -42,6 +52,14 @@ export const RhombusRight = styled.div`
   transform: rotate(-45deg);
   @media (min-width: 768px) {
     display: none;
+  }
+  @media (min-width: 1024px) {
+    display: block;
+    width: 504px;
+    height: 504px;
+    border-radius: 66px;
+    right: -270px;
+    top: -217px;
   }
 `;
 
@@ -61,6 +79,13 @@ export const RhombusLeftBottom = styled.div`
     top: 134px;
     left: -216px;
   }
+  @media (min-width: 1024px) {
+    width: 555px;
+    height: 555px;
+    border-radius: 52px;
+    top: 128px;
+    left: -346px;
+  }
 `;
 
 export const RhombsLeft = styled.div`
@@ -77,6 +102,12 @@ export const RhombsLeft = styled.div`
     top: 451px;
     left: -140px;
   }
+  @media (min-width: 1024px) {
+    width: 384px;
+    height: 290px;
+    top: 623px;
+    left: -195px;
+  }
 `;
 
 export const RhombsRight = styled.div`
@@ -89,6 +120,13 @@ export const RhombsRight = styled.div`
     top: -132px;
     right: -116px;
     z-index: -1;
+  }
+  @media (min-width: 1024px) {
+    width: 588px;
+    height: 452px;
+    top: -302px;
+    right: -252px;
+    overflow: hidden;
   }
 `;
 
@@ -105,6 +143,9 @@ export const H1 = styled.div`
     font-size: 32px;
     line-height: 39px;
   }
+  @media (min-width: 1024px) {
+    line-height: 38px;
+  }
 `;
 
 export const BoxWrapper = styled.div`
@@ -116,6 +157,10 @@ export const BoxWrapper = styled.div`
   @media (min-width: 768px) {
     width: 154px;
     height: 154px;
+  }
+  @media (min-width: 1024px) {
+    width: 168px;
+    height: 168px;
   }
 `;
 
@@ -133,6 +178,10 @@ export const MainBox = styled.div`
     height: 108px;
     border-radius: 15px;
   }
+  @media (min-width: 1024px) {
+    width: 121px;
+    height: 118px;
+  }
 `;
 
 export const Box = styled.div`
@@ -148,6 +197,10 @@ export const Box = styled.div`
     height: 83px;
     border-radius: 12px;
   }
+  @media (min-width: 1024px) {
+    width: 90px;
+    height: 90px;
+  }
 `;
 
 export const BoxImg1 = styled.img`
@@ -158,6 +211,11 @@ export const BoxImg1 = styled.img`
     width: 56px;
     height: 51px;
   }
+  @media (min-width: 1024px) {
+    width: 61px;
+    height: 56px;
+    transform: rotate(45deg);
+  }
 `;
 export const BoxImg2 = styled(BoxImg1)`
     width: 41px;
@@ -165,6 +223,10 @@ export const BoxImg2 = styled(BoxImg1)`
   @media (min-width: 768px) {
     width: 59px;
     height: 36px;
+  }
+  @media (min-width: 1024px) {
+    width: 65px;
+    height: 40px;
   }
 `;
 export const BoxImg3 = styled(BoxImg1)`
@@ -174,6 +236,10 @@ export const BoxImg3 = styled(BoxImg1)`
     width: 54px;
     height: 54px;
   }
+  @media (min-width: 1024px) {
+    width: 58px;
+    height: 59px;
+  }
 `;
 export const BoxImg4 = styled(BoxImg1)`
     width: 31px;
@@ -182,6 +248,10 @@ export const BoxImg4 = styled(BoxImg1)`
     width: 45px;
     height: 54px;
   }
+  @media (min-width: 1024px) {
+    width: 49px;
+    height: 59px;
+  }
 `;
 export const BoxImg5 = styled(BoxImg1)`
     width: 39px;
@@ -189,6 +259,10 @@ export const BoxImg5 = styled(BoxImg1)`
   @media (min-width: 768px) {
     width: 56px;
     height: 56px;
+  }
+  @media (min-width: 1024px) {
+    width: 61px;
+    height: 61px;
   }
 `;
 export const BoxImg6 = styled.img`
@@ -199,6 +273,11 @@ export const BoxImg6 = styled.img`
     width: 50px;
     height: 56px;
   }
+  @media (min-width: 1024px) {
+    width: 50px;
+    height: 61px;
+    transform: rotate(225deg);
+  }
 `;
 export const BoxImg7 = styled(BoxImg6)`
     width: 37px;
@@ -206,6 +285,10 @@ export const BoxImg7 = styled(BoxImg6)`
   @media (min-width: 768px) {
     width: 54px;
     height: 55px;
+  }
+  @media (min-width: 1024px) {
+    width: 58px;
+    height: 60px;
   }
 `;
 export const BoxImg8 = styled(BoxImg6)`
@@ -215,6 +298,10 @@ export const BoxImg8 = styled(BoxImg6)`
     width: 77px;
     height: 25px;
   }
+  @media (min-width: 1024px) {
+    width: 77px;
+    height: 27px;
+  }
 `;
 export const BoxImg9 = styled(BoxImg6)`
     width: 38px;
@@ -222,6 +309,10 @@ export const BoxImg9 = styled(BoxImg6)`
   @media (min-width: 768px) {
     width: 54px;
     height: 45px;
+  }
+  @media (min-width: 1024px) {
+    width: 59px;
+    height: 49px;
   }
 `;
 
@@ -232,6 +323,10 @@ export const BoxImg10 = styled(BoxImg6)`
     width: 68px;
     height: 63px;
   }
+  @media (min-width: 1024px) {
+    width: 74px;
+    height: 68px;
+  }
 `;
 
 
@@ -239,6 +334,10 @@ export const Boxes1 = styled.div`
   max-width: 106px;
   @media (min-width: 768px) {
     max-width: 154px;
+  }
+  @media (min-width: 1024px) {
+    max-width: 168px;
+    margin: 0 0 -178px 0;
   }
 `;
 
@@ -251,6 +350,9 @@ export const Boxes2 = styled.div`
   @media (min-width: 768px) {
     width: 451px;
   }
+  @media (min-width: 1024px) {
+    width: 455px;
+  }
 `;
 
 export const Boxes3 = styled.div`
@@ -261,6 +363,10 @@ export const Boxes3 = styled.div`
   @media (min-width: 768px) {
     width: 736px;
   }
+  @media (min-width: 1024px) {
+    width: 623px;
+    margin: 0;
+  }
 `;
 
 export const BoxesWrapper = styled.div`
@@ -269,6 +375,10 @@ export const BoxesWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: 32px 0 0;
+  @media (min-width: 1024px) {
+    transform: rotate(-90deg);
+    margin: 223px 0 0px -540px;
+  }
 `;
 
 export const BoxesWrapper2 = styled.div`
@@ -280,6 +390,10 @@ export const BoxesWrapper2 = styled.div`
   transform: rotate(180deg);
   @media (min-width: 768px) {
     margin: -185px 0 0;
+  }
+  @media (min-width: 1024px) {
+    transform: rotate(90deg);
+    margin: -376px 0 0 540px;
   }
 `;
 export const BigBoxWrapper = styled.div`
@@ -293,6 +407,11 @@ export const BigBoxWrapper = styled.div`
     width: 490px;
     height: 490px;
     margin: -185px 0 0;
+  }
+  @media (min-width: 1024px) {
+    width: 468px;
+    height: 468px;
+    margin: -373px auto 0
   }
 `;
 export const PurpleBox = styled.div`
@@ -309,6 +428,11 @@ export const PurpleBox = styled.div`
     height: 347px;
     border-radius: 26px;
   }
+  @media (min-width: 1024px) {
+    width: 329px;
+    height: 329px;
+    border-radius: 24px;
+  }
 `;
 export const MiddleBox = styled(PurpleBox)`
   width: 215px;
@@ -319,6 +443,10 @@ export const MiddleBox = styled(PurpleBox)`
     width: 308px;
     height: 308px;  
   }
+  @media (min-width: 1024px) {
+    width: 292px;
+    height: 292px;
+  }
 `;
 export const RedBox = styled(MiddleBox)`
   height: 182px;
@@ -327,6 +455,10 @@ export const RedBox = styled(MiddleBox)`
   @media (min-width: 768px) {
     width: 259px;
     height: 259px;
+  }
+  @media (min-width: 1024px) {
+    width: 246px;
+    height: 246px;
   }
 `;
 export const BoxInner = styled.div`
@@ -341,6 +473,12 @@ export const BoxInner = styled.div`
       width: 196px;
       height: 73px;
       margin: 17px 0 0;
+    }
+  }
+  @media (min-width: 1024px) {
+    & img {
+      width: 186px;
+      height: 70px;
     }
   }
 `;
@@ -358,5 +496,9 @@ export const Text = styled.div`
     font-size: 32px;
     line-height: 39px;
     padding: 57px 0 0;
+  }
+  @media (min-width: 1024px) {
+    font-size: 30px;
+    line-height: 37px;
   }
 `;

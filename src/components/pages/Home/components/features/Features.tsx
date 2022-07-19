@@ -22,7 +22,8 @@ import {
     RhombsBottom,
     RhombsTop,
     Rhombus,
-    H1
+    H1,
+    WrapperCommon
 } from "./FeaturesStyles";
 
 const Features = () => {
@@ -31,18 +32,18 @@ const Features = () => {
 
     return (
         <section className='features'>
-            <Container>
+            <WrapperCommon>
                 <Wrapper>
                     <Rhombus/>
                     <H1>
-                            Smarter supply chain transactions. <span>{isText}</span>
+                        Smarter supply chain transactions. <span>{isText}</span>
                     </H1>
                     <Options>
                         <Option isOption={isOption} onClick={() => {
                             setIsOption('chats')
                             setIsText('More buddy')
                         }
-                            }>Chats</Option>
+                        }>Chats</Option>
                         <Option2 isOption={isOption} onClick={() => {
                             setIsOption('orders')
                             setIsText('More speedy')
@@ -52,7 +53,7 @@ const Features = () => {
                             setIsOption('payments')
                             setIsText('More money')
                         }
-                            }>Payments</Option3>
+                        }>Payments</Option3>
                     </Options>
                     <Text1 isOption={isOption}>
                         <Li>
@@ -99,16 +100,16 @@ const Features = () => {
                     <Button>More Features</Button>
                     <RhombsTop/>
                 </Wrapper>
-            </Container>
-            <BlockWrapper1>
-                <Stars/>
-                <PurpleSquare>
-                    <RedSquare/>
-                </PurpleSquare>
-                <RhombsBottom/>
-                <DeviceLeft src='/assets/images/device-left-features.png'/>
-                <DeviceRight src='/assets/images/device-right-features.png'/>
-            </BlockWrapper1>
+                <BlockWrapper1>
+                    <Stars/>
+                    <PurpleSquare>
+                        <RedSquare/>
+                    </PurpleSquare>
+                    <RhombsBottom/>
+                    <DeviceLeft src='/assets/images/device-left-features.png'/>
+                    <DeviceRight src='/assets/images/device-right-features.png'/>
+                </BlockWrapper1>
+            </WrapperCommon>
         </section>
     );
 };

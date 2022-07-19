@@ -311,7 +311,6 @@ export const Title = styled.div`
     font-size: 19px;
     line-height: 24px;
   }
-  
 `;
 
 export const TabText = styled.div`

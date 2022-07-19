@@ -1,11 +1,22 @@
 import styled from "styled-components";
 
+export const WrapperCommon = styled.div`
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+`;
+
 export const Wrapper = styled.div`
   position: relative;
   margin: 106px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: 1024px) {
+    align-items: flex-start;
+    margin: 342px 0 0 0;
+    padding: 0 0 0 40px;
+  }
 `;
 
 export const Rhombus = styled.div`
@@ -24,6 +35,10 @@ export const Rhombus = styled.div`
     top: 45px;
     left: -402px;
     border-radius: 29px;
+  }
+  @media (min-width: 1024px) {
+    top: -97px;
+    left: -274px;
   }
 `;
 
@@ -56,6 +71,10 @@ export const H1 = styled.div`
     width: 394px;
     font-size: 32px;
     line-height: 39px;
+  }
+  @media (min-width: 1024px) {
+    text-align: left;
+    margin: 0;
   }
 `;
 
@@ -128,7 +147,11 @@ export const Text1 = styled.ul<{ isOption: string }>`
     margin: 24px 0 0 79px;
     font-size: 16px;
     line-height: 23px;
-}
+  }
+  @media (min-width: 1024px) {
+    margin: 24px 0 0;
+    width: 425px;
+  }
 `;
 
 export const Text2 = styled(Text1)<{ isOption: string }>`
@@ -179,6 +202,9 @@ export const RhombsTop = styled.div`
     top: 327px;
     right: -105px;
   }
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const Button = styled.button`
@@ -206,6 +232,9 @@ export const BlockWrapper1 = styled.div`
   @media (min-width: 768px) {
     margin: 131px auto 0;
   }
+  @media (min-width: 1024px) {
+    margin: 131px auto 0;
+  }
 `;
 
 export const Stars = styled.div`
@@ -221,6 +250,10 @@ export const Stars = styled.div`
     height: 199px;
     top: -32px;
     left: -192px;
+  }
+  @media (min-width: 1024px) {
+    top: 88px;
+    left: -268px;
   }
 `;
 
@@ -239,6 +272,13 @@ export const RhombsBottom = styled.div`
     top: 24px;
     right: -84px;
   }
+  @media (min-width: 1024px) {
+    width: 313px;
+    height: 237px;
+    top: 96px;
+    right: -371px;
+  }
+  
 `;
 
 
@@ -259,6 +299,11 @@ export const PurpleSquare = styled.div`
     height: 581px;
     border-radius: 72px;
   }
+  @media (min-width: 1024px) {
+    width: 560px;
+    height: 560px;
+    margin: 60px 0 0 115px;
+  }
 `;
 export const RedSquare = styled.div`
   width: 395px;
@@ -269,6 +314,11 @@ export const RedSquare = styled.div`
     width: 509px;
     height: 509px;
     border-radius: 62px;
+  }
+  @media (min-width: 1024px) {
+    width: 490px;
+    height: 490px;
+    border-radius: 72px;
   }
 `;
 
@@ -284,6 +334,12 @@ export const DeviceLeft = styled.img`
     top: -9px;
     left: -110px;
   }
+  @media (min-width: 1024px) {
+    width: 284px;
+    height: 472px;
+    top: 0px;
+    left: 0px;
+  }
 `;
 
 export const DeviceRight = styled.img`
@@ -297,6 +353,12 @@ export const DeviceRight = styled.img`
     height: 531px;
     top: 114px;
     right: -121px;
+  }
+  @media (min-width: 1024px) {
+    width: 284px;
+    height: 472px;
+    top: 0px;
+    left: 0px;
   }
 `;
 
