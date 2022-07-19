@@ -1,16 +1,15 @@
 import React from 'react';
-import {Container} from "../../../../common/container/Container";
 import {
     BlockWrapper,
     Box, BoxInner, BoxWrapper, Button, DeviceLeft, DeviceRight, Emoji, H1, MainBox,
     RhombsBottom,
-    RhombsTop, RhombusBottom, RhombusTop, TextAfterButton, TextBeforeButton, TextWrapper, Wrapper
+    RhombsTop, RhombusBottom, RhombusTop, TextAfterButton, TextBeforeButton, TextWrapper, Wrapper, WrapperCommon
 } from "./PreviewStyles";
 
 const Preview = () => {
     return (
         <section className='preview'>
-            <Container>
+            <WrapperCommon>
                 <RhombusTop/>
                 <RhombusBottom/>
                 <Wrapper>
@@ -23,21 +22,21 @@ const Preview = () => {
                         <Emoji src='/assets/images/emoji.svg'/>
                     </TextWrapper>
                 </Wrapper>
-            </Container>
-            <BlockWrapper>
-                <BoxWrapper>
-                    <MainBox>
-                        <Box>
-                            <BoxInner>
-                                <RhombsTop/>
-                                <RhombsBottom/>
-                                <DeviceLeft src='/assets/images/device-left-preview.png'/>
-                                <DeviceRight src='/assets/images/device-right-preview.png'/>
-                            </BoxInner>
-                        </Box>
-                    </MainBox>
-                </BoxWrapper>
-            </BlockWrapper>
+                <BlockWrapper>
+                    <BoxWrapper>
+                        <MainBox>
+                            <Box>
+                                <BoxInner>
+                                    <RhombsTop/>
+                                    <RhombsBottom/>
+                                    <DeviceLeft src='/assets/images/device-left-preview.png'/>
+                                    <DeviceRight src='/assets/images/device-right-preview.png'/>
+                                </BoxInner>
+                            </Box>
+                        </MainBox>
+                    </BoxWrapper>
+                </BlockWrapper>
+            </WrapperCommon>
         </section>
     );
 };

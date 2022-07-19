@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import {DeviceWidth} from "../../../../../styles/global";
 
+export const WrapperCommon = styled.div`
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+  }
+`;
+
 export const RhombusTop = styled.div`
   position: absolute;
   width: 249px;
@@ -17,6 +24,13 @@ export const RhombusTop = styled.div`
     top: -280px;
     right: -156px;
     border-radius: 58px;
+  }
+  @media (min-width: 1024px) {
+    width: 257px;
+    height: 257px;
+    border-radius: 45px;
+    top: -226px;
+    right: 575px;
   }
 `;
 
@@ -37,13 +51,26 @@ export const RhombusBottom = styled.div`
     left: -123px;
     border-radius: 36px;
   }
+  @media (min-width: 1024px) {
+    width: 344px;
+    height: 344px;
+    top: 348px;
+    left: -70px;
+  }
 `;
 
 export const Wrapper = styled.div`
   margin: 78px auto 0;
+  padding: 0 21px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (min-width: 1024px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 193px 0 0;
+    padding: 0 40px;
+  }
 `;
 
 export const H1 = styled.div`
@@ -75,6 +102,14 @@ export const H1 = styled.div`
       height: 60px;
     }
   }
+  @media (min-width: 1024px) {
+    max-width: 373px;
+    min-width: 373px;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: left;
+    margin: 0;
+  }
 `;
 
 export const TextBeforeButton = styled.div`
@@ -89,6 +124,13 @@ export const TextBeforeButton = styled.div`
   color: #5C5C5C;
   @media (min-width: 768px) {
     width: 426px;
+  }
+  @media (min-width: 1024px) {
+    width: 334px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px 0 0;
+    text-align: left;
   }
 `;
 
@@ -106,6 +148,9 @@ export const Button = styled.button`
   border: none;
   border-radius: 16px;
   cursor: pointer;
+  @media (min-width: 1024px) {
+    margin: 32px 0 0;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -114,6 +159,9 @@ export const TextWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 12px auto 0;
+  @media (min-width: 1024px) {
+    margin: 12px 0 0 38px;
+  }
 `;
 
 export const TextAfterButton = styled.div`
@@ -144,6 +192,13 @@ export const BoxWrapper = styled.div`
     height: 999px;
     margin: 99px 0 0 -499px;
   }
+  @media (min-width: 1024px) {
+    position: relative;
+    width: 1415px;
+    height: 1473px;
+    margin: -338px 0 0 -92px;
+    z-index: -1;
+  }
 `;
 
 export const MainBox = styled.div`
@@ -160,6 +215,11 @@ export const MainBox = styled.div`
     height: 999px;
     border-radius: 106px;
   }
+  @media (min-width: 1024px) {
+    width: 1032px;
+    height: 1050px;
+    border-radius: 137px;
+  }
 `;
 
 export const Box = styled.div`
@@ -174,6 +234,11 @@ export const Box = styled.div`
     width: 922px;
     height: 922px;
     border-radius: 106px;
+  }
+  @media (min-width: 1024px) {
+    width: 965px;
+    height: 965px;
+    border-radius: 126px;
   }
 `;
 
@@ -193,6 +258,13 @@ export const RhombsTop = styled.div`
     left: 235px;
     top: -340px;
   }
+  @media (min-width: 768px) {
+    width: 193px;
+    height: 146px;
+    background-size: cover;
+    left: -113px;
+    top: 38px;
+  }
 `;
 
 export const RhombsBottom = styled.div`
@@ -210,6 +282,14 @@ export const RhombsBottom = styled.div`
     bottom: 120px;
     left: 406px;
   }
+  @media (min-width: 1024px) {
+    width: 329px;
+    height: 249px;
+    background-size: cover;
+    bottom: -129px;
+    left: 251px;
+  }
+  
 `;
 
 export const BoxInner = styled.div`
@@ -217,6 +297,11 @@ export const BoxInner = styled.div`
   width: 430px;
   height: 430px;
   transform: rotate(45deg);
+  @media (min-width: 1024px) {
+    width: 927px;
+    height: 430px;
+    margin: 0 0 0 0;
+  }
 `;
 
 export const DeviceLeft = styled.img`
@@ -231,6 +316,12 @@ export const DeviceLeft = styled.img`
     left: 244px;
     top: -89px;
   }
+  @media (min-width: 1024px) {
+    width: 240px;
+    height: 405px;
+    left: -192px;
+    top: 109px;
+  }
 `;
 
 export const DeviceRight = styled.img`
@@ -244,6 +335,12 @@ export const DeviceRight = styled.img`
     height: 663px;
     top: -394px;
     right: -865px;
+  }
+  @media (min-width: 1024px) {
+    min-width: 856px;
+    height: 630px;
+    top: -185px;
+    right: 117px;
   }
 `;
 

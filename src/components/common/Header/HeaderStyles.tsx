@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     //background: rgba(255, 255, 255, 0.9);
     //backdrop-filter: blur(24px);
     //z-index: 5;
-    padding: 24px 40px 24px;
+    padding: 24px 40px 0px;
   }
 `;
 
