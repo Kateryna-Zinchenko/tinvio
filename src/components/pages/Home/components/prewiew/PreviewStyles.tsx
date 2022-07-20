@@ -226,6 +226,9 @@ export const BoxWrapper = styled.div`
   @media (min-width: 1280px) {
     margin: -337px 0 0 -159px;
   }
+  @media (min-width: 1440px) {
+    margin: -337px 0 0 -63px;
+  }
 `;
 
 export const MainBox = styled.div`
@@ -292,6 +295,9 @@ export const RhombsTop = styled.div`
     left: -113px;
     top: 38px;
   }
+  @media (min-width: 1440px) {
+    left: -102px;
+  }
 `;
 
 export const RhombsBottom = styled.div`
@@ -319,7 +325,9 @@ export const RhombsBottom = styled.div`
   @media (min-width: 1280px) {
     left: 269px;
   }
-  
+  @media (min-width: 1440px) {
+    left: 252px;
+  }
 `;
 
 export const BoxInner = styled.div`

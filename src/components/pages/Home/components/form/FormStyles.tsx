@@ -40,6 +40,10 @@ export const Wrapper = styled(DeviceWidth)`
   @media (min-width: 1280px) {
     padding: 24px 0 0 178px;
   }
+  @media (min-width: 1440px) {
+    height: 397px;
+    padding: 0 0 0 178px;
+  }
 `;
 
 export const RhombsLeft = styled.div`
@@ -128,6 +132,9 @@ export const FormBlock = styled.div`
   }
   @media (min-width: 1280px) {
     margin: -238px 0 0 66px;
+  }
+  @media (min-width: 1440px) {
+    margin: -238px 0 0 226px
   }
 `;
 
@@ -263,6 +270,9 @@ export const Map = styled.img`
     min-width: 987px;
     max-width: 987px;
     margin: -699px 0 0 -362px;
+  }
+  @media (min-width: 1440px) {
+    margin: -674px 0 0 -338px;
   }
 `;
 

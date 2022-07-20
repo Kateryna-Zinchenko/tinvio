@@ -154,6 +154,9 @@ export const H1 = styled.div`
     line-height: 42px;
     margin: 0 0 -21px 0px;
   }
+  @media (min-width: 1440px) {
+    margin: 0 0 -21px 0px;
+  }
 `;
 
 export const BoxWrapper = styled.div`
@@ -387,6 +390,12 @@ export const BoxesWrapper = styled.div`
     transform: rotate(-90deg);
     margin: 223px 0 0px -540px;
   }
+  @media (min-width: 1280px) {
+    margin: 223px 0 0px -610px;
+  }
+  @media (min-width: 1440px) {
+    margin: 223px 0 0px -731px;
+  }
 `;
 
 export const BoxesWrapper2 = styled.div`
@@ -402,6 +411,12 @@ export const BoxesWrapper2 = styled.div`
   @media (min-width: 1024px) {
     transform: rotate(90deg);
     margin: -376px 0 0 540px;
+  }
+  @media (min-width: 1280px) {
+    margin: -376px 0 0 608px;
+  }
+  @media (min-width: 1440px) {
+    margin: -376px 0 0 730px;
   }
 `;
 export const BigBoxWrapper = styled.div`
