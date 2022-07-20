@@ -18,6 +18,10 @@ export const Wrapper = styled.div`
     overflow: hidden;
     margin: 193px 0 0;
   }
+  @media (min-width: 1280px) {
+    margin: 193px 0 0 -54px;
+    padding: 0 0 48px 108px;
+  }
 `;
 
 export const RhombsTop = styled.div`
@@ -36,6 +40,10 @@ export const RhombsTop = styled.div`
     height: 323px;
     top: -225px;
     right: -85px;
+  }
+  @media (min-width: 1280px) {
+    top: -225px;
+    right: 10px;
   }
 `;
 
@@ -129,6 +137,11 @@ export const H1 = styled.div`
     line-height: 38px;
     padding: 51px 0 0;
   }
+  @media (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 42px;
+    padding: 49px 0 0;
+  }
 `;
 export const Border = styled.div`
   height: 1px;
@@ -144,6 +157,9 @@ export const Border = styled.div`
   @media (min-width: 1024px) {
     width: 666px;
     margin: 19px auto 0;
+  }
+  @media (min-width: 1280px) {
+    margin: 16px auto 0;
   }
 `;
 
@@ -162,6 +178,9 @@ export const Icons = styled.div`
     margin: 31px auto 0;
     flex-wrap: nowrap;
     justify-content: space-between;
+  }
+  @media (min-width: 1280px) {
+    width: 1032px;
   }
 `;
 

@@ -19,6 +19,9 @@ export const Wrapper = styled(DeviceWidth)`
   @media (min-width: 1024px) {
     height: 668px;
   }
+  @media (min-width: 1280px) {
+    margin: 148px 0 0 54px;
+  }
 `;
 
 export const RhombsBottom = styled.div`
@@ -61,6 +64,9 @@ export const Inner = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: 1280px) {
+    margin: 0 0 0 -108px;
+  }
 `;
 
 export const H1 = styled.div`
@@ -80,6 +86,10 @@ export const H1 = styled.div`
     line-height: 38px;
     padding: 82px 0 0;
   }
+  @media (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 `;
 
 export const Slider = styled.div`
@@ -89,6 +99,9 @@ export const Slider = styled.div`
   }
   @media (min-width: 1024px) {
     margin: 41px 0 0 50px;
+  }
+  @media (min-width: 1280px) {
+    margin: 40px auto 0;
   }
 `;
 
@@ -111,6 +124,10 @@ export const Slide1 = styled.div<{ slide: string }>`
     width: 947px;
     height: 377px;
     padding: 32px 0 30px 0;
+  }
+  @media (min-width: 1280px) {
+    width: 1032px;
+    padding: 32px 0 0;
   }
 `;
 export const Slide2 = styled(Slide1)<{ slide: string }>`
@@ -146,6 +163,9 @@ export const Img1 = styled.img`
     position: relative;
     z-index: 1;
   }
+  @media (min-width: 1280px) {
+    margin: -2px 0 0 686px;
+  }
 `;
 export const Img2 = styled.img`
   width: 189px;
@@ -159,6 +179,9 @@ export const Img2 = styled.img`
     margin: 0 0 0 669px;
     position: relative;
     z-index: 1;
+  }
+  @media (min-width: 1280px) {
+    margin: 0 0 0 760px;
   }
 `;
 export const Img3 = styled.img`
@@ -174,6 +197,9 @@ export const Img3 = styled.img`
     width: 355px;
     margin: -28px 0 0 580px
   }
+  @media (min-width: 1280px) {
+    margin: -28px 0 0 657px
+  }
 `;
 export const Img4 = styled.img`
   width: 184px;
@@ -187,6 +213,9 @@ export const Img4 = styled.img`
     z-index: 1;
     width: 278px;
     margin: -8px 0 0 653px;
+  }
+  @media (min-width: 1280px) {
+    margin: -8px 0 0 737px;
   }
 `;
 
@@ -203,22 +232,33 @@ export const TextBox1 = styled.div`
     top: 32px;
     left: 32px;
     width: 724px;
-    height: 144px;
+  }
+  @media (min-width: 1280px) {
+    width: 823px;
   }
 `;
 export const TextBox2 = styled(TextBox1)`
   @media (min-width: 1024px) {
     width: 792px;
   }
+  @media (min-width: 1280px) {
+    width: 874px;
+  }
 `;
 export const TextBox3 = styled(TextBox1)`
   @media (min-width: 1024px) {
     width: 653px;
   }
+  @media (min-width: 1280px) {
+    width: 741px;
+  }
 `;
 export const TextBox4 = styled(TextBox1)`
   @media (min-width: 1024px) {
     width: 756px;
+  }
+  @media (min-width: 1280px) {
+    width: 840px;
   }
 `;
 
@@ -238,20 +278,32 @@ export const Text1 = styled.div`
     font-size: 18px;
     line-height: 24px;
   }
+  @media (min-width: 1280px) {
+    width: 626px;
+  }
 `;
 export const Text2 = styled(Text1)`
   @media (min-width: 1024px) {
     width: 548px;
+  }
+  @media (min-width: 1280px) {
+    width: 681px;
   }
 `;
 export const Text3 = styled(Text1)`
   @media (min-width: 1024px) {
     width: 513px;
   }
+  @media (min-width: 1280px) {
+    width: 565px;
+  }
 `;
 export const Text4 = styled(Text1)`
   @media (min-width: 1024px) {
     width: 541px;
+  }
+  @media (min-width: 1280px) {
+    width: 621px;
   }
 `;
 
@@ -265,7 +317,10 @@ export const Caption = styled.div`
     width: 426px;
   }
   @media (min-width: 1024px) {
-    margin: -163px 0 0 56px
+    margin: -163px 0 0 56px;
+  }
+  @media (min-width: 1280px) {
+    margin: -175px 0 0 56px;
   }
 `;
 
@@ -277,6 +332,9 @@ export const Caption2 = styled(Caption)`
   @media (min-width: 1024px) {
     margin: -181px 0 0 56px;
   }
+  @media (min-width: 1280px) {
+    margin: -198px 0 0 56px;
+  }
 `;
 
 export const Caption3 = styled(Caption)`
@@ -285,7 +343,10 @@ export const Caption3 = styled(Caption)`
     margin: 28px auto 0;
   }
   @media (min-width: 1024px) {
-    margin: -179px 0 0 56px;
+    margin: -186px 0 0 56px;
+  }
+  @media (min-width: 1280px) {
+    margin: -202px 0 0 56px;
   }
 `;
 
@@ -295,7 +356,10 @@ export const Caption4 = styled(Caption)`
     margin: 28px auto 0;
   }
   @media (min-width: 1024px) {
-    margin: -179px 0 0 56px;
+    margin: -182px 0 0 56px;
+  }
+  @media (min-width: 1280px) {
+    margin: -198px 0 0 56px;
   }
 `;
 
@@ -373,6 +437,9 @@ export const Position = styled.div`
     line-height: 15px;
     max-width: 190px;
   }
+  @media (min-width: 1280px) {
+    max-width: 343px;
+  }
 `;
 export const Quotes1 = styled.div`
   background: url("/assets/icons/quotes.png") no-repeat;
@@ -384,6 +451,9 @@ export const Quotes1 = styled.div`
     margin: -59px -67px 0 0;
     z-index: 1;
   }
+  @media (min-width: 1280px) {
+    margin: -68px -226px 0 0;
+  }
 `;
 export const Quotes2 = styled(Quotes1)`
   margin: 0 0 0;
@@ -392,6 +462,9 @@ export const Quotes2 = styled(Quotes1)`
   }
   @media (min-width: 1024px) {
     margin: -72px -148px 0 0;
+  }
+  @media (min-width: 1280px) {
+    margin: -72px -277px 0 0;
   }
 `;
 export const Quotes3 = styled(Quotes1)`
@@ -402,6 +475,9 @@ export const Quotes3 = styled(Quotes1)`
   @media (min-width: 1024px) {
     margin: -77px -108px 0 0;
   }
+  @media (min-width: 1280px) {
+    margin: -77px -166px 0 0;
+  }
 `;
 export const Quotes4 = styled(Quotes1)`
   margin: 0 0 0;
@@ -411,6 +487,9 @@ export const Quotes4 = styled(Quotes1)`
   @media (min-width: 1024px) {
     margin: -75px -137px 0 0;
   }
+  @media (min-width: 1280px) {
+    margin: -75px -220px 0 0;
+  } 
 `;
 
 export const Arrows1 = styled.div`
@@ -421,20 +500,32 @@ export const Arrows1 = styled.div`
     justify-content: space-between;
     margin: 40px 0 0 56px;
   }
+  @media (min-width: 1280px) {
+    margin: 45px 0 0 56px;
+  }
 `;
 export const Arrows2 = styled(Arrows1)`
   @media (min-width: 1024px) {
     margin: 37.5px 0 0 56px;
+  }
+  @media (min-width: 1280px) {
+    margin: 51.5px 0 0 56px;
   }
 `;
 export const Arrows3 = styled(Arrows1)`
   @media (min-width: 1024px) {
     margin: 37.5px 0 0 56px;
   }
+  @media (min-width: 1280px) {
+    margin: 53.5px 0 0 56px;
+  }
 `;
 export const Arrows4 = styled(Arrows1)`
   @media (min-width: 1024px) {
     margin: 41px 0 0 56px;
+  }
+  @media (min-width: 1280px) {
+    margin: 53px 0 0 56px;
   }
 `;
 
