@@ -9,7 +9,11 @@ export const Wrapper = styled.ul`
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 40px;
-    margin: 311px 0 0;
+    margin: 311px 0 73px;
+  }
+  @media (min-width: 1280px) {
+    padding: 0 124px;
+    margin: 311px 0 70px;
   }
 `;
 
@@ -87,7 +91,11 @@ export const Links = styled.div`
     margin: 32px 0 0;
   }
   @media (min-width: 1024px) {
-    margin: 32px 0 0 117px;
+    position: absolute;
+    right: 40px;
+  }
+  @media (min-width: 1280px) {
+    right: 124px;
   }
 `;
 
@@ -130,7 +138,14 @@ export const FooterText = styled.div`
     justify-content: space-between;
   }
   @media (min-width: 1024px) {
-    margin: 38px 0 16px;
+    margin: 171px 0 0;
+    position: absolute;
+    left: 40px;
+  }
+  @media (min-width: 1280px) {
+    margin: 152px 0 0;
+    position: absolute;
+    left: 124px;
   }
 `;
 
