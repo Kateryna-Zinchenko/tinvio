@@ -30,8 +30,11 @@ export const RhombusTop = styled.div`
     width: 257px;
     height: 257px;
     border-radius: 45px;
-    top: -226px;
+    top: -216px;
     right: 575px;
+  }
+  @media (min-width: 1280px) {
+    right: 719px;
   }
 `;
 
@@ -58,6 +61,9 @@ export const RhombusBottom = styled.div`
     top: 348px;
     left: -70px;
   }
+  @media (min-width: 1280px) {
+    left: -107px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -69,8 +75,12 @@ export const Wrapper = styled.div`
   @media (min-width: 1024px) {
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 193px 0 0;
+    margin: 194px 0 0;
     padding: 0 40px;
+  }
+  @media (min-width: 1280px) {
+    margin: 188px 0 0;
+    padding: 0 124px;
   }
 `;
 
@@ -111,6 +121,12 @@ export const H1 = styled.div`
     text-align: left;
     margin: 0;
   }
+  @media (min-width: 1280px) {
+    max-width: 427px;
+    min-width: 427px;
+    font-size: 44px;
+    line-height: 54px;
+  }
 `;
 
 export const TextBeforeButton = styled.div`
@@ -132,6 +148,13 @@ export const TextBeforeButton = styled.div`
     line-height: 24px;
     margin: 15px 0 0;
     text-align: left;
+  }
+  @media (min-width: 1280px) {
+    width: 369px;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 11px 0 0;
+
   }
 `;
 
@@ -199,6 +222,9 @@ export const BoxWrapper = styled.div`
     height: 1473px;
     margin: -338px 0 0 -92px;
     z-index: -1;
+  }
+  @media (min-width: 1280px) {
+    margin: -337px 0 0 -159px;
   }
 `;
 
@@ -289,6 +315,9 @@ export const RhombsBottom = styled.div`
     background-size: cover;
     bottom: -129px;
     left: 251px;
+  }
+  @media (min-width: 1280px) {
+    left: 269px;
   }
   
 `;

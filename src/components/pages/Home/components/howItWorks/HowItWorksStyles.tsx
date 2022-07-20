@@ -103,11 +103,15 @@ export const Inner = styled.div`
   @media (min-width: 1024px) {
     padding: 0 40px;
     flex-direction: row-reverse;
+    max-width: 1024px;
+  }
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+    padding: 0 124px;
   }
 `;
 
 export const H1 = styled.div`
-  //width: 299px;
   font-family: 'Gilroy',serif;
   font-size: 28px;
   font-weight: 600;
@@ -123,6 +127,11 @@ export const H1 = styled.div`
   @media (min-width: 1024px) {
     line-height: 38px;
     padding: 0;
+  }
+  @media (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 44px;
+    margin: -72px 0 0;
   }
 `;
 
@@ -144,6 +153,10 @@ export const Text = styled.div`
     padding: 17px 0 0;
     text-align: left;
     width: 356px;
+  }
+  @media (min-width: 1280px) {
+    padding: 16px 0 0;
+    width: 398px;
   }
 `;
 
@@ -193,6 +206,9 @@ export const Tabs = styled(DeviceWidth)`
     margin: 0;
     padding: 21px 0 8px 444px;
   }
+  @media (min-width: 1280px) {
+    padding: 107px 0 8px 650px;
+  }
 `;
 
 export const Tab1 = styled.div`
@@ -215,6 +231,13 @@ export const Tab1 = styled.div`
     height: 102px;
     padding: 23px 0 0 0;
   }
+  @media (min-width: 1280px) {
+    width: 272px;
+    height: 110px;
+    border-radius: 19px;
+    padding: 23px 0 0;
+    margin: 31px 0 0 18px;
+  }
 `;
 
 export const Tab2 = styled(Tab1)`
@@ -226,10 +249,19 @@ export const Tab2 = styled(Tab1)`
     height: 102px;
     margin: 54px 0 0 259px;
   }
+  @media (min-width: 1280px) {
+    width: 279px;
+    height: 116px;
+  }
 `;
 
 export const Tab3 = styled(Tab1)`
   margin: 24px 0 10px 12px;
+  @media (min-width: 1280px) {
+    width: 278px;
+    height: 116px;
+    margin: 24px 0 10px -7px;
+  }
 `;
 
 export const StarsTab1 = styled.div`
@@ -246,6 +278,12 @@ export const StarsTab1 = styled.div`
     height: 39px;
     left: 131px;
     top: -54px;
+  }
+  @media (min-width: 1280px) {
+    width: 55px;
+    height: 42px;
+    left: 140px;
+    top: -57px;
   }
 `;
 
@@ -264,6 +302,12 @@ export const StarsTab2 = styled.div`
     right: 0px;
     top: -66px;
   }
+  @media (min-width: 1280px) {
+    width: 80px;
+    height: 43px;
+    right: 2px;
+    top: -70px;
+  }
 `;
 
 export const StarsTopTab3 = styled.div`
@@ -280,6 +324,12 @@ export const StarsTopTab3 = styled.div`
     height: 33px;
     top: -60px;
     left: 46px;
+  }
+  @media (min-width: 1280px) {
+    width: 50px;
+    height: 35px;
+    top: -64px;
+    left: 72px;
   }
 `;
 
@@ -298,6 +348,12 @@ export const StarsRightTab3 = styled.div`
     top: -35px;
     right: -45px;
   }
+  @media (min-width: 1280px) {
+    width: 49px;
+    height: 58px;
+    top: -30px;
+    right: -54px;
+  }
 `;
 
 export const Title = styled.div`
@@ -310,6 +366,10 @@ export const Title = styled.div`
   @media (min-width: 768px) {
     font-size: 19px;
     line-height: 24px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 21px;
+    line-height: 26px;
   }
 `;
 
@@ -327,6 +387,12 @@ export const TabText = styled.div`
     line-height: 13px;
     width: 189px;
   }
+  @media (min-width: 1280px) {
+    padding: 11px 0 0;
+    font-size: 12px;
+    line-height: 15px;
+    width: 192px;
+  }
 `;
 
 export const TabText2 = styled(TabText)`
@@ -334,12 +400,18 @@ export const TabText2 = styled(TabText)`
   @media (min-width: 768px) {
     width: 154px;
   }
+  @media (min-width: 1280px) {
+    width: 176px;
+  }
 `;
 
 export const TabText3 = styled(TabText)`
   width: 120px;
   @media (min-width: 768px) {
     width: 157px;
+  }
+  @media (min-width: 1280px) {
+    width: 176px;
   }
 `;
 
@@ -361,6 +433,12 @@ export const ArrowChats = styled.div`
     right: 17.5%;
     top: 24%;
   }
+  @media (min-width: 1280px) {
+    width: 135px;
+    height: 89px;
+    right: 16%;
+    top: 35%;
+  }
 `;
 
 export const ArrowOrders = styled.div`
@@ -381,6 +459,12 @@ export const ArrowOrders = styled.div`
     left: 58%;
     top: 52%;
   }
+  @media (min-width: 1280px) {
+    width: 135px;
+    height: 89px;
+    left: 62%;
+    top: 58%;
+  }
 `;
 
 export const Icon1 = styled.div`
@@ -395,6 +479,12 @@ export const Icon1 = styled.div`
   @media (min-width: 768px) {
     width: 110px;
     height: 110px;
+    top: -41px;
+    right: -45px;
+  }
+  @media (min-width: 1280px) {
+    width: 118px;
+    height: 118px;
     top: -41px;
     right: -45px;
   }
@@ -414,6 +504,12 @@ export const Icon2 = styled.div`
     bottom: -59px;
     left: -32px;
   }
+  @media (min-width: 1280px) {
+    width: 118px;
+    height: 118px;
+    bottom: -59px;
+    left: -32px;
+  }
 `;
 export const Icon3 = styled.div`
   background: url("/assets/icons/payments.png") no-repeat;
@@ -427,6 +523,12 @@ export const Icon3 = styled.div`
   @media (min-width: 768px) {
     width: 110px;
     height: 110px;
+    top: -38px;
+    left: -19px;
+  }
+  @media (min-width: 1280px) {
+    width: 118px;
+    height: 118px;
     top: -38px;
     left: -19px;
   }

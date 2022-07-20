@@ -3,12 +3,16 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   width: 100%;
   padding: 24px 0 0;
+  
   @media (min-width: 1024px) {
     position: fixed;
     //background: rgba(255, 255, 255, 0.9);
     //backdrop-filter: blur(24px);
-    //z-index: 5;
+    z-index: 5;
     padding: 24px 40px 24px;
+  }
+  @media (min-width: 1280px) {
+    padding: 24px 124px 24px;
   }
 `;
 
@@ -16,12 +20,17 @@ export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 `;
 
 export const LeftWrapper = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+  @media (min-width: 1024px) {
+    position: unset;
+    justify-content: unset;
+  }
 `;
 
 export const Logo = styled.img`
@@ -102,7 +111,10 @@ export const Pages = styled.ul`
     justify-content: space-between;
     align-items: center;
     width: 325px;
-    margin: 6px 0 0 137px;
+    margin: 4px 0 0 137px;
+  }
+  @media (min-width: 1280px) {
+    margin: 0 0 0 182px;
   }
 `;
 
@@ -131,12 +143,13 @@ export const Button = styled.button`
     line-height: 17px;
     width: 129px;
     height: 40px;
-    margin: 0 0 0 181px;
     color: #212121;
     background: #FFFFFF;
     border: none;
     border-radius: 16px;
     cursor: pointer;
+    position: absolute;
+    right: 0;
   }
 `;
 
