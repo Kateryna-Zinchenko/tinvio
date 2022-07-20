@@ -23,6 +23,12 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const TextWrapper = styled.div`
+  @media (min-width: 1440px) {
+    margin: 0 0 0 0;
+  }
+`;
+
 export const Rhombus = styled.div`
   position: absolute;
   width: 409px;
@@ -46,20 +52,6 @@ export const Rhombus = styled.div`
   }
 `;
 
-export const WrapperRight = styled.div`
-  @media (min-width: 1024px) {
-    margin: -42px 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-`;
-
-export const WrapperLeft = styled.div`
-  @media (min-width: 1024px) {
-    margin: 43px 75px 0 0;
-  }
-`;
 
 export const RhombsLeft = styled.div`
   background: url("/assets/images/rhombs-left-why-choose.png") no-repeat;
@@ -85,6 +77,10 @@ export const RhombsLeft = styled.div`
     bottom: -166px;
     left: -54px;
   }
+  @media (min-width: 1440px) {
+    bottom: -162px;
+    left: 25px;
+  }
 `;
 
 export const RhombsRight = styled.div`
@@ -109,6 +105,10 @@ export const RhombsRight = styled.div`
     bottom: 41px;
     right: -27px;
   }
+  @media (min-width: 1440px) {
+    bottom: 44px;
+    right: 53px;
+  }
 `;
 
 export const Inner = styled.div`
@@ -127,6 +127,10 @@ export const Inner = styled.div`
   @media (min-width: 1280px) {
     max-width: 1280px;
     padding: 0 178px 0 0;
+  }
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    padding: 0 170px 0 0
   }
 `;
 
@@ -152,6 +156,9 @@ export const H1 = styled.div`
     line-height: 44px;
     margin: -72px 0 0;
   }
+  @media (min-width: 1440px) {
+    text-align: left;
+  }
 `;
 
 export const Text = styled.div`
@@ -176,6 +183,9 @@ export const Text = styled.div`
   @media (min-width: 1280px) {
     padding: 16px 0 0;
     width: 398px;
+  }
+  @media (min-width: 1440px) {
+    width: 478px;
   }
 `;
 
@@ -228,6 +238,9 @@ export const Tabs = styled(DeviceWidth)`
   @media (min-width: 1280px) {
     padding: 107px 0 8px 650px;
   }
+  @media (min-width: 1440px) {
+    padding: 107px 0 8px 733px;  
+  }
 `;
 
 export const Tab1 = styled.div`
@@ -241,9 +254,9 @@ export const Tab1 = styled.div`
   margin: 31px 0 0 24px;
   padding: 15px 0 0 0;
   transform: matrix(0.99, 0.14, -0.14, 0.99, 0, 0);
-  box-shadow: 4px 4px 13px 0px rgba(33,33,33,0.1);
-  -webkit-box-shadow: 4px 4px 13px 0px rgba(33,33,33,0.1);
-  -moz-box-shadow: 4px 4px 13px 0px rgba(33,33,33,0.1);
+  box-shadow: 4px 4px 13px 0 rgba(33,33,33,0.1);
+  -webkit-box-shadow: 4px 4px 13px 0 rgba(33,33,33,0.1);
+  -moz-box-shadow: 4px 4px 13px 0 rgba(33,33,33,0.1);
   @media (min-width: 768px) {
     border-radius: 18px;
     width: 252px;
@@ -266,7 +279,7 @@ export const Tab2 = styled(Tab1)`
   @media (min-width: 768px) {
     width: 252px;
     height: 102px;
-    margin: 54px 0 0 259px;
+    margin: 54px 0 0 263px;
   }
   @media (min-width: 1280px) {
     width: 279px;
@@ -318,7 +331,7 @@ export const StarsTab2 = styled.div`
   @media (min-width: 768px) {
     width: 74px;
     height: 40px;
-    right: 0px;
+    right: 0;
     top: -66px;
   }
   @media (min-width: 1280px) {
@@ -458,6 +471,10 @@ export const ArrowChats = styled.div`
     right: 16%;
     top: 35%;
   }
+  @media (min-width: 1440px) {
+    right: 19.5%;
+    top: 35%;
+  }
 `;
 
 export const ArrowOrders = styled.div`
@@ -484,6 +501,10 @@ export const ArrowOrders = styled.div`
     left: 62%;
     top: 58%;
   }
+  @media (min-width: 1440px) {
+    left: 61%;
+    top: 58%;
+  }
 `;
 
 export const Icon1 = styled.div`
@@ -507,6 +528,12 @@ export const Icon1 = styled.div`
     top: -41px;
     right: -45px;
   }
+  @media (min-width: 1440px) {
+    width: 126px;
+    height: 126px;
+    top: -47px;
+    right: -50px;
+  }
 `;
 export const Icon2 = styled.div`
   background: url("/assets/icons/orders.png") no-repeat;
@@ -529,6 +556,12 @@ export const Icon2 = styled.div`
     bottom: -59px;
     left: -32px;
   }
+  @media (min-width: 1440px) {
+    width: 126px;
+    height: 126px;
+    bottom: -68px;
+    left: -33px;
+  }
 `;
 export const Icon3 = styled.div`
   background: url("/assets/icons/payments.png") no-repeat;
@@ -550,6 +583,12 @@ export const Icon3 = styled.div`
     height: 118px;
     top: -38px;
     left: -19px;
+  }
+  @media (min-width: 1440px) {
+    width: 126px;
+    height: 126px;
+    top: -46px;
+    left: -23px;
   }
 `;
 

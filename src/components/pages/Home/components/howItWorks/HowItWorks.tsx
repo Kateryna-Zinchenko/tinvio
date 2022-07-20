@@ -14,7 +14,17 @@ import {
     TabText2,
     TabText3,
     ArrowChats,
-    ArrowOrders, Icon1, Icon2, Icon3, StarsTab1, StarsTab2, StarsTopTab3, StarsRightTab3, RhombsLeft, RhombsRight, Rhombus
+    ArrowOrders,
+    Icon1,
+    Icon2,
+    Icon3,
+    StarsTab1,
+    StarsTab2,
+    StarsTopTab3,
+    StarsRightTab3,
+    RhombsLeft,
+    RhombsRight,
+    Rhombus, TextWrapper
 } from './HowItWorksStyles';
 
 const HowItWorks = () => {

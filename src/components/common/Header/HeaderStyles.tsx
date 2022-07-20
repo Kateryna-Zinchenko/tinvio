@@ -116,6 +116,9 @@ export const Pages = styled.ul`
   @media (min-width: 1280px) {
     margin: 0 0 0 182px;
   }
+  @media (min-width: 1440px) {
+    margin: 0 0 0 262px;
+  }
 `;
 
 export const Page = styled.li<{ isActive: boolean }>`

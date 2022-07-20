@@ -20,7 +20,9 @@ interface Props {
 
 const Header = ({setIsOpenMenu}: Props) => {
     const [isOpenLanguage, setIsOpenLanguage] = useToggle(false);
+
     const nav = useNavigate();
+
     const onLinkClick = (value: string) => {
         setIsOpenMenu(false)
         nav(`/${value}`)
