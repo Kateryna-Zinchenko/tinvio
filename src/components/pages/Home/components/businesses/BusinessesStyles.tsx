@@ -13,6 +13,9 @@ export const Wrapper = styled.div`
   @media (min-width: 1024px) {
     margin: 179px 0 0;
   }
+  @media (min-width: 1280px) {
+    padding: 0 84px;
+  }
 `;
 
 export const RhombusLeft = styled.div`
@@ -145,6 +148,11 @@ export const H1 = styled.div`
   }
   @media (min-width: 1024px) {
     line-height: 38px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0 0 -21px 0px;
   }
 `;
 

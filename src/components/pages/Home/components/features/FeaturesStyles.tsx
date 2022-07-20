@@ -17,6 +17,10 @@ export const Wrapper = styled.div`
     margin: 342px 0 0 0;
     padding: 0 0 0 40px;
   }
+  @media (min-width: 1280px) {
+    padding: 0 0 0 124px;
+    margin: 342px 0 0 0;
+  }
 `;
 
 export const Rhombus = styled.div`
@@ -76,6 +80,11 @@ export const H1 = styled.div`
     text-align: left;
     margin: 0;
   }
+  @media (min-width: 1280px) {
+    width: 442px;
+    font-size: 36px;
+    line-height: 44px;
+  }
 `;
 
 export const Cursor = styled.div`
@@ -112,6 +121,9 @@ export const Option = styled.button<{ isOption: string }>`
   }
   @media (min-width: 768px) {
     width: 107px;
+  }
+  @media (min-width: 1280px) {
+    margin: 0 16px 0 0;
   }
 `;
 
@@ -151,6 +163,10 @@ export const Text1 = styled.ul<{ isOption: string }>`
   @media (min-width: 1024px) {
     margin: 24px 0 0;
     width: 425px;
+  }
+  @media (min-width: 1280px) {
+    margin: 24px 0 0;
+    width: 488px;
   }
 `;
 
@@ -359,6 +375,10 @@ export const DeviceRight = styled.img`
     height: 472px;
     top: 226px;
     right: -342px;;
+  }
+  @media (min-width: 1280px) {
+    top: 226px;
+    right: -332px;
   }
 `;
 

@@ -18,6 +18,9 @@ export const Wrapper = styled.div`
   @media (min-width: 1024px) {
     height: 649px;
   }
+  @media (min-width: 1280px) {
+    margin: -387px 0 0 54px;
+  }
 `;
 
 export const Rhombus = styled.div`
@@ -29,9 +32,17 @@ export const Rhombus = styled.div`
   background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%);
   border-radius: 64px;
   transform: rotate(-45deg);
+  z-index: -1;
   @media (min-width: 768px) {
     top: -35px;
     right: -234px;
+  }
+  @media (min-width: 1280px) {
+    width: 497px;
+    height: 497px;
+    top: -35px;
+    right: -234px;  
+    border-radius: 78px;
   }
 `;
 
@@ -70,6 +81,10 @@ export const RhombsLeft = styled.div`
     bottom: -142px;
     left: -73px;
   }
+  @media (min-width: 1280px) {
+    bottom: -166px;
+    left: -54px;
+  }
 `;
 
 export const RhombsRight = styled.div`
@@ -90,6 +105,10 @@ export const RhombsRight = styled.div`
     bottom: 40px;
     right: -99px;
   }
+  @media (min-width: 1280px) {
+    bottom: 41px;
+    right: -27px;
+  }
 `;
 
 export const Inner = styled.div`
@@ -107,7 +126,7 @@ export const Inner = styled.div`
   }
   @media (min-width: 1280px) {
     max-width: 1280px;
-    padding: 0 124px;
+    padding: 0 178px 0 0;
   }
 `;
 
