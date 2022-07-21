@@ -44,6 +44,9 @@ export const Wrapper = styled(DeviceWidth)`
     height: 397px;
     padding: 0 0 0 178px;
   }
+  @media (min-width: 1920px) {
+    padding: 0 0 0 358px;
+  }
 `;
 
 export const RhombsLeft = styled.div`
@@ -115,6 +118,11 @@ export const H1 = styled.div`
     font-size: 36px;
     line-height: 42px;
   }
+  @media (min-width: 1920px) {
+    width: 580px;
+    font-size: 44px;
+    line-height: 54px;
+  }
 `;
 
 export const FormBlock = styled.div`
@@ -136,6 +144,9 @@ export const FormBlock = styled.div`
   @media (min-width: 1440px) {
     margin: -238px 0 0 226px
   }
+  @media (min-width: 1920px) {
+    width: 504px;
+  }
 `;
 
 export const FormBlockInner = styled.div`
@@ -144,6 +155,9 @@ export const FormBlockInner = styled.div`
   border-radius: 32px;
   @media (min-width: 768px) {
     width: 425px;
+  }
+  @media (min-width: 1920px) {
+    width: 440px;
   }
 `;
 export const Title = styled.div`
@@ -166,12 +180,19 @@ export const Title = styled.div`
     padding: 48px 0 0;
     text-align: center;
   }
+  @media (min-width: 1920px) {
+    font-size: 28px;
+    line-height: 34px;
+  }
 `;
 export const Inputs = styled.div`
   margin: 32px auto 0;
   width: 295px;
   @media (min-width: 768px) {
     width: 329px;
+  }
+  @media (min-width: 1920px) {
+    width: 344px;
   }
 `;
 
@@ -197,7 +218,11 @@ export const Input = styled.div`
         color: #BDBDBD;
       }
     }
-  
+  @media (min-width: 1920px) {
+    & input {
+      padding: 14px 0 15px 16px;
+    }
+  }
 `;
 
 export const InputTitle = styled.div`
@@ -207,6 +232,10 @@ export const InputTitle = styled.div`
   font-size: 12px;
   line-height: 15px;
   color: #5C5C5C;
+  @media (min-width: 1920px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 `;
 
 export const Button = styled.button`
@@ -225,6 +254,13 @@ export const Button = styled.button`
   @media (min-width: 768px) {
     display: block;
     margin: 32px auto 0;
+  }
+  @media (min-width: 1920px) {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 16px 72px;
+    margin: 48px auto 0;
+    border-radius: 19px;
   }
 `;
 
@@ -248,6 +284,18 @@ export const TextAfterButton = styled.div`
   }
   @media (min-width: 768px) {
     margin: 14px 142px 0 144px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 12px 156px 0 140px;
+    padding: 0 0 48px;
+    &::after {
+      width: 16px;
+      height: 18px;
+      top: 2px;
+      right: -12px;
+    }
   }
 `;
 

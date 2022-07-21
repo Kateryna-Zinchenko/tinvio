@@ -7,6 +7,9 @@ export const WrapperCommon = styled.div`
     flex-direction: row;
     margin: 64px 0 0;
   }
+  @media (min-width: 1920px) {
+    padding: 0 304px;
+  }
 `;
 
 export const RhombusTop = styled.div`
@@ -82,6 +85,9 @@ export const Wrapper = styled.div`
     margin: 188px 0 0;
     padding: 0 124px;
   }
+  @media (min-width: 1920px) {
+    padding: 0 0;
+  }
 `;
 
 export const H1 = styled.div`
@@ -127,6 +133,12 @@ export const H1 = styled.div`
     font-size: 44px;
     line-height: 54px;
   }
+  @media (min-width: 1920px) {
+    max-width: 478px;
+    min-width: 478px;
+    font-size: 48px;
+    line-height: 59px;
+  }
 `;
 
 export const TextBeforeButton = styled.div`
@@ -154,7 +166,12 @@ export const TextBeforeButton = styled.div`
     font-size: 18px;
     line-height: 24px;
     margin: 11px 0 0;
-
+  }
+  @media (min-width: 1920px) {
+    width: 415px;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 16px 0 0;
   }
 `;
 
@@ -175,6 +192,11 @@ export const Button = styled.button`
   @media (min-width: 1024px) {
     margin: 32px 0 0;
   }
+  @media (min-width: 1920px) {
+    padding: 15px 32px 16px 33px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -185,6 +207,10 @@ export const TextWrapper = styled.div`
   margin: 12px auto 0;
   @media (min-width: 1024px) {
     margin: 12px 0 0 38px;
+  }
+  @media (min-width: 1920px) {
+    margin: 12px 0 0 48px;
+    width: 124px;
   }
 `;
 
@@ -197,6 +223,11 @@ export const TextAfterButton = styled.div`
   line-height: 17px;
   text-align: center;
   color: #5C5C5C;
+  @media (min-width: 1920px) {
+    font-size: 16px;
+    line-height: 19px;
+    width: 100px;
+  }
 `;
 
 export const Emoji = styled.img`
@@ -228,6 +259,9 @@ export const BoxWrapper = styled.div`
   }
   @media (min-width: 1440px) {
     margin: -337px 0 0 -63px;
+  }
+  @media (min-width: 1920px) {
+    margin: -337px 0 0 70px;
   }
 `;
 

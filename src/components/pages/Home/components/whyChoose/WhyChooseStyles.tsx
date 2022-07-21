@@ -22,6 +22,9 @@ export const Wrapper = styled(DeviceWidth)`
   @media (min-width: 1280px) {
     margin: 148px 0 0 54px;
   }
+  @media (min-width: 1920px) {
+    margin: 190px 0 0 54px;
+  }
 `;
 
 export const RhombsBottom = styled.div`

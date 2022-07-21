@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {Container} from "../../../../common/container/Container";
 import {
     Wrapper,
     Options,

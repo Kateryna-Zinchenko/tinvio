@@ -33,14 +33,14 @@ const HowItWorks = () => {
                 <Wrapper>
                     <Inner>
                         <Rhombus/>
-                        <div>
+                        <TextWrapper>
                         <H1>Check out how it works</H1>
                         <Text>
                             It’s easy! Exchange messages, create or confirm orders, send invoices, and collect payments
                             across your supply chain — all within one dashboard.
                         </Text>
                         <Button>Play Video</Button>
-                        </div>
+                        </TextWrapper>
                         <div>
                         <Tabs>
 
