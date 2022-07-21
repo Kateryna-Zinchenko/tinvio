@@ -14,6 +14,9 @@ export const Wrapper = styled.div`
   @media (min-width: 1280px) {
     padding: 24px 124px 24px;
   }
+  @media (min-width: 1920px) {
+    padding: 24px 304px 24px;
+  }
 `;
 
 export const HeaderWrapper = styled.div`
@@ -118,6 +121,9 @@ export const Pages = styled.ul`
   }
   @media (min-width: 1440px) {
     margin: 0 0 0 262px;
+  }
+  @media (min-width: 1920px) {
+    margin: 0 0 0 299px;
   }
 `;
 

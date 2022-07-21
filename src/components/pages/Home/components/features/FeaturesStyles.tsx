@@ -19,7 +19,9 @@ export const Wrapper = styled.div`
   }
   @media (min-width: 1280px) {
     padding: 0 0 0 124px;
-    margin: 342px 0 0 0;
+  }
+  @media (min-width: 1920px) {
+    padding: 0 0 0 304px;
   }
 `;
 
@@ -29,7 +31,7 @@ export const Rhombus = styled.div`
   height: 376px;
   top: 77px;
   left: -281px;
-  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.15) 0%, rgba(250, 250, 250, 0.15) 100%) ;
   border-radius: 23px;
   transform: rotate(-45deg);
   z-index: -1;
@@ -68,7 +70,7 @@ export const H1 = styled.div`
     width: 2px;
     height: 36px;
     top: 0;
-    right: -4px;
+    right: -2px;
     background: #212121;
   }
   @media (min-width: 768px) {
@@ -84,15 +86,19 @@ export const H1 = styled.div`
     width: 442px;
     font-size: 36px;
     line-height: 44px;
+    & span::after {
+      height: 40px;
+      top: 4px;
+    }
   }
-`;
-
-export const Cursor = styled.div`
-  position: absolute;
-  margin: 36px 0 0 333px;
-  width: 2px;
-  height: 36px;
-  background: #212121;
+  @media (min-width: 1920px) {
+    width: 540px;
+    font-size: 44px;
+    line-height: 54px;
+    & span::after {
+      top: 10px;
+    }
+  }
 `;
 
 export const Options = styled.div`
@@ -168,6 +174,11 @@ export const Text1 = styled.ul<{ isOption: string }>`
     margin: 24px 0 0;
     width: 488px;
   }
+  @media (min-width: 1920px) {
+    font-size: 18px;
+    line-height: 23px;
+    width: 547px;
+  }
 `;
 
 export const Text2 = styled(Text1)<{ isOption: string }>`
@@ -200,6 +211,10 @@ export const Dot = styled.div`
   background: radial-gradient(95.51% 95.51% at 50% 50%, #FF474D 0%, rgba(255, 130, 134, 0.57) 100%);
   border-radius: 2px;
   transform: rotate(-45deg);
+  @media (min-width: 1920px) {
+    width: 12px;
+    height: 12px;
+  }
 `;
 
 export const RhombsTop = styled.div`
@@ -238,6 +253,12 @@ export const Button = styled.button`
   border: none;
   color: #FFFFFF;
   cursor: pointer;
+  @media (min-width: 1920px) {
+    width: 210px;
+    height: 56px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 `;
 
 export const BlockWrapper1 = styled.div`
@@ -250,6 +271,9 @@ export const BlockWrapper1 = styled.div`
   }
   @media (min-width: 1024px) {
     margin: 131px auto 0;
+  }
+  @media (min-width: 1920px) {
+    margin: 105px 0 0 372px;
   }
 `;
 
@@ -320,6 +344,9 @@ export const PurpleSquare = styled.div`
     height: 560px;
     margin: 60px 0 0 115px;
   }
+  //@media (min-width: 1920px) {
+  //  margin: 40px 0 0 115px;
+  //}
 `;
 export const RedSquare = styled.div`
   width: 395px;

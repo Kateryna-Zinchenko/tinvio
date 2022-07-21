@@ -22,6 +22,9 @@ export const Wrapper = styled.div`
     margin: 193px 0 0 -54px;
     padding: 0 0 48px 108px;
   }
+  @media (min-width: 1920px) {
+    margin: 232px 0 0 -54px;
+  }
 `;
 
 export const RhombsTop = styled.div`
@@ -142,6 +145,11 @@ export const H1 = styled.div`
     line-height: 42px;
     padding: 49px 0 0;
   }
+  @media (min-width: 1920px) {
+    font-size: 44px;
+    line-height: 54px;
+    padding: 48px 0 0;
+  }
 `;
 export const Border = styled.div`
   height: 1px;
@@ -182,6 +190,10 @@ export const Icons = styled.div`
   @media (min-width: 1280px) {
     width: 1032px;
   }
+  @media (min-width: 1920px) {
+    width: 1133px;
+    margin: 32px auto 0;
+  }
 `;
 
 export const Icon1 = styled.img`
@@ -190,6 +202,10 @@ export const Icon1 = styled.img`
   margin: 0 0 48px;
   @media (min-width: 1024px) {
     margin: 0 0 0;
+  }
+  @media (min-width: 1920px) {
+    width: 223px;
+    height: 33px;
   }
 `;
 
@@ -203,6 +219,10 @@ export const Icon2 = styled.img`
   @media (min-width: 1024px) {
     margin: 0 0 0;
   }
+  @media (min-width: 1920px) {
+    width: 229px;
+    height: 45px;
+  }
 `;
 
 export const Icon3 = styled.img`
@@ -215,6 +235,10 @@ export const Icon3 = styled.img`
   @media (min-width: 1024px) {
     margin: 0 0 0;
   }
+  @media (min-width: 1920px) {
+    width: 188px;
+    height: 27px;
+  }
 `;
 
 export const Icon4 = styled.img`
@@ -225,5 +249,9 @@ export const Icon4 = styled.img`
   }
   @media (min-width: 1024px) {
     margin: 0 0 0;
+  }
+  @media (min-width: 1920px) {
+    width: 212px;
+    height: 25px;
   }
 `;

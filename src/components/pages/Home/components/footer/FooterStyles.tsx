@@ -15,6 +15,9 @@ export const Wrapper = styled.ul`
     padding: 0 124px;
     margin: 311px 0 70px;
   }
+  @media (min-width: 1920px) {
+    padding: 0 304px;
+  }
 `;
 
 export const Logo = styled.img`
@@ -97,6 +100,9 @@ export const Links = styled.div`
   @media (min-width: 1280px) {
     right: 124px;
   }
+  @media (min-width: 1920px) {
+    right: 304px;
+  }
 `;
 
 export const LinksSocial = styled.div`
@@ -146,6 +152,9 @@ export const FooterText = styled.div`
     margin: 152px 0 0;
     position: absolute;
     left: 124px;
+  }
+  @media (min-width: 1920px) {
+    left: 304px;
   }
 `;
 

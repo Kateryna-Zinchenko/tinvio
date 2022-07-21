@@ -24,8 +24,8 @@ export const Wrapper = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  @media (min-width: 1440px) {
-    margin: 0 0 0 0;
+  @media (min-width: 1920px) {
+    margin: 0 358px 0 0;
   }
 `;
 
@@ -81,6 +81,10 @@ export const RhombsLeft = styled.div`
     bottom: -162px;
     left: 25px;
   }
+  @media (min-width: 1920px) {
+    bottom: -162px;
+    left: 250px;
+  }
 `;
 
 export const RhombsRight = styled.div`
@@ -109,6 +113,10 @@ export const RhombsRight = styled.div`
     bottom: 44px;
     right: 53px;
   }
+  @media (min-width: 1920px) {
+    bottom: 7px;
+    right: 293px;
+  }
 `;
 
 export const Inner = styled.div`
@@ -131,6 +139,10 @@ export const Inner = styled.div`
   @media (min-width: 1440px) {
     max-width: 1440px;
     padding: 0 170px 0 0
+  }
+  @media (min-width: 1920px) {
+    max-width: 1920px;
+    padding: 0 0 0 358px;
   }
 `;
 
@@ -159,6 +171,10 @@ export const H1 = styled.div`
   @media (min-width: 1440px) {
     text-align: left;
   }
+  @media (min-width: 1920px) {
+    font-size: 44px;
+    line-height: 54px;
+  }
 `;
 
 export const Text = styled.div`
@@ -186,6 +202,11 @@ export const Text = styled.div`
   }
   @media (min-width: 1440px) {
     width: 478px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 18px;
+    line-height: 24px;
+    width: 574px;
   }
 `;
 
@@ -221,6 +242,16 @@ export const Button = styled.button`
   @media (min-width: 1024px) {
     margin: 32px 0 0;
   }
+  @media (min-width: 1920px) {
+    width: 220px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 22px;
+    &::before {
+      width: 12px;
+      height: 14px;
+    }
+  }
 `;
 
 export const Tabs = styled(DeviceWidth)`
@@ -240,6 +271,9 @@ export const Tabs = styled(DeviceWidth)`
   }
   @media (min-width: 1440px) {
     padding: 107px 0 8px 733px;  
+  }
+  @media (min-width: 1920px) {
+    padding: 107px 0 8px 1199px;
   }
 `;
 
@@ -475,6 +509,10 @@ export const ArrowChats = styled.div`
     right: 19.5%;
     top: 35%;
   }
+  @media (min-width: 1920px) {
+    right: 15.5%;
+    top: 35%;
+  }
 `;
 
 export const ArrowOrders = styled.div`
@@ -503,6 +541,10 @@ export const ArrowOrders = styled.div`
   }
   @media (min-width: 1440px) {
     left: 61%;
+    top: 58%;
+  }
+  @media (min-width: 1920px) {
+    left: 69.5%;
     top: 58%;
   }
 `;
