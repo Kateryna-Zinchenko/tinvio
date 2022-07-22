@@ -82,8 +82,8 @@ export const RhombsLeft = styled.div`
     left: 25px;
   }
   @media (min-width: 1920px) {
-    bottom: -162px;
-    left: 250px;
+    bottom: -190px;
+    left: 275px;
   }
 `;
 
