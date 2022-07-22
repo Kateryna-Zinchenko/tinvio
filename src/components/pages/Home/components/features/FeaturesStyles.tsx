@@ -317,9 +317,8 @@ export const RhombsBottom = styled.div`
     width: 313px;
     height: 237px;
     top: 96px;
-    right: -371px;
+    right: -361px;
   }
-  
 `;
 
 
