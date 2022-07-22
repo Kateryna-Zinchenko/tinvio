@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  padding: 24px 0 0;
+  padding: 24px 16px 0;
   
   @media (min-width: 1024px) {
     position: fixed;

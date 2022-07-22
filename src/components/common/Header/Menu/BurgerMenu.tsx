@@ -44,6 +44,7 @@ const BurgerMenu = ({setIsOpenMenu}: Props) => {
                             <LeftWrapper>
                                 <Logo onClick={() => {
                                     nav('/')
+                                    setIsOpenMenu(false)
                                 }
                                 } src="/assets/images/logo.svg" alt="#"/>
                                 <ChooseLanguage onClick={setIsOpenLanguage}>
