@@ -7,8 +7,14 @@ import WhyChoose from "./components/whyChoose/WhyChoose";
 import Businesses from "./components/businesses/Businesses";
 import Form from "./components/form/Form";
 import Footer from "./components/footer/Footer";
+import { useToggle } from 'react-use';
+
+// interface Props {
+//     setIsScroll: (value: boolean) => void
+// }
 
 const Home = () => {
+
     return (
         <main className='home'>
             <Preview/>

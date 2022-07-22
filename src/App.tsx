@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from "./components/common/Header/Header";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./components/pages/Home/Home";
@@ -7,13 +6,15 @@ import BurgerMenu from "./components/common/Header/Menu/BurgerMenu";
 
 function App() {
     const [isOpenMenu, setIsOpenMenu] = useToggle(false);
+    const [isScroll, setIsScroll] = useToggle(false);
 
     return (
         <BrowserRouter>
             {
                 isOpenMenu ? <BurgerMenu setIsOpenMenu={setIsOpenMenu}/> :
                     <div className='app'>
-                        <Header isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu}/>
+                        <Header isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu}
+                                isScroll={isScroll}/>
                         <Routes>
                             <Route path='/' element={<Home/>}/>
                             <Route path='/home' element={<Home/>}/>

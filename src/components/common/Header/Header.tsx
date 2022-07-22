@@ -16,9 +16,10 @@ import { useToggle } from 'react-use';
 interface Props {
     setIsOpenMenu: (value: boolean) => void
     isOpenMenu: boolean
+    isScroll: boolean
 }
 
-const Header = ({setIsOpenMenu}: Props) => {
+const Header = ({setIsOpenMenu, isScroll}: Props) => {
     const [isOpenLanguage, setIsOpenLanguage] = useToggle(false);
 
     const nav = useNavigate();
@@ -29,7 +30,6 @@ const Header = ({setIsOpenMenu}: Props) => {
     }
     return (
         <section className='header'>
-            <Container>
                 <Wrapper>
                     <HeaderWrapper>
                         <LeftWrapper>
@@ -62,7 +62,7 @@ const Header = ({setIsOpenMenu}: Props) => {
                                 <Page isActive={window.location.pathname === '/company'}
                                       onClick={() => onLinkClick('company')}>Company</Page>
                             </Pages>
-                            <Button>Get Started</Button>
+                            <Button isScroll={isScroll}>Get Started</Button>
                         </LeftWrapper>
                         <MenuWrapper
                             onClick={() => setIsOpenMenu(true)}
@@ -73,7 +73,6 @@ const Header = ({setIsOpenMenu}: Props) => {
                         </MenuWrapper>
                     </HeaderWrapper>
                 </Wrapper>
-            </Container>
         </section>
 
     );
