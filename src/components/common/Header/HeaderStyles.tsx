@@ -6,8 +6,8 @@ export const Wrapper = styled.div`
   
   @media (min-width: 1024px) {
     position: fixed;
-    //background: rgba(255, 255, 255, 0.9);
-    //backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(24px);
     z-index: 5;
     padding: 24px 40px 24px;
   }
@@ -157,7 +157,7 @@ export const Page = styled.li<{ isActive: boolean }>`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<{ isScroll: boolean }>`
   display: none;
   @media (min-width: 1024px) {
     display: block;
@@ -169,7 +169,7 @@ export const Button = styled.button`
     width: 129px;
     height: 40px;
     color: #212121;
-    background: #FFFFFF;
+    background: ${({isScroll}) => isScroll ? '#FF474D' : '#FFFFFF'};
     border: none;
     border-radius: 16px;
     cursor: pointer;
