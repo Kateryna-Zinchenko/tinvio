@@ -41,6 +41,10 @@ export const Logo = styled.img`
   width: 114px;
   height: 38px;
   cursor: pointer;
+  @media (min-width: 1920px) {
+    width: 132px;
+    height: 44px;
+  }
 `;
 
 export const ChooseLanguage = styled.div`
@@ -54,6 +58,10 @@ export const ChooseLanguage = styled.div`
     margin: 5px 0 0 24px;
     cursor: pointer;
   }
+  @media (min-width: 1024px) {
+    width: 36px;
+    margin: 5px 0 0 16px;
+  }
 `;
 
 export const Language = styled.div`
@@ -63,6 +71,9 @@ export const Language = styled.div`
   font-size: 16px;
   line-height: 27px;
   color: #212121;
+  @media (min-width: 1920px) {
+    font-size: 18px;
+  }
 `;
 
 export const ArrowDown = styled.div<{ isOpenLanguage: boolean }>`
@@ -124,6 +135,7 @@ export const Pages = styled.ul`
   }
   @media (min-width: 1920px) {
     margin: 0 0 0 299px;
+    width: 347px;
   }
 `;
 
@@ -138,6 +150,10 @@ export const Page = styled.li<{ isActive: boolean }>`
     color: ${({isActive}) => isActive ? '#FF474D' : '#212121'};
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     cursor: pointer;
+  }
+  @media (min-width: 1920px) {
+    font-size: 18px;
+    line-height: 22px;
   }
 `;
 
@@ -159,6 +175,13 @@ export const Button = styled.button`
     cursor: pointer;
     position: absolute;
     right: 0;
+  }
+  @media (min-width: 1920px) {
+    width: 156px;
+    height: 48px;
+    border-radius: 19px;
+    font-size: 17px;
+    line-height: 21px;;
   }
 `;
 
