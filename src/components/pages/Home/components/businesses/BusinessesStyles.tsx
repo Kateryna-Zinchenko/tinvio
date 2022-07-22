@@ -181,6 +181,10 @@ export const BoxWrapper = styled.div`
     width: 168px;
     height: 168px;
   }
+  @media (min-width: 1920px) {
+    width: 188px;
+    height: 188px;
+  }
 `;
 
 export const MainBox = styled.div`
@@ -201,6 +205,10 @@ export const MainBox = styled.div`
     width: 121px;
     height: 118px;
   }
+  @media (min-width: 1920px) {
+    width: 135px;
+    height: 131px;
+  }
 `;
 
 export const Box = styled.div`
@@ -219,6 +227,10 @@ export const Box = styled.div`
   @media (min-width: 1024px) {
     width: 90px;
     height: 90px;
+  }
+  @media (min-width: 1920px) {
+    width: 101px;
+    height: 101px;
   }
 `;
 
@@ -358,6 +370,16 @@ export const Boxes1 = styled.div`
     max-width: 168px;
     margin: 0 0 -178px 0;
   }
+  @media (min-width: 1280px) {
+    margin: 0 0 -215px 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 0 0 -223px 0;
+  }
+  @media (min-width: 1920px) {
+    width: 188px;
+    margin: 0 0 -286px 0;
+  }
 `;
 
 
@@ -371,6 +393,9 @@ export const Boxes2 = styled.div`
   }
   @media (min-width: 1024px) {
     width: 455px;
+  }
+  @media (min-width: 1920px) {
+    width: 475px;
   }
 `;
 
@@ -386,6 +411,16 @@ export const Boxes3 = styled.div`
     width: 623px;
     margin: 0;
   }
+  @media (min-width: 1280px) {
+    margin: 16px 0 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 33px 0 0;
+  }
+  @media (min-width: 1920px) {
+    width: 643px;
+    margin: 96px 0 0;
+  }
 `;
 
 export const BoxesWrapper = styled.div`
@@ -399,10 +434,13 @@ export const BoxesWrapper = styled.div`
     margin: 223px 0 0px -540px;
   }
   @media (min-width: 1280px) {
-    margin: 223px 0 0px -610px;
+    margin: 236px 0 0px -589px;
   }
   @media (min-width: 1440px) {
-    margin: 223px 0 0px -731px;
+    margin: 230px 0 0px -720px;
+  }
+  @media (min-width: 1920px) {
+    margin: 199px 0 0px -698px;
   }
 `;
 
@@ -421,10 +459,13 @@ export const BoxesWrapper2 = styled.div`
     margin: -376px 0 0 540px;
   }
   @media (min-width: 1280px) {
-    margin: -376px 0 0 608px;
+    margin: -365px 0 0 587px;
   }
   @media (min-width: 1440px) {
-    margin: -376px 0 0 730px;
+    margin: -370px 0 0 719px;
+  }
+  @media (min-width: 1920px) {
+    margin: -412px 0 0 700px;
   }
 `;
 export const BigBoxWrapper = styled.div`
@@ -442,7 +483,15 @@ export const BigBoxWrapper = styled.div`
   @media (min-width: 1024px) {
     width: 468px;
     height: 468px;
-    margin: -373px auto 0
+    margin: -363px auto 0;
+  }
+  @media (min-width: 1440px) {
+    margin: -367px auto 0;
+  }
+  @media (min-width: 1920px) {
+    width: 493px;
+    height: 493px;
+    margin: -410px auto 0;
   }
 `;
 export const PurpleBox = styled.div`
@@ -464,6 +513,11 @@ export const PurpleBox = styled.div`
     height: 329px;
     border-radius: 24px;
   }
+  @media (min-width: 1920px) {
+    width: 349px;
+    height: 349px;
+    border-radius: 26px;
+  }
 `;
 export const MiddleBox = styled(PurpleBox)`
   width: 215px;
@@ -478,6 +532,11 @@ export const MiddleBox = styled(PurpleBox)`
     width: 292px;
     height: 292px;
   }
+  @media (min-width: 1920px) {
+    width: 309px;
+    height: 309px;
+    border-radius: 26px;
+  }
 `;
 export const RedBox = styled(MiddleBox)`
   height: 182px;
@@ -490,6 +549,11 @@ export const RedBox = styled(MiddleBox)`
   @media (min-width: 1024px) {
     width: 246px;
     height: 246px;
+  }
+  @media (min-width: 1920px) {
+    width: 261px;
+    height: 261px;
+    border-radius: 26px;
   }
 `;
 export const BoxInner = styled.div`

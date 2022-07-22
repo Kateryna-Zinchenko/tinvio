@@ -258,6 +258,7 @@ export const Button = styled.button`
     height: 56px;
     font-size: 20px;
     line-height: 25px;
+    border-radius: 18px;
   }
 `;
 

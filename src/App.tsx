@@ -3,10 +3,24 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./components/pages/Home/Home";
 import {useToggle} from 'react-use';
 import BurgerMenu from "./components/common/Header/Menu/BurgerMenu";
+import {useEffect} from "react";
 
 function App() {
     const [isOpenMenu, setIsOpenMenu] = useToggle(false);
     const [isScroll, setIsScroll] = useToggle(false);
+
+    const scroll = () => {
+        if (window.scrollY < 50){
+            setIsScroll(true);
+        }
+        else
+            setIsScroll(false)
+    }
+
+    useEffect( () => {
+        scroll();
+    }, [])
+
 
     return (
         <BrowserRouter>

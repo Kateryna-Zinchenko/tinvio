@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
     ArrowDown, Button,
     ChooseLanguage, Flag, Flags,
@@ -28,6 +28,7 @@ const Header = ({setIsOpenMenu, isScroll}: Props) => {
         setIsOpenMenu(false)
         nav(`/${value}`)
     }
+
     return (
         <section className='header'>
                 <Wrapper>
