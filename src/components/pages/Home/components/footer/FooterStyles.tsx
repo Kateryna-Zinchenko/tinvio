@@ -17,6 +17,7 @@ export const Wrapper = styled.ul`
   }
   @media (min-width: 1920px) {
     padding: 0 304px;
+    margin: 356px 0 70px;
   }
 `;
 

@@ -41,11 +41,11 @@ export const Wrapper = styled(DeviceWidth)`
     padding: 24px 0 0 178px;
   }
   @media (min-width: 1440px) {
-    height: 397px;
     padding: 0 0 0 178px;
   }
   @media (min-width: 1920px) {
     padding: 0 0 0 358px;
+    height: 442px;
   }
 `;
 
@@ -321,6 +321,9 @@ export const Map = styled.img`
   }
   @media (min-width: 1440px) {
     margin: -674px 0 0 -338px;
+  }
+  @media (min-width: 1920px) {
+    margin: -728px 0 0 -233px;
   }
 `;
 

@@ -24,6 +24,7 @@ export const Wrapper = styled(DeviceWidth)`
   }
   @media (min-width: 1920px) {
     margin: 190px 0 0 54px;
+    height: 696px;
   }
 `;
 
@@ -93,6 +94,10 @@ export const H1 = styled.div`
     font-size: 36px;
     line-height: 42px;
   }
+  @media (min-width: 1920px) {
+    font-size: 44px;
+    line-height: 54px;
+  }
 `;
 
 export const Slider = styled.div`
@@ -105,6 +110,9 @@ export const Slider = styled.div`
   }
   @media (min-width: 1280px) {
     margin: 40px auto 0;
+  }
+  @media (min-width: 1920px) {
+    margin: 42px auto 0;
   }
 `;
 
@@ -126,11 +134,15 @@ export const Slide1 = styled.div<{ slide: string }>`
     position: relative;
     width: 947px;
     height: 377px;
-    padding: 32px 0 30px 0;
+    padding: 0px 0 0px 0;
   }
   @media (min-width: 1280px) {
     width: 1032px;
-    padding: 32px 0 0;
+    //padding: 32px 0 0;
+  }
+  @media (min-width: 1920px) {
+    width: 1132px;
+    //padding: 32px 0 0;
   }
 `;
 export const Slide2 = styled(Slide1)<{ slide: string }>`
@@ -162,16 +174,19 @@ export const Img1 = styled.img`
   @media (min-width: 1024px) {
     width: 328px;
     height: 317px;
-    margin: -2px 0 0 583px;
-    position: relative;
+    margin: 0;
+    position: absolute;
+    right: 36px;
+    top: 30px;
     z-index: 1;
   }
   @media (min-width: 1280px) {
-    margin: -2px 0 0 686px;
+    right: 17px;
   }
 `;
-export const Img2 = styled.img`
+export const Img2 = styled(Img1)`
   width: 189px;
+  height: unset;
   margin: 0 0 0 104px;
   @media (min-width: 768px) {
     width: 249px;
@@ -179,46 +194,51 @@ export const Img2 = styled.img`
   }
   @media (min-width: 1024px) {
     width: 278px;
-    margin: 0 0 0 669px;
-    position: relative;
-    z-index: 1;
+    right: 0;
+    top: 3px;
   }
   @media (min-width: 1280px) {
-    margin: 0 0 0 760px;
+    top: 8px;
+    right: 2px;
+  }
+  @media (min-width: 1920px) {
+    top: 8px;
+    right: 2px;
   }
 `;
-export const Img3 = styled.img`
+export const Img3 = styled(Img1)`
   width: 243px;
+  height: unset;
   margin: -21px 0 0 67px;
   @media (min-width: 768px) {
     width: 318px;
     margin: -21px 0 -13px 112px;
   }
   @media (min-width: 1024px) {
-    position: relative;
-    z-index: 1;
     width: 355px;
-    margin: -28px 0 0 580px
+    right: 12px;
+    top: 25px;
   }
-  @media (min-width: 1280px) {
-    margin: -28px 0 0 657px
+  @media (min-width: 1920px) {
+    width: 349px;
+    right: 12px;
+    top: 22px;
   }
+  
 `;
-export const Img4 = styled.img`
+export const Img4 = styled(Img1)`
   width: 184px;
+  height: unset;
   margin: 4px 0 0 92px;
   @media (min-width: 768px) {
     width: 235px;
     margin: 5.5px 0 0 140px;
   }
   @media (min-width: 1024px) {
-    position: relative;
-    z-index: 1;
     width: 278px;
-    margin: -8px 0 0 653px;
-  }
-  @media (min-width: 1280px) {
-    margin: -8px 0 0 737px;
+    top: unset;
+    bottom: 0;
+    right: 17px;
   }
 `;
 
@@ -239,6 +259,9 @@ export const TextBox1 = styled.div`
   @media (min-width: 1280px) {
     width: 823px;
   }
+  @media (min-width: 1920px) {
+    width: 933px;
+  }
 `;
 export const TextBox2 = styled(TextBox1)`
   @media (min-width: 1024px) {
@@ -246,6 +269,9 @@ export const TextBox2 = styled(TextBox1)`
   }
   @media (min-width: 1280px) {
     width: 874px;
+  }
+  @media (min-width: 1920px) {
+    width: 976px;
   }
 `;
 export const TextBox3 = styled(TextBox1)`
@@ -255,6 +281,9 @@ export const TextBox3 = styled(TextBox1)`
   @media (min-width: 1280px) {
     width: 741px;
   }
+  @media (min-width: 1920px) {
+    width: 866px;
+  }
 `;
 export const TextBox4 = styled(TextBox1)`
   @media (min-width: 1024px) {
@@ -262,6 +291,9 @@ export const TextBox4 = styled(TextBox1)`
   }
   @media (min-width: 1280px) {
     width: 840px;
+  }
+  @media (min-width: 1920px) {
+    width: 935px;
   }
 `;
 
@@ -284,6 +316,11 @@ export const Text1 = styled.div`
   @media (min-width: 1280px) {
     width: 626px;
   }
+  @media (min-width: 1920px) {
+    width: 701px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 `;
 export const Text2 = styled(Text1)`
   @media (min-width: 1024px) {
@@ -291,6 +328,9 @@ export const Text2 = styled(Text1)`
   }
   @media (min-width: 1280px) {
     width: 681px;
+  }
+  @media (min-width: 1920px) {
+    width: 759px;
   }
 `;
 export const Text3 = styled(Text1)`
@@ -300,6 +340,9 @@ export const Text3 = styled(Text1)`
   @media (min-width: 1280px) {
     width: 565px;
   }
+  @media (min-width: 1920px) {
+    width: 698px;
+  }
 `;
 export const Text4 = styled(Text1)`
   @media (min-width: 1024px) {
@@ -307,6 +350,9 @@ export const Text4 = styled(Text1)`
   }
   @media (min-width: 1280px) {
     width: 621px;
+  }
+  @media (min-width: 1920px) {
+    width: 750px;
   }
 `;
 
@@ -320,10 +366,15 @@ export const Caption = styled.div`
     width: 426px;
   }
   @media (min-width: 1024px) {
-    margin: -163px 0 0 56px;
+    margin: 0;
+    display: block;
+    padding: 188px 0 0 56px;
   }
   @media (min-width: 1280px) {
-    margin: -175px 0 0 56px;
+    padding: 172px 0 0 56px;
+  }
+  @media (min-width: 1920px) {
+    padding: 175px 0 0 56px;
   }
 `;
 
@@ -333,10 +384,15 @@ export const Caption2 = styled(Caption)`
     margin: 26px auto 0;
   }
   @media (min-width: 1024px) {
-    margin: -181px 0 0 56px;
+    margin: 0;
+    display: block;
+    padding: 194px 0 0 56px;
   }
   @media (min-width: 1280px) {
-    margin: -198px 0 0 56px;
+    padding: 178px 0 0 56px;
+  }
+  @media (min-width: 1920px) {
+    padding: 181px 0 0 56px;
   }
 `;
 
@@ -346,10 +402,15 @@ export const Caption3 = styled(Caption)`
     margin: 28px auto 0;
   }
   @media (min-width: 1024px) {
-    margin: -186px 0 0 56px;
+    margin: 0;
+    display: block;
+    padding: 196px 0 0 56px;
   }
   @media (min-width: 1280px) {
-    margin: -202px 0 0 56px;
+    padding: 180px 0 0 56px;
+  }
+  @media (min-width: 1920px) {
+    padding: 183px 0 0 56px;
   }
 `;
 
@@ -359,10 +420,15 @@ export const Caption4 = styled(Caption)`
     margin: 28px auto 0;
   }
   @media (min-width: 1024px) {
-    margin: -182px 0 0 56px;
+    margin: 0;
+    display: block;
+    padding: 196px 0 0 56px;
   }
   @media (min-width: 1280px) {
-    margin: -198px 0 0 56px;
+    padding: 180px 0 0 56px;
+  }
+  @media (min-width: 1920px) {
+    padding: 183px 0 0 56px;
   }
 `;
 
@@ -451,11 +517,19 @@ export const Quotes1 = styled.div`
   height: 24px;
   margin: 10px 0 0;
   @media (min-width: 1024px) {
-    margin: -59px -67px 0 0;
+    margin: 0;
+    position: absolute;
+    top: 128px;
+    left: 525px;
     z-index: 1;
   }
   @media (min-width: 1280px) {
-    margin: -68px -226px 0 0;
+    top: 104px;
+    left: 682px;
+  }
+  @media (min-width: 1920px) {
+    top: 107px;
+    left: 757px;
   }
 `;
 export const Quotes2 = styled(Quotes1)`
@@ -464,10 +538,15 @@ export const Quotes2 = styled(Quotes1)`
     margin: 4px 0 0;
   }
   @media (min-width: 1024px) {
-    margin: -72px -148px 0 0;
+    margin: 0;
+    position: absolute;
+    left: 604px;
   }
   @media (min-width: 1280px) {
-    margin: -72px -277px 0 0;
+    left: 737px;
+  }
+  @media (min-width: 1920px) {
+    left: 815px;
   }
 `;
 export const Quotes3 = styled(Quotes1)`
@@ -476,10 +555,15 @@ export const Quotes3 = styled(Quotes1)`
     margin: 2px 0 0;
   }
   @media (min-width: 1024px) {
-    margin: -77px -108px 0 0;
+    margin: 0;
+    position: absolute;
+    left: 569px;
   }
   @media (min-width: 1280px) {
-    margin: -77px -166px 0 0;
+    left: 621px;
+  }
+  @media (min-width: 1920px) {
+    left: 754px;
   }
 `;
 export const Quotes4 = styled(Quotes1)`
@@ -488,47 +572,31 @@ export const Quotes4 = styled(Quotes1)`
     margin: 2px 0 0;
   }
   @media (min-width: 1024px) {
-    margin: -75px -137px 0 0;
+    margin: 0;
+    position: absolute;
+    left: 597px; 
   }
   @media (min-width: 1280px) {
-    margin: -75px -220px 0 0;
-  } 
+    left: 677px;
+  }
+  @media (min-width: 1920px) {
+    left: 806px;
+  }
 `;
 
-export const Arrows1 = styled.div`
+export const Arrows = styled.div`
   display: none;
   @media (min-width: 1024px) {
+    position: absolute;
+    bottom: 48px;
+    left: 56px;
     display: flex;
     width: 104px;
     justify-content: space-between;
-    margin: 40px 0 0 56px;
   }
   @media (min-width: 1280px) {
-    margin: 45px 0 0 56px;
-  }
-`;
-export const Arrows2 = styled(Arrows1)`
-  @media (min-width: 1024px) {
-    margin: 37.5px 0 0 56px;
-  }
-  @media (min-width: 1280px) {
-    margin: 51.5px 0 0 56px;
-  }
-`;
-export const Arrows3 = styled(Arrows1)`
-  @media (min-width: 1024px) {
-    margin: 37.5px 0 0 56px;
-  }
-  @media (min-width: 1280px) {
-    margin: 53.5px 0 0 56px;
-  }
-`;
-export const Arrows4 = styled(Arrows1)`
-  @media (min-width: 1024px) {
-    margin: 41px 0 0 56px;
-  }
-  @media (min-width: 1280px) {
-    margin: 53px 0 0 56px;
+    bottom: 56px;
+    left: 56px;
   }
 `;
 
