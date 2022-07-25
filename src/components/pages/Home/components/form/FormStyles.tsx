@@ -149,7 +149,7 @@ export const FormBlock = styled.div`
   }
 `;
 
-export const FormBlockInner = styled.div`
+export const FormBlockInner = styled.form`
   width: 343px;
   background: #FFFFFF;
   border-radius: 32px;
@@ -169,10 +169,12 @@ export const Title = styled.div`
   font-size: 20px;
   line-height: 25px;
   color: #212121;
+
   & span {
     color: #FF474D;
     font-weight: 700;
   }
+
   @media (min-width: 768px) {
     font-size: 24px;
     line-height: 29px;
@@ -198,26 +200,41 @@ export const Inputs = styled.div`
 
 export const Input = styled.div`
   margin: 0 0 16px;
+
   &:last-child {
     margin: 0 0 0;
   }
-    & input {
-      margin: 8px 0 0;
-      padding: 11px 0 12px 16px;
-      border: none;
-      width: 100%;
-      height: 40px;
-      background: #F3F4F5;
-      border-radius: 8px;
-      &::placeholder {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #BDBDBD;
-      }
+
+  & input {
+    margin: 8px 0 0;
+    padding: 11px 0 12px 16px;
+    width: 100%;
+    height: 40px;
+    background: #F3F4F5;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #212121;
+
+    &::placeholder {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #BDBDBD;
     }
+    
+    &:focus {
+      border: 1px solid #D2D2D2;
+    }
+  }
+
   @media (min-width: 1920px) {
     & input {
       padding: 14px 0 15px 16px;
@@ -274,6 +291,7 @@ export const TextAfterButton = styled.div`
   margin: 12px 103px 0 101px;
   padding: 0 0 40px;
   color: #BDBDBD;
+
   &::after {
     position: absolute;
     content: url("/assets/icons/hands-emoji.png");
@@ -282,6 +300,7 @@ export const TextAfterButton = styled.div`
     top: -1px;
     right: 0;
   }
+
   @media (min-width: 768px) {
     margin: 14px 142px 0 144px;
   }
