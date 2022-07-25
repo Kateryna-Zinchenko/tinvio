@@ -6,12 +6,8 @@ import FeaturedOn from "./components/featuredOn/FeaturedOn";
 import WhyChoose from "./components/whyChoose/WhyChoose";
 import Businesses from "./components/businesses/Businesses";
 import Form from "./components/form/Form";
-import Footer from "./components/footer/Footer";
+import Footer from "../../common/footer/Footer";
 import { useToggle } from 'react-use';
-
-// interface Props {
-//     setIsScroll: (value: boolean) => void
-// }
 
 const Home = () => {
 
@@ -24,7 +20,6 @@ const Home = () => {
             <WhyChoose/>
             <Businesses/>
             <Form/>
-            <Footer/>
         </main>
 
     );
