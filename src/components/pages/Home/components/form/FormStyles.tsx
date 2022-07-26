@@ -149,7 +149,7 @@ export const FormBlock = styled.div`
   }
 `;
 
-export const FormBlockInner = styled.form`
+export const FormBlockInner = styled.div`
   width: 343px;
   background: #FFFFFF;
   border-radius: 32px;
@@ -199,47 +199,59 @@ export const Inputs = styled.div`
 `;
 
 export const Input = styled.div`
+  position: relative;
   margin: 0 0 16px;
 
   &:last-child {
     margin: 0 0 0;
   }
+`;
 
-  & input {
-    margin: 8px 0 0;
-    padding: 11px 0 12px 16px;
-    width: 100%;
-    height: 40px;
-    background: #F3F4F5;
-    outline: none;
-    border: none;
-    border-radius: 8px;
+export const InputField = styled.input<{ isEmpty:boolean }>`
+  margin: 8px 0 0;
+  padding: 11px 0 12px 16px;
+  width: 100%;
+  height: 40px;
+  background: #F3F4F5;
+  outline: none;
+  border: ${({isEmpty}) => (isEmpty === true ? '1px solid #FF474D' : 'none')};
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #212121;
+
+  &::placeholder {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #212121;
+    color: #BDBDBD;
+  }
 
-    &::placeholder {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      color: #BDBDBD;
-    }
-    
-    &:focus {
-      border: 1px solid #D2D2D2;
-    }
+  &:focus {
+    border: 1px solid #D2D2D2;
   }
 
   @media (min-width: 1920px) {
-    & input {
-      padding: 14px 0 15px 16px;
-    }
+    padding: 14px 0 15px 16px;
   }
+`;
+
+export const RequiredFields = styled.div<{ isEmpty:boolean }>`
+  display: ${({isEmpty}) => (isEmpty === true ? 'block' : 'none')};
+  position: absolute;
+  bottom: -19px;
+  right: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FF474D;
 `;
 
 export const InputTitle = styled.div`
