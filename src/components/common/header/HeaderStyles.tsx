@@ -140,6 +140,11 @@ export const Pages = styled.ul`
 `;
 
 export const Page = styled.li<{ isActive: boolean }>`
+  &:hover {
+    color: #FF474D;
+    transition: 0.3s;
+  }
+  
   @media (min-width: 1024px) {
     font-family: 'Gilroy';
     font-style: normal;
@@ -159,6 +164,12 @@ export const Page = styled.li<{ isActive: boolean }>`
 
 export const Button = styled.button`
   display: none;
+  
+  &:hover {
+    background: #E0E0E1;
+    transition: 0.2s;
+  }
+  
   @media (min-width: 1024px) {
     display: block;
     font-family: 'Gilroy';

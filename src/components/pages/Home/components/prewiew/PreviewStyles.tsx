@@ -189,6 +189,12 @@ export const Button = styled.button`
   border: none;
   border-radius: 16px;
   cursor: pointer;
+  
+  &:hover {
+    background: rgba(255, 71, 77, 0.8);
+    transition: 0.3s;
+  }
+  
   @media (min-width: 1024px) {
     margin: 32px 0 0;
   }

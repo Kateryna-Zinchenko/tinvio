@@ -14,14 +14,18 @@ import {
     BlockWrapper1,
     PurpleSquare,
     RedSquare,
-    DeviceLeft,
-    DeviceRight,
+    DeviceLeft1,
+    DeviceRight1,
     Stars,
     RhombsBottom,
     RhombsTop,
     Rhombus,
     H1,
-    WrapperCommon
+    WrapperCommon,
+    DeviceLeft2,
+    DeviceRight2,
+    DeviceLeft3,
+    DeviceRight3
 } from "./FeaturesStyles";
 
 const Features = () => {
@@ -105,8 +109,12 @@ const Features = () => {
                         <RedSquare/>
                     </PurpleSquare>
                     <RhombsBottom/>
-                    <DeviceLeft src='/assets/images/device-left-features.png'/>
-                    <DeviceRight src='/assets/images/device-right-features.png'/>
+                    <DeviceLeft1 isOption={isOption} src='/assets/images/device-left-chats-features.png'/>
+                    <DeviceRight1 isOption={isOption} src='/assets/images/device-right-chats-features.png'/>
+                    <DeviceLeft2 isOption={isOption} src='/assets/images/device-left-orders-features.png'/>
+                    <DeviceRight2 isOption={isOption} src='/assets/images/device-right-orders-features.png'/>
+                    <DeviceLeft3 isOption={isOption} src='/assets/images/device-left-payments-features.png'/>
+                    <DeviceRight3 isOption={isOption} src='/assets/images/device-right-payments-features.png'/>
                 </BlockWrapper1>
             </WrapperCommon>
         </section>
