@@ -125,6 +125,9 @@ export const Option = styled.button<{ isOption: string }>`
   &:last-child {
     margin: 0 0 0 0;
   }
+  &:hover {
+    border: 1px solid #212121;
+  }
   @media (min-width: 768px) {
     width: 107px;
   }
@@ -253,6 +256,12 @@ export const Button = styled.button`
   border: none;
   color: #FFFFFF;
   cursor: pointer;
+
+  &:hover {
+    background: rgba(255, 71, 77, 0.8);
+    transition: 0.3s;
+  }
+  
   @media (min-width: 1920px) {
     width: 210px;
     height: 56px;
@@ -365,7 +374,8 @@ export const RedSquare = styled.div`
   }
 `;
 
-export const DeviceLeft = styled.img`
+export const DeviceLeft1 = styled.img<{ isOption:string }>`
+  display: ${({isOption}) => (isOption === 'chats' ? 'block' : 'none')};
   width: 246px;
   height: 399px;
   position: absolute;
@@ -385,12 +395,14 @@ export const DeviceLeft = styled.img`
   }
 `;
 
-export const DeviceRight = styled.img`
+export const DeviceRight1 = styled.img<{ isOption:string }>`
+  display: ${({isOption}) => (isOption === 'chats' ? 'block' : 'none')};
   width: 240px;
   height: 399px;
   position: absolute;
   top: 170px;
   right: -40px;
+  transition: 1s;
   @media (min-width: 768px) {
     width: 320px;
     height: 531px;
@@ -407,6 +419,22 @@ export const DeviceRight = styled.img`
     top: 226px;
     right: -332px;
   }
+`;
+
+export const DeviceLeft2 = styled(DeviceLeft1)<{ isOption:string }>`
+  display: ${({isOption}) => (isOption === 'orders' ? 'block' : 'none')};
+`;
+
+export const DeviceRight2 = styled(DeviceRight1)<{ isOption:string }>`
+  display: ${({isOption}) => (isOption === 'orders' ? 'block' : 'none')};
+`;
+
+export const DeviceLeft3 = styled(DeviceLeft1)<{ isOption:string }>`
+  display: ${({isOption}) => (isOption === 'payments' ? 'block' : 'none')};
+`;
+
+export const DeviceRight3 = styled(DeviceRight1)<{ isOption:string }>`
+  display: ${({isOption}) => (isOption === 'payments' ? 'block' : 'none')};
 `;
 
 

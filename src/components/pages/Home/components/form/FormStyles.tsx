@@ -280,6 +280,12 @@ export const Button = styled.button`
   padding: 14px 64px;
   margin: 48px 83px 0 80px;
   cursor: pointer;
+
+  &:hover {
+    background: rgba(255, 71, 77, 0.8);
+    transition: 0.3s;
+  }
+  
   @media (min-width: 768px) {
     display: block;
     margin: 32px auto 0;

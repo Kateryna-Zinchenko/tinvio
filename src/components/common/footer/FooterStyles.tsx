@@ -69,9 +69,16 @@ export const Page = styled.li<{ isActive: boolean }>`
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   margin: 0 0 16px;
+  
   &:last-child {
     margin: 0 0 0;
   }
+  
+  &:hover {
+    color: #FF474D;
+    transition: 0.3s;
+  }
+  
   @media (min-width: 768px) {
     margin: 0 56px 0 0;
     font-size: 16px;
