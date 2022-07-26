@@ -1,21 +1,36 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
+import {useToggle} from 'react-use';
 import {
     Button,
     FormBlock,
     FormBlockInner,
     H1,
     Input,
+    InputField,
     Inputs,
-    InputTitle, Map, RhombsLeft, RhombsRight, TextAfterButton,
+    InputTitle, Map, RequiredFields, RhombsLeft, RhombsRight, TextAfterButton,
     Title,
     Wrapper,
     WrapperTrans
 } from "./FormStyles";
 
 const Form = () => {
-    const [name, setName] = useState<string>('');
-    const [businessName, setBusinessName] = useState<string>('');
-    const [phone, setPhone] = useState<string>('');
+
+    const nameRef = useRef<HTMLInputElement>(null);
+    const businessNameRef = useRef<HTMLInputElement>(null);
+    const phoneRef = useRef<HTMLInputElement>(null);
+    const [emptyFields, setEmptyFields] = useState<any>([])
+
+    const handleValidate = () => {
+        const arr = [{name: nameRef?.current?.name, value: nameRef?.current?.value},
+            {name: businessNameRef?.current?.name, value: businessNameRef?.current?.value},
+            {name: phoneRef?.current?.name, value: phoneRef?.current?.value}
+        ];
+        const newArr = arr.filter((item) => item.value === '')
+        const newArr2 = newArr.map((i) => i.name)
+        setEmptyFields(newArr2)
+        console.log(newArr2)
+    }
 
     return (
         <section className='form'>
@@ -30,25 +45,44 @@ const Form = () => {
                             <Inputs>
                                 <Input>
                                     <InputTitle>Name</InputTitle>
-                                    <input value={name} type="text" placeholder='John Appleseed'
-                                           onChange={(e) => setName(e.target.value)}
-                                           spellCheck="false"
+                                    <InputField type="text" placeholder='John Appleseed'
+                                                spellCheck="false"
+                                                ref={nameRef}
+                                                name='name'
+                                                isEmpty={emptyFields.includes(nameRef?.current?.name)}
                                     />
+                                    <RequiredFields isEmpty={emptyFields.includes(nameRef?.current?.name)}>
+                                        Required field
+                                    </RequiredFields>
                                 </Input>
                                 <Input>
                                     <InputTitle>Business Name</InputTitle>
-                                    <input value={businessName} type="text" placeholder='Burgers &Boba (Singapore)'
-                                           onChange={(e) => setBusinessName(e.target.value)}
+                                    <InputField type="text" placeholder='Burgers &Boba (Singapore)'
+                                                spellCheck="false"
+                                                ref={businessNameRef}
+                                                name='businessName'
+                                                isEmpty={emptyFields.includes(businessNameRef?.current?.name)}
                                     />
+                                    <RequiredFields isEmpty={emptyFields.includes(businessNameRef?.current?.name)}>
+                                        Required field
+                                    </RequiredFields>
                                 </Input>
                                 <Input>
                                     <InputTitle>Phone</InputTitle>
-                                    <input value={phone} type="text" placeholder='65 9123 4567'
-                                           onChange={(e) => setPhone(e.target.value)}
+                                    <InputField type="tel" placeholder="65 9123 4567"
+                                                spellCheck="false"
+                                                ref={phoneRef}
+                                                name='phone'
+                                                isEmpty={emptyFields.includes(phoneRef?.current?.name)}
                                     />
+                                    <RequiredFields isEmpty={emptyFields.includes(phoneRef?.current?.name)}>
+                                        Required field
+                                    </RequiredFields>
                                 </Input>
                             </Inputs>
-                            <Button type='submit'>Submit</Button>
+                            <Button onClick={handleValidate}>
+                                Submit
+                            </Button>
                             <TextAfterButton>No spam, promise</TextAfterButton>
                         </FormBlockInner>
                     </FormBlock>
