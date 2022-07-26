@@ -224,7 +224,7 @@ export const Img3 = styled(Img1)`
     right: 12px;
     top: 22px;
   }
-  
+
 `;
 export const Img4 = styled(Img1)`
   width: 184px;
@@ -489,7 +489,7 @@ export const Name = styled.div`
     font-size: 18px;
     line-height: 22px;
   }
-  
+
 `;
 export const Position = styled.div`
   font-family: 'Inter';
@@ -574,7 +574,7 @@ export const Quotes4 = styled(Quotes1)`
   @media (min-width: 1024px) {
     margin: 0;
     position: absolute;
-    left: 597px; 
+    left: 597px;
   }
   @media (min-width: 1280px) {
     left: 677px;
@@ -600,15 +600,17 @@ export const Arrows = styled.div`
   }
 `;
 
-export const ArrowBoxLeft = styled.div`
+export const ArrowBox = styled.div`
   width: 40px;
   height: 40px;
   background: #D2D2D2;
   border-radius: 8px;
   cursor: pointer;
-`;
-export const ArrowBoxRight = styled(ArrowBoxLeft)`
-  
+
+  &:hover {
+    background: rgba(209, 209, 209, 0.7);
+    transition: 0.3s;
+  }
 `;
 
 export const ArrowLeft = styled.div`
@@ -638,7 +640,7 @@ export const Dot1 = styled.div<{ slide: string }>`
   height: 10px;
   transform: rotate(45deg);
   border-radius: 2px;
-  background: ${({slide}) => (slide === 'first-slide' ? 
+  background: ${({slide}) => (slide === 'first-slide' ?
           'radial-gradient(136.24% 142.18% at 50% 50%, #FFFFFF 0%, rgba(250, 250, 250, 0.8) 100%)' :
           'radial-gradient(95.51% 95.51% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(250, 250, 250, 0.2) 100%)')};
   cursor: pointer;
