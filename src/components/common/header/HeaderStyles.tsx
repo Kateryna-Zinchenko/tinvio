@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{ isScroll:boolean }>`
   width: 100%;
   padding: 24px 16px;
-  backdrop-filter: blur(24px);
+  backdrop-filter: ${({isScroll}) => isScroll ? 'blur(24px)' : 'none'};
+  background: ${({isScroll}) => isScroll ? 'rgba(255, 255, 255, 0.9)' : 'none'};
+  transition: 0.4s;
   position: fixed;
   z-index: 2;
 
   @media (min-width: 1024px) {
-    background: rgba(255, 255, 255, 0.9);
     padding: 24px 40px 24px;
   }
   @media (min-width: 1280px) {
@@ -163,7 +164,7 @@ export const Page = styled.li<{ isActive: boolean }>`
   }
 `;
 
-export const Button = styled.button<{ reachedBottom:boolean }>`
+export const Button = styled.button<{ isScroll:boolean }>`
   display: none;
   
   &:hover {
@@ -180,9 +181,8 @@ export const Button = styled.button<{ reachedBottom:boolean }>`
     line-height: 17px;
     width: 129px;
     height: 40px;
-    color: #212121;
-    //background: #FFFFFF;
-    background: ${({reachedBottom}) => reachedBottom ? '#212121' : '#FFFFFF'};
+    color: ${({isScroll}) => isScroll ? '#FFF' : '#212121'};
+    background: ${({isScroll}) => isScroll ? '#FF474D' : '#fff'};
     border: none;
     border-radius: 16px;
     cursor: pointer;

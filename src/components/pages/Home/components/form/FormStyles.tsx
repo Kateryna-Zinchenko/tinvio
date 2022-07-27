@@ -216,7 +216,7 @@ export const InputField = styled.input<{ isEmpty:boolean }>`
   outline: none;
   border: ${({isEmpty}) => (isEmpty === true ? '1px solid #FF474D' : 'none')};
   border-radius: 8px;
-  font-family: 'Inter';
+  font-family: 'Inter' !important;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
