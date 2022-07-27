@@ -239,6 +239,10 @@ export const Button = styled.button`
     height: 12px;
     left: 51px;
   }
+  &:hover {
+    background: #E0E0E1;
+    transition: 0.3s;
+  }
   @media (min-width: 1024px) {
     margin: 32px 0 0;
   }
@@ -252,6 +256,13 @@ export const Button = styled.button`
       height: 14px;
     }
   }
+`;
+
+export const PlayerWrapper = styled.div`
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  z-index: 1;
 `;
 
 export const Tabs = styled(DeviceWidth)`

@@ -1,14 +1,13 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {useToggle} from 'react-use';
+import React, {useRef, useState} from 'react';
 import {
-    Button,
+    Button, Caption,
     FormBlock,
     FormBlockInner,
     H1,
     Input,
     InputField,
     Inputs,
-    InputTitle, Map, RequiredFields, RhombsLeft, RhombsRight, TextAfterButton,
+    InputTitle, Map, RhombsLeft, RhombsRight, TextAfterButton,
     Title,
     Wrapper,
     WrapperTrans
@@ -50,10 +49,11 @@ const Form = () => {
                                                 ref={nameRef}
                                                 name='name'
                                                 isEmpty={emptyFields.includes(nameRef?.current?.name)}
+                                                onChange={() => setEmptyFields([])}
                                     />
-                                    <RequiredFields isEmpty={emptyFields.includes(nameRef?.current?.name)}>
+                                    <Caption isEmpty={emptyFields.includes(nameRef?.current?.name)}>
                                         Required field
-                                    </RequiredFields>
+                                    </Caption>
                                 </Input>
                                 <Input>
                                     <InputTitle>Business Name</InputTitle>
@@ -62,10 +62,11 @@ const Form = () => {
                                                 ref={businessNameRef}
                                                 name='businessName'
                                                 isEmpty={emptyFields.includes(businessNameRef?.current?.name)}
+                                                onChange={() => setEmptyFields([])}
                                     />
-                                    <RequiredFields isEmpty={emptyFields.includes(businessNameRef?.current?.name)}>
+                                    <Caption isEmpty={emptyFields.includes(businessNameRef?.current?.name)}>
                                         Required field
-                                    </RequiredFields>
+                                    </Caption>
                                 </Input>
                                 <Input>
                                     <InputTitle>Phone</InputTitle>
@@ -74,10 +75,11 @@ const Form = () => {
                                                 ref={phoneRef}
                                                 name='phone'
                                                 isEmpty={emptyFields.includes(phoneRef?.current?.name)}
+                                                onChange={() => setEmptyFields([])}
                                     />
-                                    <RequiredFields isEmpty={emptyFields.includes(phoneRef?.current?.name)}>
+                                    <Caption isEmpty={emptyFields.includes(phoneRef?.current?.name)}>
                                         Required field
-                                    </RequiredFields>
+                                    </Caption>
                                 </Input>
                             </Inputs>
                             <Button onClick={handleValidate}>

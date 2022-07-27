@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import ReactPlayer from 'react-player';
 import {
     H1,
     Inner,
@@ -24,24 +25,35 @@ import {
     StarsRightTab3,
     RhombsLeft,
     RhombsRight,
-    Rhombus, TextWrapper
+    Rhombus, TextWrapper, PlayerWrapper
 } from './HowItWorksStyles';
 
 const HowItWorks = () => {
+    const VIDEO_URL = 'https://www.youtube.com/watch?v=uXnLyUZYkVw'
+    const [videoUrl, setVideoUrl] = useState('')
+
     return (
         <section className='how-it-works'>
-                <Wrapper>
-                    <Inner>
-                        <Rhombus/>
-                        <TextWrapper>
+            <Wrapper>
+                <Inner>
+                    <Rhombus/>
+                    <TextWrapper>
                         <H1>Check out how it works</H1>
                         <Text>
                             It’s easy! Exchange messages, create or confirm orders, send invoices, and collect payments
                             across your supply chain — all within one dashboard.
                         </Text>
-                        <Button>Play Video</Button>
-                        </TextWrapper>
-                        <div>
+                        <Button onClick={() => setVideoUrl(VIDEO_URL)}>Play Video</Button>
+                    </TextWrapper>
+                    <PlayerWrapper>
+                        <ReactPlayer
+                            url={videoUrl}
+                            controls={true}
+                            //playing={true}
+                            muted={true}
+                        />
+                    </PlayerWrapper>
+                    <div>
                         <Tabs>
 
                             <Tab1>
@@ -70,11 +82,11 @@ const HowItWorks = () => {
                             </Tab3>
 
                         </Tabs>
-                        </div>
-                        <RhombsLeft/>
-                        <RhombsRight/>
-                    </Inner>
-                </Wrapper>
+                    </div>
+                    <RhombsLeft/>
+                    <RhombsRight/>
+                </Inner>
+            </Wrapper>
         </section>
     );
 };
