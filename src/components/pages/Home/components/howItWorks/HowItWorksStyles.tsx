@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   align-items: center;
   margin: -387px 0 0 0;
   height: 767px;
-  background: #F7F7F7;  
+  background: #F7F7F7;
   transform: skewY(-8deg);
   border-radius: 50px 0 0 50px;
   width: 100%;
@@ -47,7 +47,7 @@ export const Rhombus = styled.div`
     width: 497px;
     height: 497px;
     top: -35px;
-    right: -234px;  
+    right: -234px;
     border-radius: 78px;
   }
 `;
@@ -63,7 +63,7 @@ export const RhombsLeft = styled.div`
   left: -153px;
   z-index: -1;
   @media (min-width: 768px) {
-    bottom: 446px;    
+    bottom: 446px;
     left: -86px;
     width: 297px;
     height: 225px;
@@ -146,7 +146,7 @@ export const Inner = styled.div`
 `;
 
 export const H1 = styled.div`
-  font-family: 'Gilroy',serif;
+  font-family: 'Gilroy', serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 33px;
@@ -229,6 +229,7 @@ export const Button = styled.button`
   border-radius: 16px;
   background-color: #fff;
   cursor: pointer;
+
   &::before {
     content: '';
     background: url('/assets/icons/button-play.svg') no-repeat;
@@ -238,10 +239,12 @@ export const Button = styled.button`
     height: 12px;
     left: 51px;
   }
+
   &:hover {
     background: #E0E0E1;
     transition: 0.3s;
   }
+
   @media (min-width: 1024px) {
     margin: 32px 0 0;
   }
@@ -257,18 +260,36 @@ export const Button = styled.button`
   }
 `;
 
-export const PlayerWrapper = styled.div<{ videoUrl:string }>`
+export const PlayerWrapper = styled.div<{ isOpen: boolean }>`
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  //background: #212121;
+  display: ${({isOpen}) => (isOpen  ? 'flex' : 'none')};
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  &:only-child {
+    opacity: 1;
+  }
+`;
+export const DarkBackground = styled.div<{ isOpen: boolean }>`
   position: fixed;
   top: 0;
   z-index: 3;
   background: #212121;
   opacity: 0.7;
-  display: ${({videoUrl}) => (videoUrl !== '' ? 'flex' : 'none')};
+  display: ${({isOpen}) => (isOpen ? 'flex' : 'none')};
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
-  cursor: pointer;
+  height: 100%;
+
+  &:only-child {
+    opacity: 1;
+  }
 `;
 
 export const Tabs = styled(DeviceWidth)`
@@ -287,7 +308,7 @@ export const Tabs = styled(DeviceWidth)`
     padding: 107px 0 8px 650px;
   }
   @media (min-width: 1440px) {
-    padding: 107px 0 8px 733px;  
+    padding: 107px 0 8px 733px;
   }
   @media (min-width: 1920px) {
     padding: 107px 0 8px 1199px;
@@ -305,9 +326,9 @@ export const Tab1 = styled.div`
   margin: 31px 0 0 24px;
   padding: 15px 0 0 0;
   transform: matrix(0.99, 0.14, -0.14, 0.99, 0, 0);
-  box-shadow: 4px 4px 13px 0 rgba(33,33,33,0.1);
-  -webkit-box-shadow: 4px 4px 13px 0 rgba(33,33,33,0.1);
-  -moz-box-shadow: 4px 4px 13px 0 rgba(33,33,33,0.1);
+  box-shadow: 4px 4px 13px 0 rgba(33, 33, 33, 0.1);
+  -webkit-box-shadow: 4px 4px 13px 0 rgba(33, 33, 33, 0.1);
+  -moz-box-shadow: 4px 4px 13px 0 rgba(33, 33, 33, 0.1);
   @media (min-width: 768px) {
     border-radius: 18px;
     width: 252px;

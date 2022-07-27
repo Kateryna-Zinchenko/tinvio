@@ -68,9 +68,10 @@ export const H1 = styled.div`
     content: '';
     position: absolute;
     width: 2px;
+    min-width: 2px;
     height: 36px;
     top: 0;
-    right: -2px;
+    margin: 0 0 0 2px;
     background: #212121;
   }
   @media (min-width: 768px) {
