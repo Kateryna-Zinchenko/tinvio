@@ -260,7 +260,7 @@ export const Button = styled.button`
 export const PlayerWrapper = styled.div<{ videoUrl:string }>`
   position: fixed;
   top: 0;
-  z-index: 8;
+  z-index: 3;
   background: #212121;
   opacity: 0.7;
   display: ${({videoUrl}) => (videoUrl !== '' ? 'flex' : 'none')};

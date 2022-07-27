@@ -70,11 +70,14 @@ export const RhombusBottom = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  margin: 78px auto 0;
+  margin: 140px auto 0;
   padding: 0 21px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (min-width: 768px) {
+    margin: 126px 0 0;
+  }
   @media (min-width: 1024px) {
     justify-content: flex-start;
     align-items: flex-start;

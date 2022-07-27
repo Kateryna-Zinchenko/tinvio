@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  padding: 24px 16px 0;
-  
+  padding: 24px 16px;
+  backdrop-filter: blur(24px);
+  position: fixed;
+  z-index: 2;
+
   @media (min-width: 1024px) {
-    position: fixed;
     background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(24px);
-    z-index: 5;
     padding: 24px 40px 24px;
   }
   @media (min-width: 1280px) {
@@ -163,7 +163,7 @@ export const Page = styled.li<{ isActive: boolean }>`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<{ reachedBottom:boolean }>`
   display: none;
   
   &:hover {
@@ -181,7 +181,8 @@ export const Button = styled.button`
     width: 129px;
     height: 40px;
     color: #212121;
-    background: #FFFFFF;
+    //background: #FFFFFF;
+    background: ${({reachedBottom}) => reachedBottom ? '#212121' : '#FFFFFF'};
     border: none;
     border-radius: 16px;
     cursor: pointer;
