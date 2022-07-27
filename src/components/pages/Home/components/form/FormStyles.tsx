@@ -241,7 +241,7 @@ export const InputField = styled.input<{ isEmpty:boolean }>`
   }
 `;
 
-export const RequiredFields = styled.div<{ isEmpty:boolean }>`
+export const Caption = styled.div<{ isEmpty:boolean }>`
   display: ${({isEmpty}) => (isEmpty === true ? 'block' : 'none')};
   position: absolute;
   bottom: -19px;
