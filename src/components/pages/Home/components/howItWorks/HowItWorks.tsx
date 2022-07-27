@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import ReactPlayer from 'react-player';
+import {useToggle} from 'react-use';
 import {
     H1,
     Inner,
@@ -25,23 +26,26 @@ import {
     StarsRightTab3,
     RhombsLeft,
     RhombsRight,
-    Rhombus, TextWrapper, PlayerWrapper
+    Rhombus, TextWrapper, PlayerWrapper, DarkBackground
 } from './HowItWorksStyles';
 
 const HowItWorks = () => {
     const VIDEO_URL = 'https://www.youtube.com/watch?v=uXnLyUZYkVw'
-    const [videoUrl, setVideoUrl] = useState('')
+    const [isOpen, setOpen] = useToggle(false)
 
     return (
         <section className='how-it-works'>
-            <PlayerWrapper videoUrl={videoUrl} onClick={() => {setVideoUrl('')}}>
+            <PlayerWrapper isOpen={isOpen} onClick={() => {
+                setOpen(false)
+            }}>
                 <ReactPlayer
-                    url={videoUrl}
+                    url={VIDEO_URL}
                     controls={true}
                     playing={true}
-                    //muted={true}
+                    muted={true}
                 />
             </PlayerWrapper>
+            <DarkBackground isOpen={isOpen}/>
             <Wrapper>
                 <Inner>
                     <Rhombus/>
@@ -51,7 +55,7 @@ const HowItWorks = () => {
                             It’s easy! Exchange messages, create or confirm orders, send invoices, and collect payments
                             across your supply chain — all within one dashboard.
                         </Text>
-                        <Button onClick={() => setVideoUrl(VIDEO_URL)}>Play Video</Button>
+                        <Button onClick={() => setOpen()}>Play Video</Button>
                     </TextWrapper>
 
                     <div>

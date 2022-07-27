@@ -12,6 +12,7 @@ import {
 import {useNavigate} from 'react-router-dom';
 import { useToggle } from 'react-use';
 import useScrollPosition from "../../../hooks/useScrollPosition";
+import useOnClickOutside from '../../../hooks/useOnClickOutside';
 
 interface Props {
     setIsOpenMenu: (value: boolean) => void
@@ -45,6 +46,9 @@ const Header = ({setIsOpenMenu}: Props) => {
         }
     }, [scrollPosition]);
 
+    const modalRef = useOnClickOutside(() => {
+        setIsOpenLanguage(false);
+    });
 
     return (
         <section className='header'>
@@ -56,7 +60,7 @@ const Header = ({setIsOpenMenu}: Props) => {
                                 setIsOpenMenu(false)
                             }
                             } src="/assets/images/logo.svg" alt="#"/>
-                            <ChooseLanguage onClick={setIsOpenLanguage}>
+                            <ChooseLanguage onClick={setIsOpenLanguage} ref={modalRef}>
                                 <Language>{chosenLanguage}</Language>
                                 <ArrowDown isOpenLanguage={isOpenLanguage}/>
                             </ChooseLanguage>

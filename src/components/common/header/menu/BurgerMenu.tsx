@@ -20,6 +20,7 @@ import {
 } from "./BurgerMenuStyles";
 import {Container} from '../../container/Container';
 import { useToggle } from 'react-use';
+import useOnClickOutside from "../../../../hooks/useOnClickOutside";
 
 interface Props {
     setIsOpenMenu: (value: boolean) => void
@@ -41,6 +42,10 @@ const BurgerMenu = ({setIsOpenMenu}: Props) => {
         setIsOpenLanguage(false)
     }
 
+    const modalRef = useOnClickOutside(() => {
+        setIsOpenLanguage(false);
+    });
+
     return (
         <section className='burger-menu'>
             <OpenMenuWrapper>
@@ -56,7 +61,7 @@ const BurgerMenu = ({setIsOpenMenu}: Props) => {
                                     setIsOpenMenu(false)
                                 }
                                 } src="/assets/images/logo.svg" alt="#"/>
-                                <ChooseLanguage onClick={setIsOpenLanguage}>
+                                <ChooseLanguage onClick={setIsOpenLanguage} ref={modalRef}>
                                     <Language>{chosenLanguage}</Language>
                                     <ArrowDown isOpenLanguage={isOpenLanguage}/>
                                 </ChooseLanguage>
