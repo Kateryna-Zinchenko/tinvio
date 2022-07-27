@@ -94,7 +94,7 @@ export const LanguageList = styled.div<{ isOpenLanguage: boolean }>`
     width: 48px;
     height: 139px;
     background: #FFFFFF;
-    border: 1px solid grey;
+    box-shadow: 4px 4px 13px 0 rgba(33,33,33,0.1);
     border-radius: 8px;
   }
 `;
@@ -110,6 +110,7 @@ export const Flags = styled.div`
 
 export const Flag = styled.img`
   width: 24px;
+  cursor: pointer;
 `;
 
 export const Stick = styled.div`
