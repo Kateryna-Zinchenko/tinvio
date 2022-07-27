@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
     ArrowDown, Button,
     ChooseLanguage, Flag, Flags,
@@ -11,16 +11,17 @@ import {
 } from "./HeaderStyles";
 import {useNavigate} from 'react-router-dom';
 import { useToggle } from 'react-use';
+import useScrollPosition from "../../../hooks/useScrollPosition";
 
 interface Props {
     setIsOpenMenu: (value: boolean) => void
     isOpenMenu: boolean
-    reachedBottom: boolean
 }
 
-const Header = ({setIsOpenMenu, reachedBottom}: Props) => {
+const Header = ({setIsOpenMenu}: Props) => {
     const [isOpenLanguage, setIsOpenLanguage] = useToggle(false);
-    const [chosenLanguage, setChosenLanguage] = useState<string>('EN')
+    const [chosenLanguage, setChosenLanguage] = useState<string>('EN');
+    const [isScroll, setIsScroll] = useToggle(false);
 
     const nav = useNavigate();
 
@@ -34,9 +35,20 @@ const Header = ({setIsOpenMenu, reachedBottom}: Props) => {
         setIsOpenLanguage(false)
     }
 
+    const scrollPosition = useScrollPosition();
+
+    useEffect(() => {
+        setIsScroll(scrollPosition > 50);
+
+        if (scrollPosition > 50) {
+            setIsScroll(true);
+        }
+    }, [scrollPosition]);
+
+
     return (
         <section className='header'>
-                <Wrapper>
+                <Wrapper isScroll={isScroll}>
                     <HeaderWrapper>
                         <LeftWrapper>
                             <Logo onClick={() => {
@@ -76,7 +88,7 @@ const Header = ({setIsOpenMenu, reachedBottom}: Props) => {
                                 <Page isActive={window.location.pathname === '/company'}
                                       onClick={() => onLinkClick('company')}>Company</Page>
                             </Pages>
-                            <Button reachedBottom={reachedBottom}>Get Started</Button>
+                            <Button isScroll={isScroll}>Get Started</Button>
                         </LeftWrapper>
                         <MenuWrapper
                             onClick={() => setIsOpenMenu(true)}
