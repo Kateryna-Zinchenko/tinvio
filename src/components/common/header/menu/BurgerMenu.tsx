@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
 import {
     ArrowDown,
@@ -27,11 +27,20 @@ interface Props {
 
 const BurgerMenu = ({setIsOpenMenu}: Props) => {
     const [isOpenLanguage, setIsOpenLanguage] = useToggle(false);
+    const [chosenLanguage, setChosenLanguage] = useState<string>('EN')
+
     const nav = useNavigate();
+
     const onLinkClick = (value: string) => {
         setIsOpenMenu(false)
         nav(`/${value}`)
     }
+
+    const onFlagClick = (language: string) => {
+        setChosenLanguage(language)
+        setIsOpenLanguage(false)
+    }
+
     return (
         <section className='burger-menu'>
             <OpenMenuWrapper>
@@ -48,18 +57,26 @@ const BurgerMenu = ({setIsOpenMenu}: Props) => {
                                 }
                                 } src="/assets/images/logo.svg" alt="#"/>
                                 <ChooseLanguage onClick={setIsOpenLanguage}>
-                                    <Language>EN</Language>
+                                    <Language>{chosenLanguage}</Language>
                                     <ArrowDown isOpenLanguage={isOpenLanguage}/>
                                 </ChooseLanguage>
                                 <LanguageList isOpenLanguage={isOpenLanguage}>
                                     <Flags>
-                                        <Flag src='/assets/icons/flag-1.png'/>
+                                        <Flag src='/assets/icons/flag-1.png'
+                                              onClick={() => onFlagClick('EN')}
+                                        />
                                         <Stick/>
-                                        <Flag src='/assets/icons/flag-2.png'/>
+                                        <Flag src='/assets/icons/flag-2.png'
+                                              onClick={() => onFlagClick('ID')}
+                                        />
                                         <Stick/>
-                                        <Flag src='/assets/icons/flag-3.png'/>
+                                        <Flag src='/assets/icons/flag-3.png'
+                                              onClick={() => onFlagClick('TH')}
+                                        />
                                         <Stick/>
-                                        <Flag src='/assets/icons/flag-4.png'/>
+                                        <Flag src='/assets/icons/flag-4.png'
+                                              onClick={() => onFlagClick('VN')}
+                                        />
                                     </Flags>
                                 </LanguageList>
                             </LeftWrapper>
