@@ -15,9 +15,10 @@ import { useToggle } from 'react-use';
 interface Props {
     setIsOpenMenu: (value: boolean) => void
     isOpenMenu: boolean
+    reachedBottom: boolean
 }
 
-const Header = ({setIsOpenMenu}: Props) => {
+const Header = ({setIsOpenMenu, reachedBottom}: Props) => {
     const [isOpenLanguage, setIsOpenLanguage] = useToggle(false);
     const [chosenLanguage, setChosenLanguage] = useState<string>('EN')
 
@@ -75,7 +76,7 @@ const Header = ({setIsOpenMenu}: Props) => {
                                 <Page isActive={window.location.pathname === '/company'}
                                       onClick={() => onLinkClick('company')}>Company</Page>
                             </Pages>
-                            <Button>Get Started</Button>
+                            <Button reachedBottom={reachedBottom}>Get Started</Button>
                         </LeftWrapper>
                         <MenuWrapper
                             onClick={() => setIsOpenMenu(true)}
