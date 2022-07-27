@@ -34,6 +34,14 @@ const HowItWorks = () => {
 
     return (
         <section className='how-it-works'>
+            <PlayerWrapper videoUrl={videoUrl} onClick={() => {setVideoUrl('')}}>
+                <ReactPlayer
+                    url={videoUrl}
+                    controls={true}
+                    playing={true}
+                    //muted={true}
+                />
+            </PlayerWrapper>
             <Wrapper>
                 <Inner>
                     <Rhombus/>
@@ -45,14 +53,7 @@ const HowItWorks = () => {
                         </Text>
                         <Button onClick={() => setVideoUrl(VIDEO_URL)}>Play Video</Button>
                     </TextWrapper>
-                    <PlayerWrapper>
-                        <ReactPlayer
-                            url={videoUrl}
-                            controls={true}
-                            //playing={true}
-                            muted={true}
-                        />
-                    </PlayerWrapper>
+
                     <div>
                         <Tabs>
 
