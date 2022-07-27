@@ -120,7 +120,6 @@ export const RhombsRight = styled.div`
 `;
 
 export const Inner = styled.div`
-  position: relative;
   transform: skewY(8deg);
   width: 100%;
   height: 100%;
@@ -258,11 +257,18 @@ export const Button = styled.button`
   }
 `;
 
-export const PlayerWrapper = styled.div`
-  position: absolute;
-  bottom: 50%;
-  right: 50%;
-  z-index: 1;
+export const PlayerWrapper = styled.div<{ videoUrl:string }>`
+  position: fixed;
+  top: 0;
+  z-index: 8;
+  background: #212121;
+  opacity: 0.7;
+  display: ${({videoUrl}) => (videoUrl !== '' ? 'flex' : 'none')};
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
 `;
 
 export const Tabs = styled(DeviceWidth)`
