@@ -3,7 +3,7 @@ import {
     Arrow,
     Button, ButtonShare, ButtonUsdInner, ButtonUsdWrapper,
     Clip, CreateWrapper, File,
-    Img, ImgUsd, Input, Inputs, InputWrapper,
+    Img, Input, Inputs, InputWrapper,
     LeftWrapper,
     P,
     RightWrapper,
@@ -44,7 +44,7 @@ const ManageOrders = () => {
                         <CreateWrapper>
                             <ButtonUsdWrapper>
                                 <ButtonUsdInner>
-                                    <ImgUsd src='/assets/images/features/$.svg'/>
+                                    <img src='/assets/images/features/$.svg'/>
                                 </ButtonUsdInner>
                             </ButtonUsdWrapper>
                             <Title3>Create invoices</Title3>

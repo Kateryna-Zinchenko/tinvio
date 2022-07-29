@@ -152,10 +152,6 @@ export const ButtonUsdInner = styled.div`
   align-items: center;
 `;
 
-export const ImgUsd = styled.img`
-  
-`;
-
 export const Title3 = styled.div`
   font-family: 'Gilroy';
   font-style: normal;
