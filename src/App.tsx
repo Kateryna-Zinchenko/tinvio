@@ -4,7 +4,7 @@ import Home from "./components/pages/Home/Home";
 import {useToggle} from 'react-use';
 import BurgerMenu from "./components/common/header/menu/BurgerMenu";
 import Footer from "./components/common/footer/Footer";
-import Features from "./components/pages/Features/Features";
+import Feature from "./components/pages/Feature/Feature";
 
 function App() {
     const [isOpenMenu, setIsOpenMenu] = useToggle(false);
@@ -18,7 +18,7 @@ function App() {
                         <Routes>
                             <Route path='/' element={<Home/>}/>
                             <Route path='/home' element={<Home/>}/>
-                            <Route path='/features' element={<Features/>}/>
+                            <Route path='/features' element={<Feature/>}/>
                         </Routes>
                         <Footer/>
                     </div>

@@ -3,7 +3,7 @@ import TryIt from './components/tryIt/TryIt';
 import Dashboard from "./components/dashboard/Dashboard";
 import ManageOrders from "./components/manageOrders/ManageOrders";
 
-const Features = () => {
+const Feature = () => {
     return (
         <main className='features'>
             <TryIt/>
@@ -13,4 +13,4 @@ const Features = () => {
     );
 };
 
-export default Features;
+export default Feature;
