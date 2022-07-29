@@ -147,6 +147,9 @@ export const ButtonUsdInner = styled.div`
   height: 64px;
   background: #B3B4B5;
   border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ImgUsd = styled.img`

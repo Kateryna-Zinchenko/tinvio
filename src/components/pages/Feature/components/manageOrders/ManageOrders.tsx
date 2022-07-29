@@ -44,7 +44,7 @@ const ManageOrders = () => {
                         <CreateWrapper>
                             <ButtonUsdWrapper>
                                 <ButtonUsdInner>
-                                    <ImgUsd src=''/>
+                                    <ImgUsd src='/assets/images/features/$.svg'/>
                                 </ButtonUsdInner>
                             </ButtonUsdWrapper>
                             <Title3>Create invoices</Title3>
