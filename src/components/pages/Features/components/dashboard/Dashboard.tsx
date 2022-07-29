@@ -1,7 +1,7 @@
 import React from 'react';
-import {H1, Img, Option, Options, P, Text, Title, Wrapper} from "./SuperchargeStyles";
+import {H1, Img, Option, Options, P, Text, Title, Wrapper} from "./DashboardStyles";
 
-const Supercharge = () => {
+const Dashboard = () => {
     return (
         <section className='supercharge'>
             <div>
@@ -36,4 +36,4 @@ const Supercharge = () => {
     );
 };
 
-export default Supercharge;
+export default Dashboard;
