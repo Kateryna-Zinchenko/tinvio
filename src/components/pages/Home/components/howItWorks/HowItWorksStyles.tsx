@@ -209,7 +209,7 @@ export const Text = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<{ isOpen:boolean }>`
   position: relative;
   width: 188px;
   height: 48px;
@@ -227,7 +227,7 @@ export const Button = styled.button`
   color: #212121;
   border: none;
   border-radius: 16px;
-  background-color: #fff;
+  background-color: ${({isOpen}) => isOpen ? '#E0E0E1' : '#fff'};
   cursor: pointer;
 
   &::before {

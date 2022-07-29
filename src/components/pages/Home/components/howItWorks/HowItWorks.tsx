@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ReactPlayer from 'react-player';
 import {useToggle} from 'react-use';
 import {
@@ -55,7 +55,7 @@ const HowItWorks = () => {
                             It’s easy! Exchange messages, create or confirm orders, send invoices, and collect payments
                             across your supply chain — all within one dashboard.
                         </Text>
-                        <Button onClick={() => setOpen()}>Play Video</Button>
+                        <Button isOpen={isOpen} onClick={() => setOpen()}>Play Video</Button>
                     </TextWrapper>
 
                     <div>
