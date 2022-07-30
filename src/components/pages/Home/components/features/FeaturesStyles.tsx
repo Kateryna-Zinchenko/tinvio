@@ -354,9 +354,6 @@ export const PurpleSquare = styled.div`
     height: 560px;
     margin: 60px 0 0 115px;
   }
-  //@media (min-width: 1920px) {
-  //  margin: 40px 0 0 115px;
-  //}
 `;
 export const RedSquare = styled.div`
   width: 395px;

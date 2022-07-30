@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   padding: 0 16px;
   margin: 133px 0 0;
   position: relative;
+  
 `;
 
 export const Stars = styled.div`
@@ -54,7 +55,8 @@ export const Button = styled.div`
 
 export const Images = styled.div`
   position: relative;
-  margin: 48px 0 0;
+  margin: 48px auto 0;
+  max-width: 375px;
 `;
 
 export const ImgMain = styled.img`
