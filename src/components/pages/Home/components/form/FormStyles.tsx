@@ -8,14 +8,17 @@ export const WrapperTrans = styled(DeviceWidth)`
   background: #F7F7F7;
   border-radius: 0 50px 50px 0;
   transform: skewY(8deg);
-  margin: 70px 0 0;
+  margin: 70px 0 112px;
   @media (min-width: 1024px) {
     height: 474px;
-    margin: 327px 0 0;
+    margin: 327px 0 311px;
   }
   @media (min-width: 1280px) {
     height: 474px;
-    margin: 327px 0 0 -54px;
+    margin: 327px 0 311px -54px;
+  }
+  @media (min-width: 1920px) {
+    margin: 0 0 356px;
   }
 `;
 
