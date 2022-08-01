@@ -14,17 +14,20 @@ export const H1 = styled.div`
   color: #212121;
 `;
 
-export const QuestionsWrapper = styled.div`
+export const Questions = styled.div`
   padding: 41px 16px 0;
+`;
+
+export const QuestionWrapper = styled.div`
+  margin: 24px 0 0;
+  &:first-child {
+    margin: 0;
+  }
 `;
 
 export const Question = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 24px 0 0;
-  &:first-child {
-    margin: 0;
-  }
 `;
 
 export const Title = styled.div`
@@ -36,7 +39,8 @@ export const Title = styled.div`
   color: #212121;
 `;
 
-export const PlusWrapper = styled.div`
+export const PlusWrapper = styled.div<{ isOpen:boolean }>`
+  display: ${({isOpen}) => !isOpen ? 'block' : 'none'};
   width: 20px;
   height: 20px;
   position: relative;
@@ -67,11 +71,10 @@ export const Plus = styled.div`
   }
 `;
 
-export const MinusWrapper = styled.div`
-  display: flex;
+export const MinusWrapper = styled.div<{ isOpen:boolean }>`
+  display: ${({isOpen}) => isOpen ? 'flex' : 'none'};
   justify-content: center;
   align-items: center;
-  display: none;
 `;
 
 export const Minus = styled.div`
@@ -88,6 +91,17 @@ export const Border = styled.div`
   margin: 24px 0 0;
 `;
 
-export const Text = styled.div`
-  
+export const BorderLast = styled(Border)`
+  display: none;
+`;
+
+export const Text = styled.div<{ isOpen:boolean }>`
+  display: ${({isOpen}) => isOpen ? 'block' : 'none'};
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #212121;
+  padding: 16px 0 0;
 `;

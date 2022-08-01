@@ -28,7 +28,6 @@ const Form = () => {
         const newArr = arr.filter((item) => item.value === '')
         const newArr2 = newArr.map((i) => i.name)
         setEmptyFields(newArr2)
-        console.log(newArr2)
     }
 
     return (
