@@ -7,6 +7,7 @@ import SoundsEasy from "./components/soundsEasy/SoundsEasy";
 import MakeFast from "./components/makeFast/MakeFast";
 import GetSmarter from "./components/getSmarter/GetSmarter";
 import Supercharge from "./components/supercharge/Supercharge";
+import FAQ from "./components/faq/FAQ";
 
 const Feature = () => {
     return (
@@ -19,6 +20,7 @@ const Feature = () => {
             <MakeFast/>
             <GetSmarter/>
             <Supercharge/>
+            <FAQ/>
         </main>
     );
 };
