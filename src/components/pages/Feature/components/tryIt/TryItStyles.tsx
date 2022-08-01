@@ -51,6 +51,7 @@ export const Button = styled.div`
   padding: 14px 45px 14px 46px;
   margin: 32px auto 0;
   cursor: pointer;
+  display: block;
 `;
 
 export const Images = styled.div`

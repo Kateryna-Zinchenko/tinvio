@@ -400,7 +400,6 @@ export const DeviceRight1 = styled.img<{ isOption:string }>`
   position: absolute;
   top: 170px;
   right: -40px;
-  transition: 1s;
   @media (min-width: 768px) {
     width: 320px;
     height: 531px;
