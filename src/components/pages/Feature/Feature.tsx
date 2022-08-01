@@ -8,6 +8,7 @@ import MakeFast from "./components/makeFast/MakeFast";
 import GetSmarter from "./components/getSmarter/GetSmarter";
 import Supercharge from "./components/supercharge/Supercharge";
 import FAQ from "./components/faq/FAQ";
+import SendInvoices from "./components/sendInvoices/SendInvoices";
 
 const Feature = () => {
     return (
@@ -17,6 +18,7 @@ const Feature = () => {
             <ManageOrders/>
             <BreezeOrders/>
             <SoundsEasy/>
+            <SendInvoices/>
             <MakeFast/>
             <GetSmarter/>
             <Supercharge/>
