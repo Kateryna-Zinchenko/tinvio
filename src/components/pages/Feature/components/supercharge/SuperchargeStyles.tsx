@@ -44,6 +44,11 @@ export const Button = styled.button`
   padding: 14px 50px;
   display: block;
   margin: 24px auto 0;
+  cursor: pointer;
+  &:hover {
+    background: rgba(255, 71, 77, 0.8);
+    transition: 0.2s;
+  }
 `;
 
 export const Rhombs = styled.div`

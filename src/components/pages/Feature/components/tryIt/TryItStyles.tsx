@@ -52,6 +52,10 @@ export const Button = styled.div`
   margin: 32px auto 0;
   cursor: pointer;
   display: block;
+  &:hover {
+    background: rgba(255, 71, 77, 0.8);
+    transition: 0.2s;
+  }
 `;
 
 export const Images = styled.div`

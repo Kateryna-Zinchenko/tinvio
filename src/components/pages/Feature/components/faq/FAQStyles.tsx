@@ -28,6 +28,7 @@ export const QuestionWrapper = styled.div`
 export const Question = styled.div`
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 `;
 
 export const Title = styled.div`
@@ -44,6 +45,7 @@ export const PlusWrapper = styled.div<{ isOpen:boolean }>`
   width: 20px;
   height: 20px;
   position: relative;
+  cursor: pointer;
 `;
 
 export const Plus = styled.div`
@@ -75,6 +77,7 @@ export const MinusWrapper = styled.div<{ isOpen:boolean }>`
   display: ${({isOpen}) => isOpen ? 'flex' : 'none'};
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 `;
 
 export const Minus = styled.div`

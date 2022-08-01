@@ -31,4 +31,9 @@ export const Button = styled.button`
   border: none;
   display: block;
   margin: 24px auto 0;
+  cursor: pointer;
+  &:hover {
+    background: #E0E0E1;
+    transition: 0.2s;
+  }
 `;

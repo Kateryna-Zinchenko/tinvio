@@ -26,12 +26,12 @@ const FAQ = () => {
                 <Questions>
 
                     <QuestionWrapper>
-                        <Question>
+                        <Question onClick={setIsOpen}>
                             <Title>How to get started with Tinvio?</Title>
-                            <PlusWrapper isOpen={isOpen} onClick={setIsOpen}>
+                            <PlusWrapper isOpen={isOpen}>
                                 <Plus/>
                             </PlusWrapper>
-                            <MinusWrapper isOpen={isOpen} onClick={setIsOpen}>
+                            <MinusWrapper isOpen={isOpen}>
                                 <Minus/>
                             </MinusWrapper>
                         </Question>
@@ -46,12 +46,12 @@ const FAQ = () => {
                     </QuestionWrapper>
 
                     <QuestionWrapper>
-                        <Question>
+                        <Question onClick={setIsOpen}>
                             <Title>How does Tinvio work?</Title>
-                            <PlusWrapper isOpen={isOpen} onClick={setIsOpen}>
+                            <PlusWrapper isOpen={isOpen}>
                                 <Plus/>
                             </PlusWrapper>
-                            <MinusWrapper isOpen={isOpen} onClick={setIsOpen}>
+                            <MinusWrapper isOpen={isOpen}>
                                 <Minus/>
                             </MinusWrapper>
                         </Question>
@@ -64,12 +64,12 @@ const FAQ = () => {
                     </QuestionWrapper>
 
                     <QuestionWrapper>
-                        <Question>
+                        <Question onClick={setIsOpen}>
                             <Title>How to collect payments on Tinvio?</Title>
-                            <PlusWrapper isOpen={isOpen} onClick={setIsOpen}>
+                            <PlusWrapper isOpen={isOpen}>
                                 <Plus/>
                             </PlusWrapper>
-                            <MinusWrapper isOpen={isOpen} onClick={setIsOpen}>
+                            <MinusWrapper isOpen={isOpen}>
                                 <Minus/>
                             </MinusWrapper>
                         </Question>
@@ -84,12 +84,12 @@ const FAQ = () => {
                     </QuestionWrapper>
 
                     <QuestionWrapper>
-                        <Question>
+                        <Question onClick={setIsOpen}>
                             <Title>What are the supported payment methods?</Title>
-                            <PlusWrapper isOpen={isOpen} onClick={setIsOpen}>
+                            <PlusWrapper isOpen={isOpen}>
                                 <Plus/>
                             </PlusWrapper>
-                            <MinusWrapper isOpen={isOpen} onClick={setIsOpen}>
+                            <MinusWrapper isOpen={isOpen}>
                                 <Minus/>
                             </MinusWrapper>
                         </Question>
@@ -102,12 +102,12 @@ const FAQ = () => {
                     </QuestionWrapper>
 
                     <QuestionWrapper>
-                        <Question>
+                        <Question onClick={setIsOpen}>
                             <Title>I have more product questions! Who do I contact?</Title>
-                            <PlusWrapper isOpen={isOpen} onClick={setIsOpen}>
+                            <PlusWrapper isOpen={isOpen}>
                                 <Plus/>
                             </PlusWrapper>
-                            <MinusWrapper isOpen={isOpen} onClick={setIsOpen}>
+                            <MinusWrapper isOpen={isOpen}>
                                 <Minus/>
                             </MinusWrapper>
                         </Question>

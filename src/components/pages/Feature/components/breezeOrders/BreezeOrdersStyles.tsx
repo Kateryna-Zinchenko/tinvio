@@ -160,5 +160,6 @@ export const Button = styled.button`
   background: #FF474D;
   border: none;
   border-radius: 10px;
+  display: block;
 `;
 

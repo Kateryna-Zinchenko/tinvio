@@ -87,9 +87,16 @@ export const Input = styled.input`
   position: relative;
   width: 256px;
   height: 36px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #212121;
   background: #F3F4F5;
   border-radius: 8px;
   border: none;
+  outline: none;
   padding: 10px 0 11px 15px;
   
   &::placeholder {
@@ -104,7 +111,7 @@ export const Input = styled.input`
 
 export const Arrow = styled.div`
   content: '';
-  background: url("/assets/icons/features/manage-orders-arrow-right.svg") no-repeat;
+  background: url("/assets/icons/features/manage-orders-arrow-right-inactive.svg") no-repeat;
   background-size: contain;
   width: 6px;
   height: 9px;

@@ -168,6 +168,7 @@ export const Button = styled.button<{ isScroll:boolean }>`
   display: none;
   
   &:hover {
+    color: #212121;
     background: #E0E0E1;
     transition: 0.2s;
   }
