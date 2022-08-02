@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     Button,
-    H1, Icon,
+    H1,
     Img,
     ImgWrapper, Message, P1, P2,
     PWrapper,
@@ -37,7 +37,6 @@ const SendInvoices = () => {
                         <Button>Send Invoice</Button>
                     </Tab1Wrapper>
                     <Tab2Wrapper>
-                        <Icon/>
                         <Message>Send Reminders</Message>
                         <Tick/>
                     </Tab2Wrapper>

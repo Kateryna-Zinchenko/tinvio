@@ -9,6 +9,7 @@ import GetSmarter from "./components/getSmarter/GetSmarter";
 import Supercharge from "./components/supercharge/Supercharge";
 import FAQ from "./components/faq/FAQ";
 import SendInvoices from "./components/sendInvoices/SendInvoices";
+import RunIt from "./components/runIt/RunIt";
 
 const Feature = () => {
     return (
@@ -21,6 +22,7 @@ const Feature = () => {
             <SendInvoices/>
             <MakeFast/>
             <GetSmarter/>
+            <RunIt/>
             <Supercharge/>
             <FAQ/>
         </main>
