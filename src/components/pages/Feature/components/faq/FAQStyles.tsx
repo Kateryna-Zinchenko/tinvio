@@ -40,12 +40,28 @@ export const Title = styled.div`
   color: #212121;
 `;
 
-export const PlusWrapper = styled.div<{ isOpen:boolean }>`
-  display: ${({isOpen}) => !isOpen ? 'block' : 'none'};
+export const PlusWrapper1 = styled.div<{ question:string }>`
+  display: ${({question}) => question.includes('started') ? 'none' : 'block'};
   width: 20px;
   height: 20px;
   position: relative;
   cursor: pointer;
+`;
+
+export const PlusWrapper2 = styled(PlusWrapper1)<{ question:string }>`
+  display: ${({question}) => question.includes('work') ? 'none' : 'block'};
+`;
+
+export const PlusWrapper3 = styled(PlusWrapper1)<{ question:string }>`
+  display: ${({question}) => question.includes('collect') ? 'none' : 'block'};
+`;
+
+export const PlusWrapper4 = styled(PlusWrapper1)<{ question:string }>`
+  display: ${({question}) => question.includes('supported') ? 'none' : 'block'};
+`;
+
+export const PlusWrapper5 = styled(PlusWrapper1)<{ question:string }>`
+  display: ${({question}) => question.includes('contact') ? 'none' : 'block'};
 `;
 
 export const Plus = styled.div`
@@ -73,11 +89,27 @@ export const Plus = styled.div`
   }
 `;
 
-export const MinusWrapper = styled.div<{ isOpen:boolean }>`
-  display: ${({isOpen}) => isOpen ? 'flex' : 'none'};
+export const MinusWrapper1 = styled.div<{ question:string }>`
+  display: ${({question}) => question.includes('started') ? 'flex' : 'none'};
   justify-content: center;
   align-items: center;
   cursor: pointer;
+`;
+
+export const MinusWrapper2 = styled(MinusWrapper1)<{ question:string }>`
+  display: ${({question}) => question.includes('work') ? 'flex' : 'none'};
+`;
+
+export const MinusWrapper3 = styled(MinusWrapper1)<{ question:string }>`
+  display: ${({question}) => question.includes('collect') ? 'flex' : 'none'};
+`;
+
+export const MinusWrapper4 = styled(MinusWrapper1)<{ question:string }>`
+  display: ${({question}) => question.includes('supported') ? 'flex' : 'none'};
+`;
+
+export const MinusWrapper5 = styled(MinusWrapper1)<{ question:string }>`
+  display: ${({question}) => question.includes('contact') ? 'flex' : 'none'};
 `;
 
 export const Minus = styled.div`
@@ -98,8 +130,8 @@ export const BorderLast = styled(Border)`
   display: none;
 `;
 
-export const Text = styled.div<{ isOpen:boolean }>`
-  display: ${({isOpen}) => isOpen ? 'block' : 'none'};
+export const Text1 = styled.div<{ question:string }>`
+  display: ${({question}) => question.includes('started') ? 'block' : 'none'};
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -107,4 +139,20 @@ export const Text = styled.div<{ isOpen:boolean }>`
   line-height: 23px;
   color: #212121;
   padding: 16px 0 0;
+`;
+
+export const Text2 = styled(Text1)<{ question:string }>`
+  display: ${({question}) => question.includes('work') ? 'block' : 'none'};
+`;
+
+export const Text3 = styled(Text1)<{ question:string }>`
+  display: ${({question}) => question.includes('collect') ? 'block' : 'none'};
+`;
+
+export const Text4 = styled(Text1)<{ question:string }>`
+  display: ${({question}) => question.includes('supported') ? 'block' : 'none'};
+`;
+
+export const Text5 = styled(Text1)<{ question:string }>`
+  display: ${({question}) => question.includes('contact') ? 'block' : 'none'};
 `;
