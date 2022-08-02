@@ -17,7 +17,7 @@ export const H1 = styled.div`
 `;
 
 export const ImagesWrapper = styled.div`
-  margin: 45px 0 0;
+  margin: 45px auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
