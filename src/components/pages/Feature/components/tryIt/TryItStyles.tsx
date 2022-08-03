@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   padding: 0 16px;
   margin: 133px 0 0;
   position: relative;
+  
   @media (min-width: 768px) {
     margin: 143px 0 0;
   }

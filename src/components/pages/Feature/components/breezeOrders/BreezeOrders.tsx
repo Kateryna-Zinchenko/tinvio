@@ -7,7 +7,7 @@ import {
     BoxWrapper, Button, ConfirmOrder,
     ContentBox,
     H1, ImgMan,
-    ImgWoman, InnerBox, MainBox, Price, StarsWoman,
+    ImgWoman, InnerBox, MainBox, Price, StarsMan, StarsWoman,
     Tab1,
     Tab2,
     Text,
@@ -48,6 +48,7 @@ const BreezeOrders = () => {
                                 <ArrowCenter src='/assets/images/features/breeze-orders-arrow-c.png'/>
                                 <ArrowLeft src='/assets/images/features/breeze-orders-arrow-l.png'/>
                                 <StarsWoman/>
+                                <StarsMan/>
                             </ContentBox>
                         </BoxInner>
                     </Box>

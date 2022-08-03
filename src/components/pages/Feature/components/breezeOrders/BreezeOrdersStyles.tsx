@@ -2,6 +2,13 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin: 120px 0 0;
+
+  @media (min-width: 768px) {
+    margin: 141px 0 0;
+  }
+  @media (min-width: 1024px) {
+    margin: 80px 0 0;
+  }
 `;
 export const TextWrapper = styled.div`
   padding: 0 16px;
@@ -14,6 +21,13 @@ export const H1 = styled.div`
   line-height: 39px;
   text-align: center;
   color: #212121;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 42px;
+    max-width: 457px;
+    margin: 0 auto;
+  }
 `;
 export const Text = styled.div`
   font-family: 'Inter';
@@ -23,12 +37,22 @@ export const Text = styled.div`
   line-height: 23px;
   color: #5C5C5C;
   padding: 12px 0 0;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 23px;
+    padding: 13px 0 0;
+  }
 `;
 export const BoxWrapper = styled.div`
   position: relative;
   max-width: 576px;
   height: 576px;
   margin: 24px auto 0;
+  @media (min-width: 768px) {
+    margin: 40px auto 0;
+    max-width: 792px;
+    height: 792px;
+  }
 `;
 export const Box = styled.div`
   position: absolute;
@@ -42,6 +66,12 @@ export const Box = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  @media (min-width: 768px) {
+    width: 560px;
+    height: 560px;
+    border-radius: 56px;
+  }
 `;
 export const BoxInner = styled.div`
   width: 355px;
@@ -51,6 +81,12 @@ export const BoxInner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 768px) {
+    width: 491px;
+    height: 491px;
+    border-radius: 56px;
+  }
 `;
 export const ContentBox = styled.div`
   position: relative;
@@ -58,6 +94,11 @@ export const ContentBox = styled.div`
   min-width: 375px;
   max-width: 375px;
   height: 576px;
+  @media (min-width: 768px) {
+    min-width: 792px;
+    max-width: 792px;
+    height: 792px;
+  }
 `;
 export const Tab1 = styled.img`
   position: absolute;
@@ -65,24 +106,44 @@ export const Tab1 = styled.img`
   left: 82px;
   width: 222px;
   z-index: 1;
+  @media (min-width: 768px) {
+    top: 169px;
+    left: 233px;
+    width: 302px;
+  }
 `;
 export const ArrowRight = styled.img`
   position: absolute;
   top: 168px;
   right: 84px;
   width: 88px;
+  @media (min-width: 768px) {
+    top: 203px;
+    right: 273px;
+    width: 120px;
+  }
 `;
 export const ArrowCenter = styled.img`
   position: absolute;
   top: 177px;
   left: 115px;
   width: 72px;
+  @media (min-width: 768px) {
+    top: 215px;
+    left: 278px;
+    width: 98px;
+  }
 `;
 export const ArrowLeft = styled.img`
   position: absolute;
   bottom: 204px;
   left: 101px;
   width: 86px;
+  @media (min-width: 768px) {
+    bottom: 302px;
+    left: 270px;
+    width: 117px;
+  }
 `;
 export const StarsWoman = styled.div`
   background: url("/assets/icons/features/breeze-orders-stars-woman.png") no-repeat;
@@ -92,6 +153,22 @@ export const StarsWoman = styled.div`
   right: -4px;
   width: 74px;
   height: 61px;
+  @media (min-width: 768px) {
+    top: 252px;
+    right: 160px;
+    width: 92px;
+  }
+`;
+export const StarsMan = styled.div`
+  @media (min-width: 768px) {
+    background: url("/assets/icons/features/breeze-orders-stars-man.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 358px;
+    left: 89px;
+    width: 72px;
+    height: 66px;
+  }
 `;
 export const Tab2 = styled.img`
   position: absolute;
@@ -99,6 +176,11 @@ export const Tab2 = styled.img`
   left: 0;
   width: 242px;
   z-index: 1;
+  @media (min-width: 768px) {
+    top: 278px;
+    left: 120px;
+    width: 330px;
+  }
 `;
 export const ImgWoman = styled.img`
   position: absolute;
@@ -106,6 +188,11 @@ export const ImgWoman = styled.img`
   right: 24px;
   width: 91px;
   z-index: 1;
+  @media (min-width: 768px) {
+    top: 306px;
+    right: 189px;
+    width: 124px;
+  }
 `;
 export const ImgMan = styled.img`
   position: absolute;
@@ -113,6 +200,11 @@ export const ImgMan = styled.img`
   left: 16px;
   width: 91px;
   z-index: 1;
+  @media (min-width: 768px) {
+    bottom: 273px;
+    left: 119px;
+    width: 124px;
+  }
 `;
 
 export const ConfirmOrder = styled.div`
@@ -120,6 +212,10 @@ export const ConfirmOrder = styled.div`
   bottom: 149px;
   right: 21px;
   z-index: 1;
+  @media (min-width: 768px) {
+    bottom: 229px;
+    right: 190px;
+  }
 `;
 
 export const MainBox = styled.div`
@@ -127,12 +223,20 @@ export const MainBox = styled.div`
   height: 65px;
   background: #FFFFFF;
   border-radius: 10px;
+  @media (min-width: 768px) {
+    width: 287px;
+    height: 88px;
+    border-radius: 14px;
+  }
 `;
 
 export const InnerBox = styled.div`
   padding: 10px 8px;
   display: flex;
   justify-content: space-between;
+  @media (min-width: 768px) {
+    padding: 14px 10px;
+  }
 `;
 
 export const Title = styled.div`
@@ -142,6 +246,10 @@ export const Title = styled.div`
   font-size: 9px;
   line-height: 11px;
   color: #212121;
+  @media (min-width: 768px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
 `;
 
 export const Price = styled(Title)`
@@ -149,7 +257,7 @@ export const Price = styled(Title)`
 `;
 
 export const Button = styled.button`
-  width: 211px;
+  width: 100%;
   height: 35px;
   font-family: 'Gilroy';
   font-style: normal;
@@ -161,5 +269,10 @@ export const Button = styled.button`
   border: none;
   border-radius: 10px;
   display: block;
+  @media (min-width: 768px) {
+    height: 47px;
+    font-size: 14px;
+    line-height: 17px;
+  }
 `;
 
