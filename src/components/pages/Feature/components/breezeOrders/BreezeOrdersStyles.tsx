@@ -8,11 +8,25 @@ export const Wrapper = styled.div`
   }
   @media (min-width: 1024px) {
     margin: 80px 0 0;
+    display: flex;
+    align-items: center;
   }
 `;
+
 export const TextWrapper = styled.div`
   padding: 0 16px;
+  
+  @media (min-width: 1024px) {
+    padding: 0 0 0 40px;
+  }
+  @media (min-width: 1280px) {
+    padding: 0 0 0 124px;
+  }
+  @media (min-width: 1920px) {
+    padding: 0 0 0 304px;
+  }
 `;
+
 export const H1 = styled.div`
   font-family: 'Gilroy';
   font-style: normal;
@@ -28,7 +42,25 @@ export const H1 = styled.div`
     max-width: 457px;
     margin: 0 auto;
   }
+  @media (min-width: 1024px) {
+    text-align: left;
+    max-width: 410px
+  }
+  @media (min-width: 1280px) {
+    font-size: 40px;
+    line-height: 49px;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    font-size: 44px;
+    line-height: 52px;
+    max-width: 458px;
+  }
+  @media (min-width: 1920px) {
+    line-height: 54px;
+  }
 `;
+
 export const Text = styled.div`
   font-family: 'Inter';
   font-style: normal;
@@ -37,23 +69,54 @@ export const Text = styled.div`
   line-height: 23px;
   color: #5C5C5C;
   padding: 12px 0 0;
+  
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 23px;
     padding: 13px 0 0;
   }
+  @media (min-width: 1024px) {
+    padding: 16px 0 0;
+    max-width: 340px;
+  }
+  @media (min-width: 1280px) {
+    max-width: 440px;
+  }
+  @media (min-width: 1440px) {
+    line-height: 150%;
+  }
+  @media (min-width: 1920px) {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 510px;
+  }
 `;
+
 export const BoxWrapper = styled.div`
   position: relative;
   max-width: 576px;
   height: 576px;
   margin: 24px auto 0;
+  
   @media (min-width: 768px) {
     margin: 40px auto 0;
     max-width: 792px;
     height: 792px;
   }
+  @media (min-width: 1024px) {
+    margin: 0 0 0 357px;
+  }
+  @media (min-width: 1280px) {
+    margin: 0 0 0 440px;
+  }
+  @media (min-width: 1440px) {
+    margin: 0 0 0 520px;
+  }
+  @media (min-width: 1920px) {
+    
+  }
 `;
+
 export const Box = styled.div`
   position: absolute;
   top: 50%;
