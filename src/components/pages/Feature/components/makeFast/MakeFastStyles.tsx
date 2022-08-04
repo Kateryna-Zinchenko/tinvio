@@ -2,10 +2,33 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin: 120px 0 0;
+
+  @media(min-width: 768px) {
+    margin: 142px 0 0;
+  }
+  @media(min-width: 1024px) {
+    margin: 80px 0 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 `;
 
 export const TextWrapper = styled.div`
   padding: 0 16px;
+  
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const H1 = styled.div`
@@ -16,6 +39,25 @@ export const H1 = styled.div`
   line-height: 39px;
   text-align: center;
   color: #212121;
+  margin: 0 auto;
+
+  @media(min-width: 768px) {
+    font-size: 36px;
+    line-height: 42px;
+    max-width: 464px;
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const Text = styled.div`
@@ -26,6 +68,23 @@ export const Text = styled.div`
   line-height: 23px;
   color: #5C5C5C;
   padding: 12px 0 0;
+
+  @media(min-width: 768px) {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const BoxWrapper = styled.div`
@@ -33,6 +92,25 @@ export const BoxWrapper = styled.div`
   max-width: 375px;
   height: 574px;
   margin: 24px auto 0;
+
+  @media(min-width: 768px) {
+    margin: 40px auto 0;
+    max-width: 768px;
+    height: 792px;
+  }
+  @media(min-width: 1024px) {
+    margin: 0;
+    max-width: 1024px;
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const PurpleBox = styled.div`
@@ -47,13 +125,49 @@ export const PurpleBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media(min-width: 768px) {
+    width: 560px;
+    height: 560px;
+    border-radius: 72px;
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const RedBox = styled.div`
   width: 355px;
   height: 355px;
   background: #FB242B;
-  border-radius: 52.1364px;
+  border-radius: 52px;
+
+  @media(min-width: 768px) {
+    width: 491px;
+    height: 491px;
+    border-radius: 72px;
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const Rhombs = styled.div`
@@ -64,6 +178,22 @@ export const Rhombs = styled.div`
   height: 143px;
   background: url("/assets/icons/features/rhombs.png") no-repeat;
   background-size: cover;
+
+  @media(min-width: 768px) {
+
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const Stars = styled.div`
@@ -74,6 +204,22 @@ export const Stars = styled.div`
   height: 53px;
   background: url("/assets/icons/features/make-fast-stars.png") no-repeat;
   background-size: cover;
+
+  @media(min-width: 768px) {
+
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const DeviceLeft = styled.img`
@@ -81,6 +227,24 @@ export const DeviceLeft = styled.img`
   position: absolute;
   top: 59px;
   left: -22px;
+
+  @media(min-width: 768px) {
+    width: 331px;
+    top: 81px;
+    left: 90px;
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const DeviceRight = styled.img`
@@ -88,4 +252,22 @@ export const DeviceRight = styled.img`
   position: absolute;
   bottom: 11px;
   right: -26px;
+
+  @media(min-width: 768px) {
+    width: 330px;
+    bottom: 11px;
+    right: 94px;
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
