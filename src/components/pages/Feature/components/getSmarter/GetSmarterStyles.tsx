@@ -2,10 +2,35 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin: 120px 0 0;
+
+  @media(min-width: 768px) {
+    margin: 142px 0 0;
+  }
+  @media(min-width: 1024px) {
+    margin: 80px 0 0;
+    padding: 0 40px;
+  }
+  @media(min-width: 1280px) {
+    padding: 0 124px;
+  }
+  @media(min-width: 1920px) {
+    padding: 0 304px;
+  }
 `;
 
 export const TextWrapper = styled.div`
   padding: 0 16px;
+  
+  @media(min-width: 1024px) {
+    padding: 0;
+    max-width: 336px;
+  }
+  @media(min-width: 1280px) {
+    max-width: 440px;
+  }
+  @media(min-width: 1440px) {
+    max-width: 484px;
+  }
 `;
 
 export const H1 = styled.div`
@@ -16,6 +41,24 @@ export const H1 = styled.div`
   line-height: 39px;
   text-align: center;
   color: #212121;
+
+  @media(min-width: 768px) {
+    max-width: 382px;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0 auto;
+  }
+  @media(min-width: 1024px) {
+    margin: 0;
+    text-align: left;
+  }
+  @media(min-width: 1280px) {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  @media(min-width: 1920px) {
+    max-width: 462px;
+  }
 `;
 
 export const Text = styled.div`
@@ -24,8 +67,20 @@ export const Text = styled.div`
   font-weight: 400;
   font-size: 14px;
   line-height: 23px;
+  text-align: center;
   color: #5C5C5C;
   padding: 12px 0 0;
+
+  @media(min-width: 768px) {
+    font-size: 16px;
+  }
+  @media(min-width: 1024px) {
+    text-align: left;
+  }
+  @media(min-width: 1920px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 `;
 
 export const BoxWrapper = styled.div`
@@ -33,6 +88,22 @@ export const BoxWrapper = styled.div`
   max-width: 375px;
   height: 574px;
   margin: 24px auto 0;
+
+  @media(min-width: 768px) {
+
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const MainBox = styled.div`
@@ -47,6 +118,22 @@ export const MainBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media(min-width: 768px) {
+
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const BoxInner = styled.div`
@@ -54,6 +141,22 @@ export const BoxInner = styled.div`
   height: 355px;
   background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(218, 218, 218, 0.6) 0%, rgba(250, 250, 250, 0.6) 100%);
   border-radius: 40px;
+
+  @media(min-width: 768px) {
+
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const Rhombs = styled.div`
@@ -64,6 +167,22 @@ export const Rhombs = styled.div`
   position: absolute;
   top: 13px;
   right: -46px;
+
+  @media(min-width: 768px) {
+
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const DeviceLeft = styled.img`
@@ -71,6 +190,22 @@ export const DeviceLeft = styled.img`
   position: absolute;
   bottom: 49px;
   left: -10px;
+
+  @media(min-width: 768px) {
+
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
 
 export const DeviceRight = styled.img`
@@ -78,4 +213,20 @@ export const DeviceRight = styled.img`
   position: absolute;
   top: 61px;
   right: -91px;
+
+  @media(min-width: 768px) {
+
+  }
+  @media(min-width: 1024px) {
+
+  }
+  @media(min-width: 1280px) {
+
+  }
+  @media(min-width: 1440px) {
+
+  }
+  @media(min-width: 1920px) {
+
+  }
 `;
