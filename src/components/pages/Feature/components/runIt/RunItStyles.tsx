@@ -72,10 +72,10 @@ export const ImagesWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 375px;
+  max-width: 343px;
 
   @media(min-width: 768px) {
-    max-width: 768px;
+    max-width: 736px;
   }
   @media(min-width: 1024px) {
     max-width: 644px;

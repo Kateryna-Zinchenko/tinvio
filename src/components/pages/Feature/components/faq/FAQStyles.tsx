@@ -2,6 +2,16 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin: 120px 0 0;
+
+  @media(min-width: 768px) {
+    margin: 80px 0 0;
+  }
+  @media(min-width: 1024px) {
+    margin: 140px 0 0;
+  }
+  @media(min-width: 1920px) {
+    margin: 137px 0 0;
+  }
 `;
 
 export const H1 = styled.div`
@@ -12,16 +22,46 @@ export const H1 = styled.div`
   text-transform: uppercase;
   text-align: center;
   color: #212121;
+
+  @media(min-width: 768px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  @media(min-width: 1280px) {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  @media(min-width: 1920px) {
+    font-size: 44px;
+    line-height: 54px;
+  }
 `;
 
 export const Questions = styled.div`
   padding: 41px 16px 0;
+
+  @media(min-width: 768px) {
+    padding: 43px 16px 0;
+  }
+  @media(min-width: 1024px) {
+    padding: 43px 40px 0;
+  }
+  @media(min-width: 1280px) {
+    padding: 40px 124px 0;
+  }
+  @media(min-width: 1920px) {
+    padding: 40px 304px 0;
+  }
 `;
 
 export const QuestionWrapper = styled.div`
   margin: 24px 0 0;
   &:first-child {
     margin: 0;
+  }
+
+  @media(min-width: 768px) {
+    margin: 32px 0 0;
   }
 `;
 
@@ -38,6 +78,15 @@ export const Title = styled.div`
   font-size: 16px;
   line-height: 20px;
   color: #212121;
+
+  @media(min-width: 768px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  @media(min-width: 1920px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
 `;
 
 export const PlusWrapper1 = styled.div<{ question:string }>`
@@ -117,6 +166,7 @@ export const Minus = styled.div`
   height: 2px;
   background: #212121;
   border-radius: 100px;
+  
 `;
 
 export const Border = styled.div`
@@ -124,10 +174,10 @@ export const Border = styled.div`
   height: 1px;
   background: #D2D2D2;
   margin: 24px 0 0;
-`;
 
-export const BorderLast = styled(Border)`
-  display: none;
+  @media(min-width: 768px) {
+    margin: 32px 0 0;
+  }
 `;
 
 export const Text1 = styled.div<{ question:string }>`
@@ -139,6 +189,14 @@ export const Text1 = styled.div<{ question:string }>`
   line-height: 23px;
   color: #212121;
   padding: 16px 0 0;
+
+  @media(min-width: 768px) {
+    padding: 24px 0 0;
+  }
+  @media(min-width: 1920px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 `;
 
 export const Text2 = styled(Text1)<{ question:string }>`

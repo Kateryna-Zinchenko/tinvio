@@ -119,6 +119,7 @@ export const Text = styled.div`
 
 export const Button = styled.div`
   width: 188px;
+  height: 48px;
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 700;
@@ -127,7 +128,7 @@ export const Button = styled.div`
   color: #FFFFFF;
   background: #FF474D;
   border-radius: 16px;
-  padding: 14px 45px 14px 46px;
+  padding: 14px 45px;
   margin: 32px auto 0;
   cursor: pointer;
   display: block;

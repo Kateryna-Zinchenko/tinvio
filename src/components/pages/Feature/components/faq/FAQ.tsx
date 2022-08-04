@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {
-    Border, BorderLast,
+    Border,
     H1,
     Minus,
     MinusWrapper1,
@@ -124,7 +124,6 @@ const FAQ = () => {
                             If you're already signed up, you can live chat with "Team Tinvio" in the dashboard or
                             mobile app. Otherwise, you can contact us at support@tinvio.com for more information!
                         </Text5>
-                        <BorderLast/>
                     </QuestionWrapper>
 
                 </Questions>
