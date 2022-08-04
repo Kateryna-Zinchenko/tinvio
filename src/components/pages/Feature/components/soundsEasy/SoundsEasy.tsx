@@ -6,9 +6,8 @@ const SoundsEasy = () => {
         <section className='sounds-easy'>
             <Wrapper>
                 <Text>
-                    <p>Sounds easy?</p>
-                    <p>Supply chain transactions don’t have to be complicated</p>
-                    </Text>
+                    Sounds easy? Supply chain transactions don’t have to be complicated
+                </Text>
                 <Button>Get Started</Button>
             </Wrapper>
         </section>
