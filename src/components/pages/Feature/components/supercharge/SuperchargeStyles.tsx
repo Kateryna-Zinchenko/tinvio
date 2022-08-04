@@ -124,15 +124,3 @@ export const Rhombs = styled.div`
   right: -141px;
   z-index: -1;
 `;
-// @media(min-width: 768px) {
-//
-// }
-// @media(min-width: 1024px) {
-//
-// }
-// @media(min-width: 1280px) {
-//
-// }
-// @media(min-width: 1920px) {
-//
-// }
