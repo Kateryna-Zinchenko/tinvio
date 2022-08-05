@@ -2,14 +2,41 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin: 16px 0 0;
+
+  @media (min-width: 1024px) {
+    margin: 24px 0 0;
+    display: flex;
+  }
+  @media (min-width: 1280px) {
+    margin: 24px 0 0 54px;
+  }
+  @media (min-width: 1920px) {
+    margin: 24px 0 0 234px;
+  }
 `;
 
 export const LeftWrapper = styled.div`
   width: 100%;
   height: 481px;
   background: #F7F7F7;
-  border-radius: 48px 48px 0 0;
+  border-radius: 48px;
   overflow: hidden;
+
+  @media (min-width: 768px) {
+    border-radius: 32px;
+  }
+  @media (min-width: 1024px) {
+    width: 544px;
+  }
+  @media (min-width: 1280px) {
+    width: 574px;
+  }
+  @media (min-width: 1440px) {
+    width: 654px;
+  }
+  @media (min-width: 1920px) {
+    width: 714px;
+  }
 `;
 
 export const Title1 = styled.div`
@@ -22,6 +49,14 @@ export const Title1 = styled.div`
   text-align: center;
   color: #212121;
   margin: 48px auto 0;
+
+  @media (min-width: 768px) {
+    line-height: 30px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 28px;
+    line-height: 35px;
+  }
 `;
 
 export const P = styled.div`
@@ -32,7 +67,13 @@ export const P = styled.div`
   line-height: 150%;
   text-align: center;
   color: #727272;
-  padding: 8px 0 0;
+  margin: 8px auto 0;
+  max-width: 330px;
+  
+  @media (min-width: 1920px) {
+    font-size: 16px;
+    margin: 2px auto 0;
+  }
 `;
 
 export const Img = styled.img`
@@ -40,14 +81,33 @@ export const Img = styled.img`
 `;
 
 export const RightWrapper = styled.div`
+  margin: 16px 0 0;
   
+  @media (min-width: 1024px) {
+    margin: 0 0 0 24px;
+    width: 456px;
+  }
+  @media (min-width: 1280px) {
+    width: 628px;
+  }
+  @media (min-width: 1440px) {
+    width: 708px;
+  }
+  @media (min-width: 1920px) {
+    width: 948px;
+  }
 `;
 
 export const SendWrapper = styled.div`
-  margin: 16px 0 0;
   padding: 54px 16px;
   background: #363636;
   border-radius: 32px;
+
+  @media (min-width: 768px) {
+    padding: 67px 0;
+    margin: 0 auto;
+    border-radius: 32px 0 0 32px;
+  }
 `;
 
 export const Inputs = styled.div`
@@ -55,6 +115,13 @@ export const Inputs = styled.div`
   justify-content: space-between;
   width: 343px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 379px;
+  }
+  @media (min-width: 1920px) {
+    margin: 0 0 0 133px;
+  }
 `;
 
 export const Button = styled.div`
@@ -65,18 +132,33 @@ export const Button = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const Clip = styled.div`
   background: url("/assets/icons/features/manage-orders-clip.png") no-repeat;
   width: 15px;
   height: 15px;
+
+  @media (min-width: 768px) {
+    width: 16px;
+    height: 16px;
+  }
 `;
 
 export const File = styled.div`
   background: url("/assets/icons/features/manage-orders-file.png") no-repeat;
   width: 13px;
   height: 15px;
+
+  @media (min-width: 768px) {
+    width: 14px;
+    height: 16px;
+  }
 `;
 
 export const InputWrapper = styled.div`
@@ -98,14 +180,19 @@ export const Input = styled.input`
   border: none;
   outline: none;
   padding: 10px 0 11px 15px;
-  
+
   &::placeholder {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 17px;
     color: #BDBDBD;
+  }
+
+  @media (min-width: 768px) {
+    width: 283px;
+    height: 40px;
   }
 `;
 
@@ -129,6 +216,25 @@ export const Title2 = styled.div`
   text-align: center;
   color: #FFFFFF;
   padding: 24px 0 0;
+  
+  @media (min-width: 1920px) {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: left;
+    margin: 0 0 0 222px;
+  }
+`;
+
+export const CreateShareWrapper = styled.div`
+
+  @media (min-width: 768px) {
+    margin: 16px 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: 1024px) {
+    margin: 24px 0 0;
+  }
 `;
 
 export const CreateWrapper = styled.div`
@@ -136,6 +242,23 @@ export const CreateWrapper = styled.div`
   padding: 46px 0;
   background: #F7F7F7;
   border-radius: 32px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 44px 0;
+    width: 376px;
+    background: #363636;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  @media (min-width: 1024px) {
+    width: 208px;
+    height: 229px;
+  }
+  @media (min-width: 1280px) {
+    width: 275px;
+  }
 `;
 
 export const ButtonUsdWrapper = styled.div`
@@ -147,6 +270,10 @@ export const ButtonUsdWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const ButtonUsdInner = styled.div`
@@ -168,6 +295,15 @@ export const Title3 = styled.div`
   text-align: center;
   color: #212121;
   padding: 10px 0 0;
+
+  @media (min-width: 768px) {
+    color: #FFFFFF;
+    padding: 0;
+  }
+  @media (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
 `;
 
 export const ShareWrapper = styled.div`
@@ -175,11 +311,34 @@ export const ShareWrapper = styled.div`
   padding: 46px 0;
   background: #363636;
   border-radius: 32px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    width: 376px;
+    background: #F7F7F7;
+  }
+  @media (min-width: 1024px) {
+    width: 224px;
+    height: 229px;
+  }
+  @media (min-width: 1280px) {
+    width: 329px;
+  }
+  @media (min-width: 1440px) {
+    width: 409px;
+  }
+  @media (min-width: 1920px) {
+    width: 649px;
+  }
 `;
 
 export const ButtonShare = styled.img`
   width: 96px;
   margin: 0 auto;
+  
+  @media (min-width: 1440px) {
+    margin: 0 0 0 121px;
+  }
 `;
 
 export const Title4 = styled.div`
@@ -191,6 +350,18 @@ export const Title4 = styled.div`
   text-align: center;
   color: #FFFFFF;
   padding: 10px 0 0;
+
+  @media (min-width: 768px) {
+    color: #212121;
+  }
+  @media (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  @media (min-width: 1440px) {
+    text-align: left;
+    margin: 0 0 0 59px;
+  }
 `;
 
 

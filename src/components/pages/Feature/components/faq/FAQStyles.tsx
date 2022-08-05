@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin: 120px 0 0;
+  margin: 120px 0 80px;
 
   @media(min-width: 768px) {
-    margin: 80px 0 0;
+    margin: 80px 0 80px;
   }
   @media(min-width: 1024px) {
-    margin: 140px 0 0;
+    margin: 140px 0 80px;
   }
   @media(min-width: 1920px) {
-    margin: 137px 0 0;
+    margin: 137px 0 80px;
   }
 `;
 

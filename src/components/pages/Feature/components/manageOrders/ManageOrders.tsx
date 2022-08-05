@@ -2,7 +2,7 @@ import React from 'react';
 import {
     Arrow,
     Button, ButtonShare, ButtonUsdInner, ButtonUsdWrapper,
-    Clip, CreateWrapper, File,
+    Clip, CreateShareWrapper, CreateWrapper, File,
     Img, Input, Inputs, InputWrapper,
     LeftWrapper,
     P,
@@ -40,7 +40,7 @@ const ManageOrders = () => {
                         </Inputs>
                         <Title2>Send messages</Title2>
                     </SendWrapper>
-                    <div>
+                    <CreateShareWrapper>
                         <CreateWrapper>
                             <ButtonUsdWrapper>
                                 <ButtonUsdInner>
@@ -53,7 +53,7 @@ const ManageOrders = () => {
                             <ButtonShare src='/assets/images/features/manage-orders-share.png'/>
                             <Title4>Share payment links</Title4>
                         </ShareWrapper>
-                    </div>
+                    </CreateShareWrapper>
                 </RightWrapper>
             </Wrapper>
         </section>
