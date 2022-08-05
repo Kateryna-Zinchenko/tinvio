@@ -9,6 +9,8 @@ export const Wrapper = styled.div`
   @media(min-width: 1024px) {
     margin: 80px 0 0;
     padding: 0 40px;
+    display: flex;
+    align-items: center;
   }
   @media(min-width: 1280px) {
     padding: 0 124px;
@@ -90,19 +92,18 @@ export const BoxWrapper = styled.div`
   margin: 24px auto 0;
 
   @media(min-width: 768px) {
-
+    margin: 40px auto 0;
+    max-width: 768px;
+    height: 792px;
   }
   @media(min-width: 1024px) {
-
-  }
-  @media(min-width: 1280px) {
-
+    margin: 0 0 0 432px;
   }
   @media(min-width: 1440px) {
-
+    margin: 0 0 0 476px;
   }
   @media(min-width: 1920px) {
-
+    margin: 0 0 0 580px;
   }
 `;
 
@@ -120,19 +121,9 @@ export const MainBox = styled.div`
   align-items: center;
 
   @media(min-width: 768px) {
-
-  }
-  @media(min-width: 1024px) {
-
-  }
-  @media(min-width: 1280px) {
-
-  }
-  @media(min-width: 1440px) {
-
-  }
-  @media(min-width: 1920px) {
-
+    width: 560px;
+    height: 560px;
+    border-radius: 56px;
   }
 `;
 
@@ -143,19 +134,9 @@ export const BoxInner = styled.div`
   border-radius: 40px;
 
   @media(min-width: 768px) {
-
-  }
-  @media(min-width: 1024px) {
-
-  }
-  @media(min-width: 1280px) {
-
-  }
-  @media(min-width: 1440px) {
-
-  }
-  @media(min-width: 1920px) {
-
+    width: 491px;
+    height: 491px;
+    border-radius: 56px;
   }
 `;
 
@@ -186,47 +167,39 @@ export const Rhombs = styled.div`
 `;
 
 export const DeviceLeft = styled.img`
-  width: 191px;
+  max-width: 191px;
   position: absolute;
   bottom: 49px;
   left: -10px;
 
   @media(min-width: 768px) {
-
+    max-width: 298px;
+    bottom: 52px;
+    left: 30px;
   }
   @media(min-width: 1024px) {
-
-  }
-  @media(min-width: 1280px) {
-
-  }
-  @media(min-width: 1440px) {
-
-  }
-  @media(min-width: 1920px) {
-
+    max-width: 289px;
+    min-width: 289px;
+    bottom: 68px;
+    left: -331px;
   }
 `;
 
 export const DeviceRight = styled.img`
-  width: 343px;
+  max-width: 343px;
   position: absolute;
   top: 61px;
   right: -91px;
 
   @media(min-width: 768px) {
-
+    max-width: 539px;
+    top: 18px;
+    right: 0;
   }
   @media(min-width: 1024px) {
-
-  }
-  @media(min-width: 1280px) {
-
-  }
-  @media(min-width: 1440px) {
-
-  }
-  @media(min-width: 1920px) {
-
+    max-width: 517px;
+    min-width: 517px;
+    top: 20px;
+    right: -390px;
   }
 `;
