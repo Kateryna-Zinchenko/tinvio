@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import TryIt from './components/tryIt/TryIt';
 import Dashboard from "./components/dashboard/Dashboard";
 import ManageOrders from "./components/manageOrders/ManageOrders";
@@ -10,8 +10,10 @@ import Supercharge from "./components/supercharge/Supercharge";
 import FAQ from "./components/faq/FAQ";
 import SendInvoices from "./components/sendInvoices/SendInvoices";
 import RunIt from "./components/runIt/RunIt";
+import Login from "../../common/login/Login";
 
 const Feature = () => {
+
     return (
         <main className='features'>
             <TryIt/>

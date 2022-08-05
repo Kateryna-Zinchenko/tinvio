@@ -27,9 +27,11 @@ const Dashboard = () => {
                                 Collect payments and reconcile them against invoices, without checking bank statements
                             </P>
                         </Option>
-                        <Img src='/assets/images/features/supercharge-screen.png'/>
-                        <Text>And more in one dashboard...</Text>
+                        <Text>
+                            And more in one dashboard...
+                        </Text>
                     </Options>
+                    <Img src='/assets/images/features/supercharge-screen.png'/>
                 </Wrapper>
             </div>
         </section>

@@ -93,7 +93,7 @@ export const Title = styled.div`
   }
 `;
 
-export const P = styled.div`
+export const P = styled.p`
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -101,6 +101,9 @@ export const P = styled.div`
   line-height: 150%;
   color: #FAFAFA;
   
+  @media (min-width: 1024px) {
+    
+  }
   @media (min-width: 1920px) {
     font-size: 16px;
   }
@@ -113,6 +116,7 @@ export const Text = styled.div`
   font-size: 24px;
   line-height: 150%;
   color: #FFFFFF;
+  height: fit-content;
 
   @media (min-width: 1920px) {
     font-size: 28px;
@@ -128,6 +132,9 @@ export const Img = styled.img`
   @media (min-width: 768px) {
     max-width: 690px;
     padding: 0;
-    margin: 0 -139px 0 0;
+    margin: 0 -500px 0 0;
+  }
+  @media (min-width: 1024px) {
+    
   }
 `;
