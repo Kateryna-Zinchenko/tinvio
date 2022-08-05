@@ -6,7 +6,6 @@ import {
     ImgWrapper, Message, P1, P2,
     PWrapper,
     Tab1Wrapper, Tab2Wrapper,
-    TabText,
     Text,
     TextWrapper, Tick,
     Title,
@@ -27,13 +26,13 @@ const SendInvoices = () => {
                 <ImgWrapper>
                     <Img src='/assets/images/features/send-invoices-main.png'/>
                     <Tab1Wrapper>
-                        <TabText>
+                        <div>
                             <Title>Send an invoice for this order</Title>
                             <PWrapper>
                                 <P1>Need a template?</P1>
                                 <P2>Generate Invoice</P2>
                             </PWrapper>
-                        </TabText>
+                        </div>
                         <Button>Send Invoice</Button>
                     </Tab1Wrapper>
                     <Tab2Wrapper>
