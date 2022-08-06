@@ -89,28 +89,28 @@ export const Title = styled.div`
   }
 `;
 
-export const PlusWrapper1 = styled.div<{ question:string }>`
-  display: ${({question}) => question.includes('started') ? 'none' : 'block'};
+export const PlusWrapper1 = styled.div<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('started') && isOpen ? 'none' : 'block'};
   width: 20px;
   height: 20px;
   position: relative;
   cursor: pointer;
 `;
 
-export const PlusWrapper2 = styled(PlusWrapper1)<{ question:string }>`
-  display: ${({question}) => question.includes('work') ? 'none' : 'block'};
+export const PlusWrapper2 = styled(PlusWrapper1)<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('work') && isOpen ? 'none' : 'block'};
 `;
 
-export const PlusWrapper3 = styled(PlusWrapper1)<{ question:string }>`
-  display: ${({question}) => question.includes('collect') ? 'none' : 'block'};
+export const PlusWrapper3 = styled(PlusWrapper1)<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('collect') && isOpen ? 'none' : 'block'};
 `;
 
-export const PlusWrapper4 = styled(PlusWrapper1)<{ question:string }>`
-  display: ${({question}) => question.includes('supported') ? 'none' : 'block'};
+export const PlusWrapper4 = styled(PlusWrapper1)<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('supported') && isOpen ? 'none' : 'block'};
 `;
 
-export const PlusWrapper5 = styled(PlusWrapper1)<{ question:string }>`
-  display: ${({question}) => question.includes('contact') ? 'none' : 'block'};
+export const PlusWrapper5 = styled(PlusWrapper1)<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('contact') && isOpen ? 'none' : 'block'};
 `;
 
 export const Plus = styled.div`
@@ -138,27 +138,27 @@ export const Plus = styled.div`
   }
 `;
 
-export const MinusWrapper1 = styled.div<{ question:string }>`
-  display: ${({question}) => question.includes('started') ? 'flex' : 'none'};
+export const MinusWrapper1 = styled.div<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('started') && isOpen ? 'flex' : 'none'};
   justify-content: center;
   align-items: center;
   cursor: pointer;
 `;
 
-export const MinusWrapper2 = styled(MinusWrapper1)<{ question:string }>`
-  display: ${({question}) => question.includes('work') ? 'flex' : 'none'};
+export const MinusWrapper2 = styled(MinusWrapper1)<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('work') && isOpen ? 'flex' : 'none'};
 `;
 
-export const MinusWrapper3 = styled(MinusWrapper1)<{ question:string }>`
-  display: ${({question}) => question.includes('collect') ? 'flex' : 'none'};
+export const MinusWrapper3 = styled(MinusWrapper1)<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('collect') && isOpen ? 'flex' : 'none'};
 `;
 
-export const MinusWrapper4 = styled(MinusWrapper1)<{ question:string }>`
-  display: ${({question}) => question.includes('supported') ? 'flex' : 'none'};
+export const MinusWrapper4 = styled(MinusWrapper1)<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('supported') && isOpen ? 'flex' : 'none'};
 `;
 
-export const MinusWrapper5 = styled(MinusWrapper1)<{ question:string }>`
-  display: ${({question}) => question.includes('contact') ? 'flex' : 'none'};
+export const MinusWrapper5 = styled(MinusWrapper1)<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('contact') && isOpen ? 'flex' : 'none'};
 `;
 
 export const Minus = styled.div`
@@ -180,8 +180,8 @@ export const Border = styled.div`
   }
 `;
 
-export const Text1 = styled.div<{ question:string }>`
-  display: ${({question}) => question.includes('started') ? 'block' : 'none'};
+export const Text1 = styled.div<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('started') && isOpen ? 'block' : 'none'};
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -192,6 +192,8 @@ export const Text1 = styled.div<{ question:string }>`
 
   @media(min-width: 768px) {
     padding: 24px 0 0;
+    font-size: 16px;
+    line-height: 23px;
   }
   @media(min-width: 1920px) {
     font-size: 18px;
@@ -199,18 +201,18 @@ export const Text1 = styled.div<{ question:string }>`
   }
 `;
 
-export const Text2 = styled(Text1)<{ question:string }>`
-  display: ${({question}) => question.includes('work') ? 'block' : 'none'};
+export const Text2 = styled(Text1)<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('work') && isOpen ? 'block' : 'none'};
 `;
 
-export const Text3 = styled(Text1)<{ question:string }>`
-  display: ${({question}) => question.includes('collect') ? 'block' : 'none'};
+export const Text3 = styled(Text1)<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('collect') && isOpen ? 'block' : 'none'};
 `;
 
-export const Text4 = styled(Text1)<{ question:string }>`
-  display: ${({question}) => question.includes('supported') ? 'block' : 'none'};
+export const Text4 = styled(Text1)<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('supported') && isOpen ? 'block' : 'none'};
 `;
 
-export const Text5 = styled(Text1)<{ question:string }>`
-  display: ${({question}) => question.includes('contact') ? 'block' : 'none'};
+export const Text5 = styled(Text1)<{ isOpen:boolean, question:string }>`
+  display: ${({question, isOpen}) => question.includes('contact') && isOpen ? 'block' : 'none'};
 `;
