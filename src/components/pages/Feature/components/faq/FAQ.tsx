@@ -27,12 +27,12 @@ import {
 } from "./FAQStyles";
 
 const FAQ = () => {
-    const [question, setQuestion] = useState<string>('')
-    const [isOpen, setIsOpen] = useToggle(false)
+    const [question, setQuestion] = useState<string>('');
+    const [isOpen, setIsOpen] = useToggle(false);
 
     const onQuestionClick = (question:string) => {
         setQuestion(question)
-        setIsOpen()
+        setIsOpen(question && true)
     }
 
     return (
@@ -51,7 +51,7 @@ const FAQ = () => {
                                 <Minus/>
                             </MinusWrapper1>
                         </Question>
-                        <Text1 question={question} isOpen={isOpen}>
+                        <Text1 question={question}>
                             You can create an account on Tinvio (dashboard or mobile app) within a minute to start
                             managing
                             chats, orders, and invoices. For payments, our Customer Success team will reach out for
@@ -71,7 +71,7 @@ const FAQ = () => {
                                 <Minus/>
                             </MinusWrapper2>
                         </Question>
-                        <Text2 question={question} isOpen={isOpen}>
+                        <Text2 question={question}>
                             This dashboard is an easy all-in-one interface for you to manage chats, orders, invoices,
                             and payments with your merchants. Merchants just need to download the free Tinvio mobile
                             app to exchange messages, place orders, and make payments. It’s zero friction for them!
@@ -89,7 +89,7 @@ const FAQ = () => {
                                 <Minus/>
                             </MinusWrapper3>
                         </Question>
-                        <Text3 question={question} isOpen={isOpen}>
+                        <Text3 question={question}>
                             Once your account is verified, you'll be able to request and reconcile payments for all
                             your orders and invoices on Tinvio. Your merchants will receive notifications for each
                             payment request in their favorite channels (e.g. Tinvio app, WhatsApp), and they'll be
@@ -109,7 +109,7 @@ const FAQ = () => {
                                 <Minus/>
                             </MinusWrapper4>
                         </Question>
-                        <Text4 question={question} isOpen={isOpen}>
+                        <Text4 question={question}>
                             We’re always enabling new payment methods. Our Customer Success teams will advise on the
                             available methods in your market (including transaction fees for that method). In general,
                             we support bank transfers, credit cards, and B2B BNPL options!
@@ -128,7 +128,7 @@ const FAQ = () => {
                                 <Minus/>
                             </MinusWrapper5>
                         </Question>
-                        <Text5 question={question} isOpen={isOpen}>
+                        <Text5 question={question}>
                             If you're already signed up, you can live chat with "Team Tinvio" in the dashboard or
                             mobile app. Otherwise, you can contact us at support@tinvio.com for more information!
                         </Text5>

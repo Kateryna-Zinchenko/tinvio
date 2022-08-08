@@ -12,7 +12,6 @@ import RunIt from "./components/runIt/RunIt";
 
 
 const Feature = () => {
-
     return (
         <main className='features'>
             <TryIt/>

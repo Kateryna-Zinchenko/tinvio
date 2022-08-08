@@ -180,8 +180,8 @@ export const Border = styled.div`
   }
 `;
 
-export const Text1 = styled.div<{ isOpen:boolean, question:string }>`
-  display: ${({question, isOpen}) => question.includes('started') && isOpen ? 'block' : 'none'};
+export const Text1 = styled.div<{ question:string }>`
+  display: ${({question}) => question.includes('started') ? 'block' : 'none'};
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -201,18 +201,18 @@ export const Text1 = styled.div<{ isOpen:boolean, question:string }>`
   }
 `;
 
-export const Text2 = styled(Text1)<{ isOpen:boolean, question:string }>`
-  display: ${({question, isOpen}) => question.includes('work') && isOpen ? 'block' : 'none'};
+export const Text2 = styled(Text1)<{ question:string }>`
+  display: ${({question}) => question.includes('work') ? 'block' : 'none'};
 `;
 
-export const Text3 = styled(Text1)<{ isOpen:boolean, question:string }>`
-  display: ${({question, isOpen}) => question.includes('collect') && isOpen ? 'block' : 'none'};
+export const Text3 = styled(Text1)<{ question:string }>`
+  display: ${({question}) => question.includes('collect') ? 'block' : 'none'};
 `;
 
-export const Text4 = styled(Text1)<{ isOpen:boolean, question:string }>`
-  display: ${({question, isOpen}) => question.includes('supported') && isOpen ? 'block' : 'none'};
+export const Text4 = styled(Text1)<{ question:string }>`
+  display: ${({question}) => question.includes('supported') ? 'block' : 'none'};
 `;
 
-export const Text5 = styled(Text1)<{ isOpen:boolean, question:string }>`
-  display: ${({question, isOpen}) => question.includes('contact') && isOpen ? 'block' : 'none'};
+export const Text5 = styled(Text1)<{ question:string }>`
+  display: ${({question}) => question.includes('contact') ? 'block' : 'none'};
 `;

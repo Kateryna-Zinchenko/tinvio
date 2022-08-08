@@ -5,6 +5,7 @@ import {useToggle} from 'react-use';
 import BurgerMenu from "./components/common/header/menu/BurgerMenu";
 import Footer from "./components/common/footer/Footer";
 import Feature from "./components/pages/Feature/Feature";
+import Company from "./components/pages/Company/Company";
 
 function App() {
     const [isOpenMenu, setIsOpenMenu] = useToggle(false);
@@ -19,6 +20,7 @@ function App() {
                             <Route path='/' element={<Home/>}/>
                             <Route path='/home' element={<Home/>}/>
                             <Route path='/features' element={<Feature/>}/>
+                            <Route path='/company' element={<Company/>}/>
                         </Routes>
                         <Footer/>
                     </div>
