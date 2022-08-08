@@ -20,7 +20,7 @@ export const Stars = styled.div`
   height: 62px;
   position: absolute;
   top: -40px;
-  left: 0px;
+  left: 0;
 `;
 
 export const Button = styled.button`
