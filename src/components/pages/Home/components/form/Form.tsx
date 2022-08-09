@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react';
 import {
-    Button, Caption,
+    Button,
+    Caption,
     FormBlock,
     FormBlockInner,
     H1,

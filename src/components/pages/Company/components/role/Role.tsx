@@ -1,5 +1,6 @@
 import React from 'react';
-import {Button, H1, ImagesWrapper, Img1, Img2, Img3, Img4, Stars, Wrapper} from "./RoleStyles";
+import {H1, ImagesWrapper, Img1, Img2, Img3, Img4, Stars, Wrapper} from "./RoleStyles";
+import Button from "../../../../common/button/Button";
 
 const Role = () => {
     return (
@@ -9,7 +10,7 @@ const Role = () => {
                     <Stars/>
                     Global, local, remote. Find the perfect role
                 </H1>
-                <Button>Explore Roles</Button>
+                <Button bordered>Explore Roles</Button>
                 <ImagesWrapper>
                     <Img1 src='/assets/images/company/role-1.png'/>
                     <Img2 src='/assets/images/company/role-2.png'/>

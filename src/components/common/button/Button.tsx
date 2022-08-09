@@ -39,4 +39,17 @@ const Wrapper = styled.button<Props>`
   border: ${({bordered}) => bordered ? '1px solid #D2D2D2' : 'none'};
   margin: 0 auto;
   display: block;
+  cursor: pointer;
+  
+  &:hover {
+    background: ${({background}) => background === '#FFF' || background === '#FFFFFF' ? '#E0E0E1' : '#FFF'} ;
+  }
+
+  @media(min-width: 1920px) {
+    width: 219px;
+    height: 56px;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 19px;
+  }
 `;

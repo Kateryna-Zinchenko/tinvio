@@ -34,6 +34,7 @@ export const Text = styled.div`
   line-height: 29px;
   text-align: center;
   color: #FFFFFF;
+  padding: 0 0 24px;
 
   @media(min-width: 768px) {
     font-size: 32px;
@@ -42,6 +43,7 @@ export const Text = styled.div`
   @media(min-width: 1024px) {
     max-width: 679px;
     text-align: left;
+    padding: 0;
   }
   @media(min-width: 1280px) {
     font-size: 36px;

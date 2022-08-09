@@ -191,7 +191,7 @@ export const Title = styled.div`
   }
 `;
 export const Inputs = styled.div`
-  margin: 32px auto 0;
+  margin: 32px auto 32px;
   width: 295px;
   @media (min-width: 768px) {
     width: 329px;

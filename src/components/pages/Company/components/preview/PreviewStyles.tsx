@@ -94,6 +94,11 @@ export const Button = styled.div`
   margin: 32px auto 0;
   padding: 14px 42px 14px 63px;
   position: relative;
+  cursor: pointer;
+  
+  &:hover {
+    background: #E0E0E1;
+  }
 
   &::before {
     content: '';

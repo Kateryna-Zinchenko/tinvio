@@ -48,25 +48,9 @@ export const P = styled.div`
   line-height: 150%;
   text-align: center;
   color: #5C5C5C;
-  padding: 16px 0 0;
+  padding: 16px 0 32px;
 `;
 
 export const P2 = styled(P)`
   color: #FFFFFF;
-`;
-
-export const Button = styled.button`
-  border: 1px solid #D2D2D2;
-  border-radius: 16px;
-  margin: 32px auto 0;
-  display: block;
-  width: 188px;
-  height: 48px;
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #212121;
 `;

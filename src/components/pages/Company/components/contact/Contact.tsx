@@ -16,7 +16,7 @@ const Contact = () => {
                     <Tab2>
                         <Title2>Business & Partnerships</Title2>
                         <P2>Porta pellentesque leo arcu in massa. Praesent mattis faucibus placerat.</P2>
-                        <Button background='#fff'>Contact Us</Button>
+                        <Button background='#FFF'>Contact Us</Button>
                     </Tab2>
                     <Tab>
                         <Title>Media Relations</Title>

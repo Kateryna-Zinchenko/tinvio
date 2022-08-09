@@ -11,6 +11,7 @@ export const H1 = styled.div`
   text-align: center;
   color: #212121;
   position: relative;
+  padding: 0 0 34px;
 `;
 
 export const Stars = styled.div`
@@ -21,23 +22,6 @@ export const Stars = styled.div`
   position: absolute;
   top: -40px;
   left: 0;
-`;
-
-export const Button = styled.button`
-  display: block;
-  width: 188px;
-  height: 48px;
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #212121;
-  border: 1px solid #D2D2D2;
-  border-radius: 16px;
-  background: #fff;
-  margin: 34px auto 0;
 `;
 
 export const ImagesWrapper = styled.div`

@@ -146,7 +146,7 @@ export const H1 = styled.div`
 
 export const TextBeforeButton = styled.div`
   width: 333px;
-  margin: 16px auto 0;
+  margin: 16px auto 32px;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;

@@ -56,23 +56,7 @@ export const P = styled.div`
   line-height: 22px;
   text-align: center;
   color: #FFFFFF;
-`;
-
-export const Button = styled.button`
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #212121;
-  width: 188px;
-  height: 48px;
-  background: #FFFFFF;
-  border-radius: 16px;
-  border: none;
-  display: block;
-  margin: 24px auto 0;
+  padding: 0 0 24px;
 `;
 
 export const Img3 = styled(Img1)`
