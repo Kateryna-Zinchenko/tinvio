@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin: 180px 0 0;
+  margin: 180px 0 80px;
 `;
 
 export const H1 = styled.div`
@@ -24,12 +24,20 @@ export const Tab = styled.div`
   margin: 16px 0 0;
 `;
 
+export const Tab2 = styled(Tab)`
+  background: #363636;
+`;
+
 export const Title = styled.div`
   font-family: 'Gilroy';
   font-size: 28px;
   line-height: 33px;
   text-align: center;
   color: #212121;
+`;
+
+export const Title2 = styled(Title)`
+  color: #FFFFFF;
 `;
 
 export const P = styled.div`
@@ -41,7 +49,10 @@ export const P = styled.div`
   text-align: center;
   color: #5C5C5C;
   padding: 16px 0 0;
+`;
 
+export const P2 = styled(P)`
+  color: #FFFFFF;
 `;
 
 export const Button = styled.button`
