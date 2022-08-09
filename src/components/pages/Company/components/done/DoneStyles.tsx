@@ -29,6 +29,7 @@ export const Year = styled.div`
 
 export const List = styled.div`
   padding: 16px 0 0;
+  margin: 0 auto;
 `;
 
 export const LiWrapper = styled.div`
@@ -70,4 +71,41 @@ export const LightDot = styled.div`
   border-radius: 2px;
   transform: rotate(-45deg);
 `;
+
+export const TabWrapper2 = styled.div`
+  margin: 16px 0 0;
+  padding: 16px;
+  background: #FB242B;
+  border-radius: 32px;
+`;
+
+export const TabWrapper4 = styled.div`
+  margin: 16px 0 0;
+  padding: 29px 0 0;
+  background: #FB242B;
+  border-radius: 32px;
+  height: 309px;
+  overflow: hidden;
+`;
+
+export const Title = styled.div`
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+`;
+
+export const ImgDevice = styled.img`
+  max-width: 232px;
+  margin: 16px 0 0 85px;
+`;
+
+export const ImgScreen = styled.img`
+  max-width: 507px;
+`;
+
+
 
