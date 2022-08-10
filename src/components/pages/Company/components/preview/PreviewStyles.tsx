@@ -24,15 +24,6 @@ export const StarsTop = styled.div`
   @media (min-width: 1024px) {
     left: -63px;
   }
-  @media (min-width: 1280px) {
-
-  }
-  @media (min-width: 1440px) {
-
-  }
-  @media (min-width: 1920px) {
-
-  }
 `;
 
 export const H1 = styled.div`
@@ -77,20 +68,6 @@ export const P = styled.div`
   @media (min-width: 1920px) {
     font-size: 20px;
     line-height: 26px;
-  }
-`;
-
-export const FlexWrapper = styled.div`
-  @media (min-width: 1024px) {
-    //display: flex;
-    //flex-direction: row-reverse;
-    //align-items: center;
-  }
-  @media (min-width: 1280px) {
-
-  }
-  @media (min-width: 1440px) {
-
   }
 `;
 

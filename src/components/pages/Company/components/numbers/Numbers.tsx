@@ -1,5 +1,5 @@
 import React from 'react';
-import {Amount, Caption, LeftBlock, MiddleBlock, RightBlock, Wrapper} from "./NumbersStyles";
+import {Amount, Caption, LeftBlock, MiddleBlock, MiddleBlock2, RightBlock, Wrapper} from "./NumbersStyles";
 
 const Numbers = () => {
     return (
@@ -13,10 +13,10 @@ const Numbers = () => {
                     <Amount>10<span>+</span></Amount>
                     <Caption>Nationalities</Caption>
                 </MiddleBlock>
-                <MiddleBlock>
+                <MiddleBlock2>
                     <Amount>5000<span>+</span></Amount>
                     <Caption>Businesses</Caption>
-                </MiddleBlock>
+                </MiddleBlock2>
                 <RightBlock>
                     <Amount>$500<span>M</span></Amount>
                     <Caption>Transactions</Caption>
