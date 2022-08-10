@@ -12,7 +12,7 @@ const Powered = () => {
                     <Img2 src='/assets/images/company/powered-2.png'/>
                     <TextBlock>
                         <P>Up for a challenge? We’re always looking for the best</P>
-                        <Button background={'#FFF'}>Join Us</Button>
+                        <Button background={'#FFF'} margin1920={'0'}>Join Us</Button>
                     </TextBlock>
                     <Img3 src='/assets/images/company/powered-3.png'/>
                     <Img4 src='/assets/images/company/powered-4.png'/>

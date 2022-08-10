@@ -6,17 +6,21 @@ type Props = {
     children: React.ReactNode; // make the component able to receive children elements
     background?: string;
     bordered?: boolean;
-    color1?: boolean
+    color1?: boolean;
+    margin?: string;
+    margin1920?: string
 };
 const Button = ({
                     onClick,
                     children,
                     background,
                     bordered,
-                    color1
+                    color1,
+                    margin,
+                    margin1920
                 }: Props) => {
     return (
-        <Wrapper background={background} bordered={bordered} color1={color1}>
+        <Wrapper background={background} bordered={bordered} color1={color1} margin={margin} margin1920={margin1920}>
             {children}
         </Wrapper>
     );
@@ -37,7 +41,7 @@ const Wrapper = styled.button<Props>`
   background: ${({background}) => background ? background : 'none'};
   color: ${({color1}) => color1 ? '#FFFFFF' : '#212121'};
   border: ${({bordered}) => bordered ? '1px solid #D2D2D2' : 'none'};
-  margin: 0 auto;
+  margin: ${({margin}) => margin ? margin : '0 auto'};
   display: block;
   cursor: pointer;
   
@@ -46,10 +50,11 @@ const Wrapper = styled.button<Props>`
   }
 
   @media(min-width: 1920px) {
-    width: 219px;
+    width: 210px;
     height: 56px;
     font-size: 20px;
     line-height: 25px;
     border-radius: 19px;
+    margin: ${({margin1920}) => margin1920 && margin1920};
   }
 `;
