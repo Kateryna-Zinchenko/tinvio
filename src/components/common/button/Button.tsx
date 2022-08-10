@@ -34,7 +34,7 @@ const Wrapper = styled.button<Props>`
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  background: ${({background}) => background ? background : 'none'} ;
+  background: ${({background}) => background ? background : 'none'};
   color: ${({color1}) => color1 ? '#FFFFFF' : '#212121'};
   border: ${({bordered}) => bordered ? '1px solid #D2D2D2' : 'none'};
   margin: 0 auto;

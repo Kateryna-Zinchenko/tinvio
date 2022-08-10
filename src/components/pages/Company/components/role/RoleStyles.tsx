@@ -25,7 +25,7 @@ export const Stars = styled.div`
 `;
 
 export const ImagesWrapper = styled.div`
-  margin: 48px 16px 0;
+  margin: 48px auto 0;
 `;
 
 export const Img1 = styled.img`
@@ -34,7 +34,7 @@ export const Img1 = styled.img`
   object-fit: cover;
   border-radius: 32px;
   object-position: 44% 0;
-  margin: 16px 0 0;
+  margin: 16px auto 0;
   
 `;
 
