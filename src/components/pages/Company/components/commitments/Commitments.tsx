@@ -1,5 +1,5 @@
 import React from 'react';
-import {Caption, H1, Img1, Img2, Item, Items, Title, Wrapper} from "./CommitmentsStyles";
+import {Caption, H1, Img1, Img2, Item, Item2, Items, Title, Title2, Wrapper} from "./CommitmentsStyles";
 
 const CommitmentsStyles = () => {
     return (
@@ -12,11 +12,11 @@ const CommitmentsStyles = () => {
                         <Title>Every pixel matters</Title>
                         <Caption>Biased towards perfection</Caption>
                     </Item>
-                    <Item>
+                    <Item2>
                         <Img2 src='/assets/images/company/item-2.png'/>
-                        <Title>Shut the fluff</Title>
+                        <Title2>Shut the fluff</Title2>
                         <Caption>Clear and direct communication</Caption>
-                    </Item>
+                    </Item2>
                     <Item>
                         <Img1 src='/assets/images/company/item-3.png'/>
                         <Title>Break things fast</Title>
