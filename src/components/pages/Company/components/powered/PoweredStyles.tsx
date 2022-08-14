@@ -57,6 +57,45 @@ export const ImagesWrapper = styled.div`
   }
 `;
 
+export const TopWrapper = styled.div`
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+  @media (min-width: 1024px) {
+    
+  }
+  @media (min-width: 1280px) {
+    
+  }
+  @media (min-width: 1440px) {
+   
+  }
+  @media (min-width: 1920px) {
+    
+  }
+`;
+
+export const BottomWrapper = styled.div`
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1024px) {
+    
+  }
+  @media (min-width: 1280px) {
+    
+  }
+  @media (min-width: 1440px) {
+   
+  }
+  @media (min-width: 1920px) {
+    
+  }
+`;
+
 export const Img1 = styled.img`
   width: 343px;
   height: 380px;
@@ -130,16 +169,18 @@ export const TextBlock = styled.div`
   @media (min-width: 768px) {
     width: 360px;
     height: 178px;
-    margin: 0;
+    margin: -81px 0 0 376px;
     padding: 32px 50px;
   }
   @media (min-width: 1024px) {
     width: 460px;
     padding: 32px 71px;
+    margin: -77px 0 0 484px;
   }
   @media (min-width: 1280px) {
     width: 493px;
     height: 139px;
+    margin: -58px 0 0 539px;
     padding: 32px 0 32px 32px;
     display: flex;
     justify-content: space-between;
@@ -148,11 +189,13 @@ export const TextBlock = styled.div`
   @media (min-width: 1440px) {
     width: 584px;
     height: 114px;
+    margin: -45px 0 0 608px;
   }
   @media (min-width: 1920px) {
     width: 645px;
     height: 122px;
     padding: 32px;
+    margin: -49px 0 0 667px;
   }
 `;
 
@@ -191,13 +234,21 @@ export const Img3 = styled(Img1)`
 
   @media (min-width: 768px) {
     height: 425px;
-    padding: 0 0 0 0;
+    margin: -81px 0 0;
   }
   @media (min-width: 1024px) {
     height: 477px;
+    margin: -77px 0 0;
+  }
+  @media (min-width: 1280px) {
+    margin: -58px 0 0;
+  }
+  @media (min-width: 1440px) {
+    margin: -44px 0 0;
   }
   @media (min-width: 1920px) {
     height: 481px;
+    margin: -49px 0 0;
   }
 `;
 
@@ -206,9 +257,11 @@ export const Img4 = styled(Img1)`
 
   @media (min-width: 768px) {
     height: 328px;
+    margin: 16px 0 0;
   }
   @media (min-width: 1024px) {
     height: 376px;
+    margin: 24px 0 0;
   }
   @media (min-width: 1280px) {
     width: 493px;
