@@ -8,6 +8,82 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const RhombusTop = styled.div`
+  position: absolute;
+  top: 120px;
+  left: -110px;
+  width: 252px;
+  height: 252px;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, #DADADA 0%, #FAFAFA 100%);
+  opacity: 0.15;
+  border-radius: 24px;
+  transform: rotate(-45deg);
+
+  @media (min-width: 768px) {
+    
+  }
+  @media (min-width: 1024px) {
+    
+  }
+  @media (min-width: 1280px) {
+    
+  }
+  @media (min-width: 1440px) {
+    
+  }
+  @media (min-width: 1920px) {
+    
+  }
+`;
+
+export const RhombusMiddle = styled.div`
+  position: absolute;
+  top: 508px;
+  left: -258px;
+  width: 461px;
+  height: 461px;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, #DADADA 0%, #FAFAFA 100%);
+  opacity: 0.15;
+  border-radius: 43px;
+  transform: rotate(-45deg);
+
+  @media (min-width: 768px) {
+    
+  }
+  @media (min-width: 1024px) {
+    
+  }
+  @media (min-width: 1280px) {
+    
+  }
+  @media (min-width: 1440px) {
+    
+  }
+  @media (min-width: 1920px) {
+    
+  }
+`;
+
+export const a = styled.div`
+  
+
+  @media (min-width: 768px) {
+    
+  }
+  @media (min-width: 1024px) {
+    
+  }
+  @media (min-width: 1280px) {
+    
+  }
+  @media (min-width: 1440px) {
+    
+  }
+  @media (min-width: 1920px) {
+    
+  }
+`;
+
 export const StarsTop = styled.div`
   background: url("/assets/icons/company/preview-stars-top.png") no-repeat;
   background-size: contain;

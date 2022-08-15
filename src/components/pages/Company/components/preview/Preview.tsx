@@ -1,10 +1,25 @@
 import React from 'react';
-import {Button, H1, Img, MainImg, P, Stars, StarsTop, Text, TextWrapper, Wrapper} from "./PreviewStyles";
+import {
+    Button,
+    H1,
+    Img,
+    MainImg,
+    P,
+    RhombusMiddle,
+    RhombusTop,
+    Stars,
+    StarsTop,
+    Text,
+    TextWrapper,
+    Wrapper
+} from "./PreviewStyles";
 
 const Preview = () => {
     return (
         <section className='preview'>
             <Wrapper>
+                <RhombusTop/>
+                <RhombusMiddle/>
                 <H1>
                     <StarsTop/>
                     Hi, we’re <span>Tinvio</span>!
