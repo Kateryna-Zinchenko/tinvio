@@ -5,7 +5,7 @@ import {
     ImgDevice, ImgScreen, Li, Li1, LightDot, LightDot3, List, List1, LiWrapper, LiWrapper1, Tabs, TabWrapper1,
     TabWrapper2, TabWrapper3,
     TabWrapper4, TabWrapper5, Title,
-    Wrapper, Wrapper1, Year3, Year1, Year5, Li5
+    Wrapper, Year3, Year1, Year5, Li5, WrapperFor3, WrapperFor2
 } from "./DoneStyles";
 
 const Done = () => {
@@ -100,54 +100,58 @@ const Done = () => {
                         </List1>
                     </TabWrapper1>
 
-                    <Wrapper1>
+                    <WrapperFor3>
                         <TabWrapper2>
                             <ImgScreen src='/assets/images/company/done-screen.png'/>
                         </TabWrapper2>
 
-                        <TabWrapper3>
-                            <Year3>
-                                2020
-                            </Year3>
-                            <List>
-                                <LiWrapper>
-                                    <div>
-                                        <DotWrapper>
-                                            <LightDot3/>
-                                        </DotWrapper>
-                                    </div>
-                                    <Li>
-                                        Seed funding led by Sequoia, GFC
-                                    </Li>
-                                </LiWrapper>
-                                <LiWrapper>
-                                    <div>
-                                        <DotWrapper>
-                                            <LightDot3/>
-                                        </DotWrapper>
-                                    </div>
-                                    <Li>
-                                        Launch multi-country localization, digital invoicing and more
-                                    </Li>
-                                </LiWrapper>
-                                <LiWrapper>
-                                    <div>
-                                        <DotWrapper>
-                                            <LightDot3/>
-                                        </DotWrapper>
-                                    </div>
-                                    <Li>
-                                        Adapt to Covid-19. Triple our team size to 100. Activate 1000+ new businesses
-                                    </Li>
-                                </LiWrapper>
-                            </List>
-                        </TabWrapper3>
-                    </Wrapper1>
+                        <WrapperFor2>
+                            <TabWrapper3>
+                                <Year3>
+                                    2020
+                                </Year3>
+                                <List>
+                                    <LiWrapper>
+                                        <div>
+                                            <DotWrapper>
+                                                <LightDot3/>
+                                            </DotWrapper>
+                                        </div>
+                                        <Li>
+                                            Seed funding led by Sequoia, GFC
+                                        </Li>
+                                    </LiWrapper>
+                                    <LiWrapper>
+                                        <div>
+                                            <DotWrapper>
+                                                <LightDot3/>
+                                            </DotWrapper>
+                                        </div>
+                                        <Li>
+                                            Launch multi-country localization, digital invoicing and more
+                                        </Li>
+                                    </LiWrapper>
+                                    <LiWrapper>
+                                        <div>
+                                            <DotWrapper>
+                                                <LightDot3/>
+                                            </DotWrapper>
+                                        </div>
+                                        <Li>
+                                            Adapt to Covid-19. Triple our team size to 100. Activate 1000+ new
+                                            businesses
+                                        </Li>
+                                    </LiWrapper>
+                                </List>
+                            </TabWrapper3>
 
-                    <TabWrapper4>
-                        <Title>Dark mode too!</Title>
-                        <ImgDevice src='/assets/images/company/done-device.png'/>
-                    </TabWrapper4>
+                            <TabWrapper4>
+                                <Title>Dark mode too!</Title>
+                                <ImgDevice src='/assets/images/company/done-device.png'/>
+                            </TabWrapper4>
+                        </WrapperFor2>
+
+                    </WrapperFor3>
 
                     <TabWrapper5>
                         <Year5>
@@ -187,7 +191,6 @@ const Done = () => {
                             </LiWrapper>
                         </List>
                     </TabWrapper5>
-
                 </Tabs>
             </Wrapper>
         </section>

@@ -38,15 +38,24 @@ export const Tabs = styled.div`
   }
 `;
 
-export const Wrapper1 = styled.div`
+export const WrapperFor3 = styled.div`
   @media (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
     margin: 16px 0 0;
   }
   @media (min-width: 1024px) {
-    display: unset;
-    margin: 0;
+    margin: -350px 0 0 0;
+  }
+`;
+
+export const WrapperFor2 = styled.div`
+  
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 24px 340px 0 0;
   }
 `;
 
@@ -58,12 +67,14 @@ export const TabWrapper2 = styled.div`
   overflow: hidden;
 
   @media (min-width: 768px) {
-    min-width: 360px;
+    width: 360px;
+    height: 311px;
     margin: 0 16px;
     padding: 16px 0 16px 26px;
   }
   @media (min-width: 1024px) {
-    min-width: 500px;
+    width: 500px;
+    height: 351px;
     margin: 0;
     padding: 16px 22px;
   }
@@ -99,6 +110,7 @@ export const TabWrapper4 = styled.div`
   @media (min-width: 1024px) {
     width: 340px;
     height: 342px;
+    margin: 0;
   }
   @media (min-width: 1280px) {
     width: 404px;
@@ -196,6 +208,7 @@ export const TabWrapper3 = styled(TabWrapper1)`
     width: 296px;
     height: 342px;
     padding: 40px 40px 50px 40px;
+    margin: 0 24px;
   }
   @media (min-width: 1280px) {
     width: 328px;
@@ -218,13 +231,14 @@ export const TabWrapper5 = styled(TabWrapper1)`
   border-radius: 32px 0 0 32px;
 
   @media (min-width: 768px) {
-    width: 376px;
     height: 311px;
-    margin: 16px 0 0;
+    margin: -311px 0 0 392px;
   }
   @media (min-width: 1024px) {
     width: 340px;
     height: 342px;
+    margin: -342px 0 0 684px;
+  }
   }
   @media (min-width: 1280px) {
     width: 446px;
