@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Button,
+    Button, Dots,
     H1,
     Img,
     MainImg,
@@ -20,6 +20,7 @@ const Preview = () => {
             <Wrapper>
                 <RhombusTop/>
                 <RhombusMiddle/>
+                <Dots/>
                 <H1>
                     <StarsTop/>
                     Hi, we’re <span>Tinvio</span>!

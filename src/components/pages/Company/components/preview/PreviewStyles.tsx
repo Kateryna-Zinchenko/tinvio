@@ -64,6 +64,32 @@ export const RhombusMiddle = styled.div`
   }
 `;
 
+export const Dots = styled.div`
+  background: url("/assets/icons/company/preview-dots.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 513px;
+  left: -117px;
+  width: 350px;
+  height: 265px;
+
+  @media (min-width: 768px) {
+    
+  }
+  @media (min-width: 1024px) {
+    
+  }
+  @media (min-width: 1280px) {
+    
+  }
+  @media (min-width: 1440px) {
+    
+  }
+  @media (min-width: 1920px) {
+    
+  }
+`;
+
 export const a = styled.div`
   
 
