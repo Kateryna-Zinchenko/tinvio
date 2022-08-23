@@ -13,12 +13,13 @@ import LoginForm from "../../common/loginForm/LoginForm";
 import { LoginFormWrapper } from './FeatureStyles';
 import { useToggle } from 'react-use';
 import useOnClickOutside from "../../../hooks/useOnClickOutside";
+import LoginThankYou from "./components/loginThankYou/loginThankYou";
 
 const Feature = () => {
     const [isOpen, setIsOpen] = useToggle(true);
 
     const modalRef = useOnClickOutside(() => {
-        setIsOpen(false);
+        setIsOpen();
     });
 
     return (

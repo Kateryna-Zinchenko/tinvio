@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {Props} from "./LoginForm";
 
-export const FormBlock = styled.div<Props>`
+export const Wrapper = styled.div<Props>`
   width: 375px;
   margin: 33px 0 0;
   padding: 16px;
@@ -19,7 +19,7 @@ export const FormBlock = styled.div<Props>`
   }
 `;
 
-export const FormBlockInner = styled.div`
+export const Inner = styled.div`
   width: 343px;
   background: #FFFFFF;
   border-radius: 32px;
@@ -30,6 +30,7 @@ export const FormBlockInner = styled.div`
     width: 440px;
   }
 `;
+
 export const Title = styled.div`
   margin: 0 auto;
   padding: 40px 53px 0 56px;
@@ -57,6 +58,7 @@ export const Title = styled.div`
     line-height: 34px;
   }
 `;
+
 export const Inputs = styled.div`
   margin: 32px auto 32px;
   width: 295px;

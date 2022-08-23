@@ -1,7 +1,6 @@
 import React, {useRef, useState} from 'react';
 import
-{Button, Caption, FormBlock, FormBlockInner, Input, InputField, Inputs, InputTitle, TextAfterButton, Title }
-    from './LoginFormStyles';
+{Button, Caption, Inner, Input, InputField, Inputs, InputTitle, TextAfterButton, Title, Wrapper} from './LoginFormStyles';
 
 export type Props = {
     //onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -28,8 +27,8 @@ const LoginForm = ({ modalRef, isOpen }: Props) => {
 
     return (
         <section className='form'>
-            <FormBlock ref={modalRef} isOpen={isOpen}>
-                <FormBlockInner>
+            <Wrapper ref={modalRef} isOpen={isOpen}>
+                <Inner>
                     <Title>Hi, we’re <span>Tinvio!</span> And you?</Title>
                     <Inputs>
                         <Input>
@@ -76,8 +75,8 @@ const LoginForm = ({ modalRef, isOpen }: Props) => {
                         Submit
                     </Button>
                     <TextAfterButton>No spam, promise</TextAfterButton>
-                </FormBlockInner>
-            </FormBlock>
+                </Inner>
+            </Wrapper>
         </section>
     );
 };
