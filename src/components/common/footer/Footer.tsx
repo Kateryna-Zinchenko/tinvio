@@ -36,8 +36,8 @@ const Footer = () => {
                           onClick={() => onLinkClick('features')}>Features</Page>
                     <Page isActive={window.location.pathname === '/company'}
                           onClick={() => onLinkClick('company')}>Company</Page>
-                    <Page isActive={window.location.pathname === '/login'}
-                          onClick={() => onLinkClick('login')}>Login</Page>
+                    <Page isActive={window.location.pathname === '/loginForm'}
+                          onClick={() => onLinkClick('loginForm')}>Login</Page>
                 </Pages>
                 <Links>
                     <LinksSocial>
