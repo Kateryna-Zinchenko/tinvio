@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 type Props = {
-    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void; // to handle onClick functions
-    children: React.ReactNode; // make the component able to receive children elements
+    children: React.ReactNode;
     background?: string;
     bordered?: boolean;
     color1?: boolean;
@@ -12,7 +11,6 @@ type Props = {
     margin1920?: string
 };
 const Button = ({
-                    onClick,
                     children,
                     background,
                     bordered,
