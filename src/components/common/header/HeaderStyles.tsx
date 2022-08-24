@@ -155,7 +155,7 @@ export const Page = styled.li<{ isActive: boolean }>`
     line-height: 19px;
     text-align: center;
     color: ${({isActive}) => isActive ? '#FF474D' : '#212121'};
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    //-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     cursor: pointer;
   }
   @media (min-width: 1920px) {
@@ -182,8 +182,12 @@ export const Button = styled.button<{ isScroll:boolean }>`
     line-height: 17px;
     width: 129px;
     height: 40px;
-    color: ${({isScroll}) => isScroll ? '#FFF' : '#212121'};
-    background: ${({isScroll}) => isScroll ? '#FF474D' : '#fff'};
+    color: ${
+        ({isScroll}) => isScroll ? '#FFF' :
+                (window.location.pathname === '/home') || (window.location.pathname === '/') ? '#212121' : '#FFF'};
+    background: ${
+        ({isScroll}) => isScroll ? '#FF474D' :
+              (window.location.pathname === '/home') || (window.location.pathname === '/') ? '#fff' : '#FF474D'};
     border: none;
     border-radius: 16px;
     cursor: pointer;

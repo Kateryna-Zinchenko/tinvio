@@ -44,7 +44,7 @@ const Header = ({setIsOpenMenu}: Props) => {
         if (scrollPosition > 50) {
             setIsScroll(true);
         }
-    }, [scrollPosition]);
+    }, [setIsScroll, scrollPosition]);
 
     const modalRef = useOnClickOutside(() => {
         setIsOpenLanguage(false);
