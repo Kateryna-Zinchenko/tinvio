@@ -9,24 +9,11 @@ import Supercharge from "./components/supercharge/Supercharge";
 import FAQ from "./components/faq/FAQ";
 import SendInvoices from "./components/sendInvoices/SendInvoices";
 import RunIt from "./components/runIt/RunIt";
-import LoginForm from "../../common/loginForm/LoginForm";
-import { LoginFormWrapper } from './FeatureStyles';
-import { useToggle } from 'react-use';
-import useOnClickOutside from "../../../hooks/useOnClickOutside";
-import LoginThankYou from "./components/loginThankYou/loginThankYou";
 
 const Feature = () => {
-    const [isOpen, setIsOpen] = useToggle(true);
-
-    const modalRef = useOnClickOutside(() => {
-        setIsOpen();
-    });
 
     return (
         <main className='features'>
-            <LoginFormWrapper isOpen={isOpen}>
-                <LoginForm modalRef={modalRef}/>
-            </LoginFormWrapper>
             <TryIt/>
             <Dashboard/>
             <ManageOrders/>

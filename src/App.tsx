@@ -6,12 +6,31 @@ import BurgerMenu from "./components/common/header/menu/BurgerMenu";
 import Footer from "./components/common/footer/Footer";
 import Feature from "./components/pages/Feature/Feature";
 import Company from "./components/pages/Company/Company";
+import {LoginFormWrapper} from "./components/pages/Feature/FeatureStyles";
+import LoginForm from "./components/common/loginForm/LoginForm";
+import LoginThankYou from "./components/pages/Feature/components/loginThankYou/loginThankYou";
+import useOnClickOutside from "./hooks/useOnClickOutside";
+import {useEffect, useState} from "react";
 
 function App() {
     const [isOpenMenu, setIsOpenMenu] = useToggle(false);
+    const [isOpen, setIsOpen] = useToggle(true);
 
+    const [submitted, setSubmitted] = useState<boolean>(false);
+
+    const modalRef = useOnClickOutside(() => {
+        setIsOpen(false);
+    });
+
+    useEffect(() => {
+        setIsOpen(true)
+    }, []);
     return (
         <BrowserRouter>
+            <LoginFormWrapper isOpen={isOpen}>
+                <LoginForm isOpen={isOpen} modalRef={modalRef} submitted={submitted} setSubmitted={setSubmitted}/>
+                <LoginThankYou submitted={submitted}/>
+            </LoginFormWrapper>
             {
                 isOpenMenu ? <BurgerMenu setIsOpenMenu={setIsOpenMenu}/> :
                     <div className='app'>

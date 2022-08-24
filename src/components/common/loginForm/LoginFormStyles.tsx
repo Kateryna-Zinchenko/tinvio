@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import {Props} from "./LoginForm";
 
-export const Wrapper = styled.div<Props>`
+export const Wrapper = styled.div<{ submitted: boolean }>`
+  display: ${({ submitted }) => submitted ? 'none' : 'block'};
   width: 375px;
   margin: 33px 0 0;
   padding: 16px;

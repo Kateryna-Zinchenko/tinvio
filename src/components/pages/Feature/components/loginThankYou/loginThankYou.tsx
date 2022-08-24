@@ -1,9 +1,11 @@
 import React from 'react';
 import {Button, Caption, Img, Inner, Title, Wrapper} from './loginThankYouStyles';
-
-const LoginThankYou = () => {
+interface Props {
+    submitted: boolean
+}
+const LoginThankYou = ({submitted}: Props) => {
     return (
-        <Wrapper>
+        <Wrapper submitted={submitted}>
             <Inner>
                 <Title>Thank you!</Title>
                 <Img src='/assets/images/features/login-form.png'/>

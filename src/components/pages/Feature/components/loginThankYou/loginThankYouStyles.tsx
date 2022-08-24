@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{ submitted: boolean }>`
+  display: ${({submitted}) => submitted ? 'block' : 'none'};
   width: 375px;
   margin: 33px 0 0;
   padding: 16px;
@@ -22,6 +23,7 @@ export const Inner = styled.div`
   width: 343px;
   background: #FFFFFF;
   border-radius: 32px;
+  padding: 48px 0;
   @media (min-width: 768px) {
     width: 425px;
   }
@@ -32,7 +34,6 @@ export const Inner = styled.div`
 
 export const Title = styled.div`
   margin: 0 auto;
-  padding: 40px 53px 0 56px;
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 600;
@@ -49,7 +50,6 @@ export const Title = styled.div`
     font-size: 24px;
     line-height: 29px;
     width: 425px;
-    padding: 48px 0 0;
     text-align: center;
   }
   @media (min-width: 1920px) {
