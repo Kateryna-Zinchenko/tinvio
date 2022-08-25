@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   width: 100%;
   overflow: hidden;
   @media (min-width: 768px) {
-    height: 927px;
+    height: 954px;
   }
   @media (min-width: 1024px) {
     height: 649px;
@@ -96,7 +96,7 @@ export const RhombsRight = styled.div`
   bottom: -59px;
   right: -161px;
   @media (min-width: 768px) {
-    bottom: 35px;
+    bottom: 58px;
     right: -130px;
   }
   @media (min-width: 1024px) {
@@ -209,7 +209,7 @@ export const Text = styled.div`
   }
 `;
 
-export const Button = styled.button<{isOpen:boolean}>`
+export const Button = styled.button<{ isOpen:boolean }>`
   position: relative;
   width: 188px;
   height: 48px;
@@ -227,7 +227,7 @@ export const Button = styled.button<{isOpen:boolean}>`
   color: #212121;
   border: none;
   border-radius: 16px;
-  background: ${({isOpen}) => isOpen ? '#E0E0E1' : '#fff'};
+  background-color: ${({isOpen}) => isOpen ? '#E0E0E1' : '#fff'};
   cursor: pointer;
 
   &::before {

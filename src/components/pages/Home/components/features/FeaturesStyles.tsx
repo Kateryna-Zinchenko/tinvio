@@ -354,9 +354,6 @@ export const PurpleSquare = styled.div`
     height: 560px;
     margin: 60px 0 0 115px;
   }
-  //@media (min-width: 1920px) {
-  //  margin: 40px 0 0 115px;
-  //}
 `;
 export const RedSquare = styled.div`
   width: 395px;
@@ -403,7 +400,6 @@ export const DeviceRight1 = styled.img<{ isOption:string }>`
   position: absolute;
   top: 170px;
   right: -40px;
-  transition: 1s;
   @media (min-width: 768px) {
     width: 320px;
     height: 531px;
