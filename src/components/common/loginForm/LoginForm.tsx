@@ -10,7 +10,7 @@ export type Props = {
     setSubmitted?: any
 };
 
-const LoginForm = ({ modalRef, isOpen, submitted, setSubmitted }: Props) => {
+const LoginForm = ({ modalRef, submitted, setSubmitted }: Props) => {
 
     const nameRef = useRef<HTMLInputElement>(null);
     const businessNameRef = useRef<HTMLInputElement>(null);

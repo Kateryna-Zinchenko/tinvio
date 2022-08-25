@@ -11,6 +11,7 @@ import LoginForm from "./components/common/loginForm/LoginForm";
 import LoginThankYou from "./components/pages/Feature/components/loginThankYou/loginThankYou";
 import useOnClickOutside from "./hooks/useOnClickOutside";
 import {useEffect, useState} from "react";
+import Login from "./components/pages/Login/Login";
 
 function App() {
     const [isOpenMenu, setIsOpenMenu] = useToggle(false);
@@ -20,11 +21,16 @@ function App() {
 
     const modalRef = useOnClickOutside(() => {
         setIsOpen(false);
+        document.body.style.overflow = 'unset'
     });
 
     useEffect(() => {
         setIsOpen(true)
-    }, []);
+        if (isOpen === true) {
+            // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+            document.body.style.overflow = 'hidden'
+        }
+    }, [isOpen, setIsOpen]);
     return (
         <BrowserRouter>
             <LoginFormWrapper isOpen={isOpen}>
@@ -40,6 +46,7 @@ function App() {
                             <Route path='/home' element={<Home/>}/>
                             <Route path='/features' element={<Feature/>}/>
                             <Route path='/company' element={<Company/>}/>
+                            <Route path='/login' element={<Login/>}/>
                         </Routes>
                         <Footer/>
                     </div>

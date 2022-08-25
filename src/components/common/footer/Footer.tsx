@@ -36,8 +36,8 @@ const Footer = () => {
                           onClick={() => onLinkClick('features')}>Features</Page>
                     <Page isActive={window.location.pathname === '/company'}
                           onClick={() => onLinkClick('company')}>Company</Page>
-                    <Page isActive={window.location.pathname === '/loginForm'}
-                          onClick={() => onLinkClick('loginForm')}>Login</Page>
+                    {/*<Page isActive={window.location.pathname === '/login'}*/}
+                    {/*      onClick={() => onLinkClick('login')}>Login</Page>*/}
                 </Pages>
                 <Links>
                     <LinksSocial>
@@ -54,9 +54,9 @@ const Footer = () => {
                     <Text>© Tinvio™ 2020. All Rights Reserved</Text>
                     <Stick2/>
                     <LinksTerms>
-                        <PrivacyPolicy><a href="">Privacy Policy</a></PrivacyPolicy>
+                        <PrivacyPolicy><a>Privacy Policy</a></PrivacyPolicy>
                         <Stick/>
-                        <Terms><a href="">Terms of Service</a></Terms>
+                        <Terms><a>Terms of Service</a></Terms>
                     </LinksTerms>
                 </FooterText>
             </Wrapper>
