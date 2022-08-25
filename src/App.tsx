@@ -30,7 +30,7 @@ function App() {
             // eslint-disable-next-line @typescript-eslint/no-unused-expressions
             document.body.style.overflow = 'hidden'
         }
-    }, [isOpen, setIsOpen]);
+    }, [setIsOpen]);
     return (
         <BrowserRouter>
             <LoginFormWrapper isOpen={isOpen}>
