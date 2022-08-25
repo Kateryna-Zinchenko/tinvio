@@ -35,6 +35,7 @@ export const Tabs = styled.div`
   }
   @media (min-width: 1024px) {
     margin: 49px 0 0;
+    display: none;
   }
 `;
 
@@ -81,6 +82,7 @@ export const TabWrapper2 = styled.div`
   @media (min-width: 1280px) {
     width: 574px;
     height: 403px;
+    margin: 0 54px 0 0;
   }
   @media (min-width: 1440px) {
     width: 654px;
@@ -89,6 +91,7 @@ export const TabWrapper2 = styled.div`
   @media (min-width: 1920px) {
     width: 714px;
     height: 391px;
+    margin: 0 234px 0 0;
   }
 `;
 
@@ -110,14 +113,20 @@ export const TabWrapper4 = styled.div`
   @media (min-width: 1024px) {
     width: 340px;
     height: 342px;
-    margin: 0;
+    margin: 24px 0 0;
   }
   @media (min-width: 1280px) {
     width: 404px;
     height: 340px;
+    margin: 24px 0 0 54px;
   }
   @media (min-width: 1440px) {
     height: 298px;
+  }
+  @media (min-width: 1920px) {
+    width: 492px;
+    height: 310px;
+    margin: 24px 0 0 234px;
   }
 `;
 
@@ -208,7 +217,7 @@ export const TabWrapper3 = styled(TabWrapper1)`
     width: 296px;
     height: 342px;
     padding: 40px 40px 50px 40px;
-    margin: 0 24px;
+    margin: 24px 24px 0;
   }
   @media (min-width: 1280px) {
     width: 328px;
@@ -223,6 +232,7 @@ export const TabWrapper3 = styled(TabWrapper1)`
   @media (min-width: 1920px) {
     width: 421px;
     height: 310px;
+    margin: 24px 0 0;
   }
 `;
 
@@ -237,8 +247,7 @@ export const TabWrapper5 = styled(TabWrapper1)`
   @media (min-width: 1024px) {
     width: 340px;
     height: 342px;
-    margin: -342px 0 0 684px;
-  }
+    margin: 24px 0 0;
   }
   @media (min-width: 1280px) {
     width: 446px;
@@ -407,6 +416,17 @@ export const LightDot = styled.div`
 export const LightDot3 = styled(LightDot)`
   background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(109, 109, 109, 0.18) 0%, rgba(250, 250, 250, 0) 100%);
 `;
+
+export const Tabs1024 = styled(Tabs)`
+  display: none;
+  
+  @media (min-width: 1024px) {
+    display: flex;
+    margin: 49px 0 0;
+  }
+`;
+
+
 
 
 

@@ -1,12 +1,11 @@
 import React from 'react';
 import {
-    Button, Dots,
+    Button, Dots, DotsBottom,
     H1,
     Img,
     MainImg,
-    P,
-    RhombusMiddle,
-    RhombusTop,
+    P, RhombusBottomLeft,
+    RhombusTopLeft, RhombusTopRight, RhombusTopRight1,
     Stars,
     StarsTop,
     Text,
@@ -18,9 +17,12 @@ const Preview = () => {
     return (
         <section className='preview'>
             <Wrapper>
-                <RhombusTop/>
-                <RhombusMiddle/>
+                <RhombusTopLeft/>
+                <RhombusBottomLeft/>
+                <RhombusTopRight/>
+                <RhombusTopRight1/>
                 <Dots/>
+                <DotsBottom/>
                 <H1>
                     <StarsTop/>
                     Hi, we’re <span>Tinvio</span>!

@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin: 143px 0 0;
+  position: relative;
 
   @media (min-width: 1920px) {
     margin: 152px 0 0;
   }
 `;
 
-export const RhombusTop = styled.div`
+export const RhombusTopLeft = styled.div`
   position: absolute;
   top: 120px;
   left: -110px;
@@ -20,10 +21,12 @@ export const RhombusTop = styled.div`
   transform: rotate(-45deg);
 
   @media (min-width: 768px) {
-    
+    top: -22px;
+    left: -209px;
   }
   @media (min-width: 1024px) {
-    
+    top: -26px;
+    left: -209px;
   }
   @media (min-width: 1280px) {
     
@@ -36,7 +39,7 @@ export const RhombusTop = styled.div`
   }
 `;
 
-export const RhombusMiddle = styled.div`
+export const RhombusBottomLeft = styled.div`
   position: absolute;
   top: 508px;
   left: -258px;
@@ -64,15 +67,37 @@ export const RhombusMiddle = styled.div`
   }
 `;
 
-export const Dots = styled.div`
-  background: url("/assets/icons/company/preview-dots.png") no-repeat;
-  background-size: contain;
+export const RhombusTopRight = styled.div`
   position: absolute;
-  top: 513px;
-  left: -117px;
-  width: 350px;
-  height: 265px;
+  top: 642px;
+  right: -539px;
+  width: 679px;
+  height: 679px;
+  background: radial-gradient(95.51% 95.51% at 50% 50%, #DADADA 0%, #FAFAFA 100%);
+  opacity: 0.15;
+  border-radius: 64px;
+  transform: rotate(-45deg);
+  
+  @media (min-width: 1024px) {
+    top: 25px;
+    right: -420px;
+  }
+  @media (min-width: 1280px) {
+    
+  }
+  @media (min-width: 1440px) {
+    
+  }
+  @media (min-width: 1920px) {
+    
+  }
+`;
 
+export const RhombusTopRight1 = styled(RhombusTopRight)`
+  position: absolute;
+  top: 926px;
+  right: -516px;
+  
   @media (min-width: 768px) {
     
   }
@@ -87,6 +112,64 @@ export const Dots = styled.div`
   }
   @media (min-width: 1920px) {
     
+  }
+`;
+
+export const Dots = styled.div`
+  background: url("/assets/icons/company/preview-dots.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 513px;
+  left: -117px;
+  width: 350px;
+  height: 265px;
+
+  @media (min-width: 768px) {
+    top: 136px;
+    left: unset;
+    right: 116px;
+    width: 356px;
+    height: 269px;
+  }
+  @media (min-width: 1024px) {
+    
+  }
+  @media (min-width: 1280px) {
+    
+  }
+  @media (min-width: 1440px) {
+    
+  }
+  @media (min-width: 1920px) {
+    
+  }
+`;
+
+export const DotsBottom = styled.div`
+  background: url("/assets/icons/company/preview-dots-bottom.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -60px;
+  right: -64px;
+  width: 251px;
+  height: 190px;
+  
+  @media (min-width: 1024px) {
+    width: 356px;
+    height: 269px;
+    bottom: -63px;
+    right: 2px;
+  }
+  @media (min-width: 1280px) {
+    bottom: -162px;
+    right: 85px;
+  }
+  @media (min-width: 1440px) {
+    bottom: -201px;
+  }
+  @media (min-width: 1920px) {
+    bottom: -185px;
+    right: 281px;
   }
 `;
 
