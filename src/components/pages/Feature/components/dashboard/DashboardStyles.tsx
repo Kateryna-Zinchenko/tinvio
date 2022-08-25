@@ -71,7 +71,7 @@ export const Options = styled.div`
     width: 732px;
   }
   @media (min-width: 1920px) {
-    padding: 87px 178px 75px 306px;
+    padding: 75px 178px 53px 306px;
     width: 1035px;
   }
 `;
