@@ -29,6 +29,7 @@ const Header = ({setIsOpenMenu}: Props) => {
     const onLinkClick = (value: string) => {
         setIsOpenMenu(false)
         nav(`/${value}`)
+        window.scrollTo(0, 0)
     }
 
     const onFlagClick = (language: string) => {
